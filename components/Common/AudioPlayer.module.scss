@@ -1,0 +1,128 @@
+@import "../../scss/setting/variables.scss";
+@import "../../scss/setting/mixin";
+
+@keyframes text-marquee {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+.audioPlayerContainer {
+  width: 100%;
+  #playButton {
+    font-size: 50px;
+    color: #007aff;
+    @include mobile {
+      font-size: 40px;
+      align-items: center;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .audioPlayerDetail {
+    margin-left: 10px;
+    width: calc(100% - 50px - 25px);
+    @include mobile {
+      width: calc(100% - 40px - 15px);
+    }
+    .audioPlayerSongName {
+      position: relative;
+      overflow: hidden;
+      margin-top: 5px;
+      @include mobile {
+        margin-top: 0px;
+      }
+      .songNamePreview {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        padding-right: 40px;
+        margin-bottom: 5px;
+        @include mobile {
+          margin-bottom: 0px;
+          font-size: 14px;
+          padding-right: 0px;
+        }
+      }
+      .songNamePreview.is-playing {
+        animation: text-marquee 5s linear infinite;
+      }
+      .songNamePreview-1.is-playing {
+        animation: text-marquee 5s 2.5s linear infinite;
+      }
+    }
+    .durationBar {
+      width: 100%;
+      .progressBarAudio {
+        position: relative;
+        width: calc(100% - 135px);
+        display: flex;
+        align-items: center;
+        @include mobile {
+          width: calc(100% - 110px);
+        }
+        .progressBarContent {
+          position: absolute;
+          left: 0;
+          top: 6.5px;
+          background-color: #007aff;
+          z-index: 2;
+          height: 9.5px;
+          border-radius: 10px;
+          pointer-events: none;
+        }
+        .inputSlider {
+          overflow: hidden;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          height: 10px;
+          border-radius: 10px;
+          background: #d3d3d3;
+          outline: none;
+          box-shadow: none;
+          width: 100%;
+          border: none;
+          &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            background-color: transparent;
+            cursor: pointer;
+            width: 0;
+            height: 0;
+          }
+          &::-moz-range-thumb {
+            width: 0px;
+            height: 0px;
+            border-radius: 99px;
+            background: #007aff;
+            cursor: pointer;
+            border: 0;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      .audioTime {
+        @include mobile {
+          font-size: 14px;
+        }
+        .timePlay {
+          display: inline-block;
+          width: 22px;
+          @include mobile {
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+}

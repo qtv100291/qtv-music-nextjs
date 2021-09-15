@@ -1,0 +1,60 @@
+@import "../../scss/setting/mixin" ;
+
+.carouselHomePage{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    @include mobile{
+        display: none;
+    }
+    .carouselBanner{
+        width: 100%;
+        padding-top: calc(100%*5/12);
+        position: relative;
+        .carouselBannerPhoto{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    :global(.carousel-caption){
+        width: 100%;
+        left: 0;
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        @include tablet{
+            padding: 10px 0;
+            bottom: 10px;
+        }
+        h3 {
+            font-family: $font-catamaran;
+            @include tablet{
+                font-size: 20px;
+            }
+        }
+        p { 
+            margin-bottom: 5px;
+            @include tablet{
+                font-size: 14px;
+            }
+        }
+    }
+    #carouselMainItem{
+        h3 {
+            font-size: 40px;
+            margin: 0;
+            font-weight: bold;
+        }
+    }
+    .carousel-control-prev, .carousel-control-next{
+        span {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}

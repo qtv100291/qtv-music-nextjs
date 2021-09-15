@@ -1,0 +1,49 @@
+@import "../../scss/setting/variables";
+@import "../../scss/setting/mixin";
+
+.tradeHistory {
+  width: 100%;
+  margin: 0;
+  h2 {
+    font-size: 30px;
+    line-height: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid black;
+    @include mobile {
+      font-size: 25px;
+    }
+  }
+  .tradeHistoryContainer {
+    width: 100%;
+    > h3 {
+      font-size: 25px;
+      text-align: center;
+      margin-top: 25px;
+      @include mobile {
+        font-size: 20px;
+      }
+    }
+    .tradeHistoryList {
+      margin: 0;
+      .tradeHistoryItem {
+        list-style: none;
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid rgb(201, 201, 201);
+        h3 {
+          font-size: 25px;
+          @include mobile {
+            font-size: 20px;
+          }
+        }
+        > p {
+          margin-bottom: 0;
+          color: rgb(73, 73, 73);
+        }
+      }
+      li:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}

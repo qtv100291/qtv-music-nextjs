@@ -1,0 +1,158 @@
+@import "../../scss/setting/mixin" ;
+
+.navbarIconItem{
+    svg{
+        font-size: 22px;
+        color: white;
+        &:hover{
+            cursor: pointer;
+            color: $color-active;
+            @include mobile {
+                color: white;
+            }
+            @include tablet {
+                color: white;
+            }
+            @include large-tablet {
+                color: white;
+            }
+        }
+    }
+}
+
+.shoppingIconPart{
+    position: relative;
+    strong{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 11px;
+        top: -5px;
+        border-radius: 999px;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(41, 41, 255);
+        font-size: 0.75rem;
+        font-family: $font-roboto;
+    }
+}
+
+.searchBarIcon{
+    width: 22px;
+    height: 22px;
+}
+.searchBarIconPart{
+    position: relative;
+    .searchBar{
+        background-color: white;
+        position: absolute;
+        right: -10px;
+        top: 48px;
+        border-top: 5px solid $color-active ;
+        transition: 0.3s;
+        transform: scaleY(0);
+        transform-origin: top;
+        border-bottom: 1px solid rgb(109, 109, 109);
+        border-left: 1px solid rgb(109, 109, 109);
+        border-right: 1px solid rgb(109, 109, 109);
+        @include mobile {
+            position: fixed;
+            top: 45px;
+            left: 0;
+            width: 100%;
+            z-index: 20;
+        }
+        @include tablet {
+            top: 40px;
+        }
+        @include large-tablet {
+            top: 40px;
+        }
+        > input{
+            width: 300px;
+            border: none;
+            outline: none;
+            padding: 10px 10px;
+        } 
+        .iconSearchContainer{
+            padding: 10px;
+            position: relative;
+            .iconSearch{
+                color: black;
+                font-size: 20px;
+            }
+            .loadingSearchBar{
+                width: 22px;
+                height: 22px;
+                position: absolute;
+                top: 8px;
+                left: -25px;
+                >img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            top: -25px;
+            right: 10px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: transparent transparent $color-active transparent;
+        }
+        &.displaying{
+            transform: scaleY(1);
+        }
+        .result{
+            position: absolute;
+            top: 45px;
+            left: 0;
+            width: 340px;
+            background-color: white;
+            box-shadow: 1px 1px 5px rgb(122, 122, 122);
+            max-height: 150px;
+            overflow: auto;
+            border-radius: 0 0 3px 3px;
+            scrollbar-width:thin;
+            scrollbar-color:#C4C4C4;
+            @include mobile {
+                width: 100%;
+            }
+            &::-webkit-scrollbar{
+                width: 7px;
+            }
+            &::-webkit-scrollbar-track{
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+            }
+            &::-webkit-scrollbar-thumb{
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+            }
+            &::-webkit-scrollbar-thumb{
+                background: #C4C4C4;
+            }
+            p{
+                margin: 0;
+                line-height: 25px;
+                text-align: center;
+                padding: 5px 0;
+            }
+            .linkSearchBar{
+                text-decoration: none;
+                display: block;
+                line-height: 30px;
+                text-indent: 10px;
+                color: black;
+                &:hover{
+                    background-color: rgb(207, 207, 207);
+                }
+                .textColored{
+                    color: $color-active;
+                }
+            }
+        }
+    }
+}

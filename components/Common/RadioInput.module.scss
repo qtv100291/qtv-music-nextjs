@@ -1,0 +1,20 @@
+@import "../../scss/setting/mixin" ;
+
+.radioInput{
+    height: 32px;
+    @include large-tablet {
+        height: auto;
+    }
+    @include mobile {
+        height: auto;
+    }
+    label{
+        margin: 0;
+        margin-left: 15px; 
+        margin-top: 1px;
+        cursor: pointer;
+    }
+    input{
+        cursor: pointer;
+    }
+}

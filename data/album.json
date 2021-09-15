@@ -1,0 +1,1375 @@
+{"musicData": [
+    {
+      "id": "1",
+      "albumName": "Tâm Hồn của Đá",
+      "releaseYear": "2002",
+      "bandName": "Bức Tường",
+      "country": "Việt Nam",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FTam_Hon_Cua_Da%2FDuongDenVinhQuang-Sample.mp3?alt=media&token=fea41c9d-7647-4d8f-8b4b-f8d509c43eb6",
+      "previewSongName": "Đường Đến Ngày Vinh Quang",
+      "listSong": [
+        "Rock Xuyên Màn Đêm",
+        "Bông Hồng Thủy Tinh",
+        "Tâm Hồn Của Đá",
+        "Ngày Hôm Qua",
+        "Chim Hót Trời Xanh",
+        "Giọt Đắng",
+        "Cơn Mưa Hoang Dã",
+        "Người Đàn Bà Hóa Đá",
+        "Niềm Tin Cho Cát Bụi",
+        "Đường Đến Vinh Quang"
+      ],
+      "listSongDuration": [
+        "03:46",
+        "04:31",
+        "03:38",
+        "04:51",
+        "05:04",
+        "04:20",
+        "05:06",
+        "04:34",
+        "03:47",
+        "05:30"
+      ],
+      "description": [
+        "Tâm hồn của đá (tựa tiếng Anh: The Soul of Rock) là album phòng thu đầu tay của ban nhạc rock Việt Bức Tường, phát hành ngày 3 tháng 2 năm 2002 bởi Trung tâm Nghe nhìn Hà Nội. Album tập hợp 10 ca khúc thành công nhất của Bức Tường, trong đó có những bài đã trở thành 'ca khúc ruột' trong giới sinh viên – cái nôi trưởng thành của ban nhạc. Mặc dù từ bản demo đầu tiên được thu vào tháng 6 năm 1999 cho tới khi chính thức thâu âm cũng mất chừng 1 năm vì thiếu tiền thực hiện. Một năm sau khi thu âm, sau rất nhiều lần gõ cửa các đầu mối phát hành khắp Bắc chí Nam, cuối cùng thì \"Tâm hồn của đá\" mới chính thức ra đời. Toàn bộ các khâu sản xuất thực sự đều do chính tay các thành viên ban nhạc thực hiện."
+      ],
+      "albumFolder": "album-cover-and-audio/Tam_Hon_Cua_Da",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FTam_Hon_Cua_Da%2Fcover.jpg?alt=media&token=9b21efcd-a39a-4a7e-878d-f9276736b81e",
+      "price": "199.000"
+    },
+    {
+      "id": "2",
+      "albumName": "Vô Hình",
+      "releaseYear": "2003",
+      "bandName": "Bức Tường",
+      "country": "Việt Nam",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FVo_Hinh%2FKhamPha-BucTuong-Sample.mp3?alt=media&token=bfda9dbc-4d20-4b5b-ab9c-7bc640171b7e",
+      "previewSongName": "Khám Phá",
+      "listSong": [
+        "Đêm",
+        "Cây Bàng",
+        "Cô Gái Mù",
+        "Bài Ca Sông Hồng",
+        "Cơn Mưa Hoang Dã ver.2",
+        "Con Số 0",
+        "Mắt Đen",
+        "Vô Hình",
+        "Khám Phá"
+      ],
+      "listSongDuration": [
+        "06:25",
+        "07:39",
+        "05:24",
+        "06:06",
+        "06:42",
+        "05:30",
+        "04:07",
+        "06:05",
+        "04:29"
+      ],
+      "description": [
+        "Vô Hình (tựa tiếng Anh: The Invisible) là album phòng thu thứ hai của ban nhạc rock Việt Bức Tường, phát hành ngày 10 tháng 8 năm 2003 bởi Trung tâm Nghe nhìn Hà Nội. Album tập hợp chuỗi 9 ca khúc thành công tiếp theo của Bức Tường, những bài hát nói về giá trị của cuộc sống, hạnh phúc hay khổ đau nhiều khi không thể đo được bằng vật chất mà có khi là một thứ gì đó rất \"vô hình\". Có một số ca khúc về thân phận con người như: Sông Hồng, Con số không, Đêm, Cô gái mù....Toàn bộ nhạc phẩm được soạn và sáng tác bởi Trần Lập"
+      ],
+      "albumFolder": "album-cover-and-audio/Vo_Hinh",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FVo_Hinh%2Fcover.jpg?alt=media&token=39d222fe-67ed-403d-b8cd-937ff5bd31ef",
+      "price": "199.000"
+    },
+    {
+      "id": "3",
+      "albumName": "Nam Châm",
+      "releaseYear": "2004",
+      "bandName": "Bức Tường",
+      "country": "Việt Nam",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FNam_Cham%2FTrove-Sample.mp3?alt=media&token=9824ef58-8554-4f5b-8409-2e60b25fbbe4",
+      "previewSongName": "Trở Về",
+      "listSong": [
+        "Ra Khơi",
+        "Cha Và Con",
+        "Dấu Vết Nghiệt Ngã",
+        "Nếu Em Hiểu",
+        "Nam Châm",
+        "Người Mộng Du",
+        "Chuyện Tình Của Thủy Thần",
+        "Dế Mèn",
+        "I Am Your Stylish Man",
+        "Bất Tử (Beat)",
+        "Trở Về",
+        "Đôi Bàn Tay"
+      ],
+      "listSongDuration": [
+        "04:38",
+        "03:53",
+        "07:02",
+        "04:47",
+        "04:36",
+        "04:34",
+        "06:17",
+        "06:57",
+        "03:28",
+        "06:05",
+        "03:23",
+        "05:10"
+      ],
+      "description": [
+        "Nam châm (tựa tiếng Anh: Magnet) là album phòng thu thứ ba sau “Tâm hồn của đá” và “Vô hình” của ban nhạc rock Việt Bức Tường, phát hành ngày 16 tháng 10 năm 2004 bởi Trung tâm Nghe nhìn Hà Nội. Album tập hợp 12 ca khúc rất thành công của Bức Tường, trong đó có những ca khúc lần này khai thác mảng đề tài mới dựa vào kho tàng văn học nghệ thuật dân gian Việt Nam, cùng những câu chuyện dã sử hoặc truyền thuyết. Các ca khúc trong “Nam châm” có lẽ là  những ca khúc đa dạng trong cả phương thức thể hiện cũng như nội dung ca từ. Bên cạnh những ca khúc về tình yêu, gia đình, điều thú vị chính là sự xuất hiện mới mẻ của những câu chuyện truyền thuyết như tình yêu oan trái của Mỵ Châu-Trọng Thuỷ, chuyện Sơn Tinh-Thuỷ Tinh... được chuyển tải bằng ngôn ngữ rock mang chất sử thi (âm hưởng Symphony - Power Metal) với cường độ âm nhạc dữ dội, tốc độ nhanh.",
+        "Có lẽ độc đáo nhất là ca khúc \" Dế Mèn\" với nội dung đầy chất triết lý và sự kết hợp đầy sáng tạo của nét giai điệu cổ truyền và chất Metal. Đặc biệt là ca khúc “Ra khơi” phóng tác từ dân ca Nam Bộ, như một thử nghiệm, tìm tòi mới của Bức Tường khi kết hợp âm nhạc dân gian và Rock. “Nam châm”  là tên của một ca khúc trong album, đồng thời cũng như mong muốn của ban nhạc, là ''sức hút'' của những khát khao sáng tạo để tìm đến một phong cách rock đậm chất Việt. “Nam châm” cũng là bước tiếp theo của Bức tường qua gần mười năm gắn bó với rock để đến gần với tiêu chí này."
+      ],
+      "albumFolder": "album-cover-and-audio/Nam_Cham",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FNam_Cham%2Fcover.jpg?alt=media&token=aa51db22-7a62-4c4f-affa-9cd6c0c0f658",
+      "price": "230.000"
+    },
+    {
+      "id": "4",
+      "albumName": "Ngày Khác",
+      "releaseYear": "2010",
+      "bandName": "Bức Tường",
+      "country": "Việt Nam",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FNgay_Khac%2FHoaBanTrang-Sample.mp3?alt=media&token=17afd72c-f31d-4688-ae92-52434ed1e5dc",
+      "previewSongName": "Hoa Ban Trắng",
+      "listSong": [
+        "Ngày Khác",
+        "Người Bão",
+        "Chờ Bước Chân Em Đi",
+        "Chọi Trâu",
+        "Bài Ca Sông Hồng",
+        "Mỏi",
+        "Tiếng Gọi",
+        "Cô Gái Quàng Khăn Đỏ",
+        "Chơi Vơi",
+        "Anh Sẽ Đến",
+        "Rung Chuông Vàng",
+        "Hoa Ban Trắng"
+      ],
+      "listSongDuration": [
+        "05:06",
+        "04:02",
+        "04:28",
+        "03:42",
+        "05:57",
+        "04:10",
+        "04:05",
+        "04:24",
+        "05:15",
+        "04:24",
+        "03:52",
+        "07:02"
+      ],
+      "description": [
+        "Trở lại sau 4 năm, ban nhạc Rock đình đám của Việt Nam đã đánh dấu sự tái hợp bằng việc phát hành album “Ngày khác” trong phạm vi toàn quốc.",
+        "Vẫn là chất rock sâu lắng, 12 ca khúc trong album đã truyền đến người nghe năng lượng sống dồi dào, tình yêu thương giữa con người-con người cùng tình yêu cuộc sống. Album “Ngày khác” đã cho thấy sự chuẩn bị kỹ lưỡng  của họ ở nhiều góc cạnh về một hình ảnh hoàn toàn mới của ban nhạc Bức tường với nhiều trải nghiệm. Lời ca không chỉ chứa đựng nhiều hình ảnh mà còn mang tính triết lý. Phong cách biểu diễn cũng không thiên về tốc độ mà chú trọng tới kỹ thuật nhiều hơn. Đặc biệt, phần hình ảnh của 5 chàng trai Bức tường không còn dáng vẻ hầm hố, đinh sắt mà trở nên lịch thiệp, thân thiện của các quý ông chơi rock. Đây là kết quả của những năm tháng miệt mài tập luyện, chuẩn bị không đứt đoạn của các thành viên Bức tường, họ chia tay để rồi vẫn hy vọng một ngày tái ngộ."
+      ],
+      "albumFolder": "album-cover-and-audio/Ngay_Khac",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FNgay_Khac%2Fcover.jpg?alt=media&token=8c70d8e5-681a-495d-8dc0-bf720e6d302c",
+      "price": "299.000"
+    },
+    {
+      "id": "5",
+      "albumName": "Đất Việt",
+      "releaseYear": "2010",
+      "bandName": "Bức Tường",
+      "country": "Việt Nam",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FDat_Viet%2FDatViet-Sample.mp3?alt=media&token=e3dc06e6-d246-4436-ab0e-4315495ae52e",
+      "previewSongName": "Đất Việt",
+      "listSong": [
+        "Tuổi 20",
+        "Sóng",
+        "Những Chuyến Đi Dài",
+        "Men Say",
+        "Hiếm",
+        "Cơn Mưa Tháng 5",
+        "Ước Mơ Của Tôi",
+        "Dấu Ấn",
+        "Tháng 12",
+        "Đất Việt"
+      ],
+      "listSongDuration": [
+        "03:24",
+        "03:16",
+        "03:46",
+        "06:48",
+        "04:05",
+        "04:03",
+        "03:37",
+        "05:01",
+        "04:35",
+        "08:52"
+      ],
+      "description": [
+        "Trở lại sau 4 năm, ban nhạc Rock đình đám của Việt Nam đã đánh dấu sự tái hợp bằng việc phát hành album “Ngày khác” trong phạm vi toàn quốc.",
+        "Vẫn là chất rock sâu lắng, 12 ca khúc trong album đã truyền đến người nghe năng lượng sống dồi dào, tình yêu thương giữa con người-con người cùng tình yêu cuộc sống. Album “Ngày khác” đã cho thấy sự chuẩn bị kỹ lưỡng  của họ ở nhiều góc cạnh về một hình ảnh hoàn toàn mới của ban nhạc Bức tường với nhiều trải nghiệm. Lời ca không chỉ chứa đựng nhiều hình ảnh mà còn mang tính triết lý. Phong cách biểu diễn cũng không thiên về tốc độ mà chú trọng tới kỹ thuật nhiều hơn. Đặc biệt, phần hình ảnh của 5 chàng trai Bức tường không còn dáng vẻ hầm hố, đinh sắt mà trở nên lịch thiệp, thân thiện của các quý ông chơi rock. Đây là kết quả của những năm tháng miệt mài tập luyện, chuẩn bị không đứt đoạn của các thành viên Bức tường, họ chia tay để rồi vẫn hy vọng một ngày tái ngộ."
+      ],
+      "albumFolder": "album-cover-and-audio/Dat_Viet",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FDat_Viet%2Fcover.jpg?alt=media&token=0cfa7ef8-9eee-4deb-844a-fe80e8a016a6",
+      "price": "350.000"
+    },
+    {
+      "id": "6",
+      "albumName": "Master of Puppets",
+      "releaseYear": "1986",
+      "bandName": "Metallica",
+      "country": "Quốc Tế",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FMaster_Of_Pupets%2FMasterOfPuppets-Sample.mp3?alt=media&token=99232317-2621-4942-9cef-0816d1974f86",
+      "previewSongName": "Master Of Puppets",
+      "listSong": [
+        "Battery",
+        "Master of Puppets",
+        "The Thing That Should Not Be",
+        "Welcome Home (Sanitarium)",
+        "Disposable Heroes",
+        "Leper Messiah",
+        "Orion",
+        "Damage, Inc."
+      ],
+      "listSongDuration": [
+        "5:12",
+        "8:36",
+        "6:37",
+        "6:27",
+        "8:17",
+        "5:40",
+        "8:28",
+        "5:29"
+      ],
+      "description": [
+        "Master of Puppets là album phòng thu thứ ba của ban nhạc heavy metal Metallica của Hoa Kỳ, do Elektra Records phát hành vào ngày 3 tháng 3 năm 1986. Được thu âm tại phòng thu Sweet Silence Studios với nhà sản xuất Flemming Rasmussen, nó là album đầu tiên của Metallica được hãng đĩa lớn phát hành. Master of Puppets là album cuối cùng của ban nhạc mang dấu ấn của tay bass Cliff Burton, người đã qua đời trong một tai nạn xe bus tại Thụy Điển trong đợt lưu diễn quảng bá album. Album đạt vị trí thứ 29 trên Billboard 200 và trở thành album thrash metal đầu tiên được chứng nhận bạch kim. Nó được chứng nhận đĩa bạch kim 6× bởi Hiệp hội Công nghiệp ghi âm Hoa Kỳ (RIAA) vào năm 2003 do doanh số 6 triệu bản tại Hoa Kỳ. Album cuối cùng cũng được chứng nhận đĩa bạch kim 6× bởi Music Canada và đĩa vàng bởi British Phonographic Industry (BPI)",
+        "Master of Puppets nhận được lời khen ngợi từ giới phê bình và được đưa vào các danh sách album hay nhất của những ấn phẩm khác nhau. Với chất nhạc mạnh mẽ đầy kỹ thuật cùng ca từ đậm chất chính trị và dữ tợn, nó đã nhận được lời khen ngợi từ các nhà phê bình ở ngoài cộng đồng nhạc metal. Album được xem như là nỗ lực mạnh nhất của ban nhạc trong gian đoạn này và là một trong những album heavy metal có nhiều ảnh hưởng nhất. Master of Puppets được cho rằng có đầy đủ \"tầm quan trọng về văn hóa, lịch sử hoặc thẩm mỹ\" để được gìn giữ trong National Recording Registry của Thư viện Quốc hội Hoa Kỳ vào năm 2016. Chỉ có 450 bản thu âm nhận được vinh dự này, và Master of Puppets là lựa chọn đầu tiên thuộc dòng nhạc metal."
+      ],
+      "albumFolder": "album-cover-and-audio/Master_Of_Pupets",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FMaster_Of_Pupets%2Fcover.jpg?alt=media&token=4456058b-7995-47b8-bdbe-6fde8815bcad",
+      "price": "499.000"
+    },
+    {
+      "id": "7",
+      "albumName": "Metallica",
+      "releaseYear": "1991",
+      "bandName": "Metallica",
+      "country": "Quốc Tế",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FMetallica%2FNothing%20else%20matter-Sample.mp3?alt=media&token=45d2ca72-856b-4e86-8153-dc6153f60087",
+      "previewSongName": "Nothing Else Matter",
+      "listSong": [
+        "Enter Sandman",
+        "Sad but True",
+        "Holier Than Thou",
+        "The Unforgiven",
+        "Wherever I May Roam",
+        "Don't Tread on Me",
+        "Through the Never",
+        "Nothing Else Matters",
+        "Of Wolf and Man",
+        "The God That Failed",
+        "My Friend of Misery",
+        "The Struggle Within"
+      ],
+      "listSongDuration": [
+        "5:34",
+        "5:24",
+        "3:48",
+        "6:26",
+        "6:44",
+        "4:01",
+        "4:03",
+        "6:30",
+        "4:17",
+        "5:09",
+        "6:48",
+        "3:56"
+      ],
+      "description": [
+        "Mettalica ( hay thường được biết đến với cái tên The Black Album ) là album phòng thu thứ 5 của ban nhạc Mettalica, phát hành vào ngày 12 tháng 8 năm 1991, bởi hãng Elektra Records. Nó được thu âm trong 8 tháng tại  One on One Recording Studios ( Los Angeles ). Quá trình thu âm có nhiều vấn đề, đặc biệt là xung đột giữa ban nhạc và nhà sản xuất mới của họ Bob Rock. Album cũng đánh dấu sự thanh đổi của nhóm từ thrash metal sang phong cách chậm và nặng nề hơn.",
+        "Metallica đã nhận được nhiều lời khen ngợi từ giới phê bình và trở thành album bán chạy nhất của ban nhạc. Album đã ra mắt ở vị trí số một trên bảng xếp hạng của hơn mười quốc gia và trải qua bốn tuần liên tiếp đứng đầu Billboard 200, và là album đầu tiên của Metallica đứng đầu các bảng xếp hạng album. Metallica là một trong những album bán chạy nhất trên toàn thế giới và cũng là một trong những album bán chạy nhất tại Hoa Kỳ kể từ khi hệ thống Nielsen SoundScan bắt đầu. Album được chứng nhận 16× platinum bởi Hiệp hội Công nghiệp ghi âm Hoa Kỳ (RIAA) vào năm 2012 và đã bán được hơn mười sáu triệu bản tại Hoa Kỳ, và là album đầu tiên trong kỷ nguyên SoundScan làm được điều đó."
+      ],
+      "albumFolder": "album-cover-and-audio/Metallica",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FMetallica%2Fcover.jpg?alt=media&token=4d0960f2-b48b-49ab-ae5a-221dccbad449",
+      "price": "750.000"
+    },
+    {
+      "id": "8",
+      "albumName": "Death Magnetic",
+      "releaseYear": "2008",
+      "bandName": "Metallica",
+      "country": "Quốc Tế",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FDeath_Magnetic%2FAllNightmareLong-Sample.mp3?alt=media&token=bf6995fe-6b6c-47af-923c-e0cdc4e856b8",
+      "previewSongName": "All Nightmare Long",
+      "listSong": [
+        "That Was Just Your Life",
+        "The End of the Line",
+        "Broken, Beat & Scarred",
+        "The Day That Never Comes",
+        "All Nightmare Long",
+        "Cyanide",
+        "The Unforgiven III",
+        "The Judas Kiss",
+        "Suicide & Redemption",
+        "My Apocalypse"
+      ],
+      "listSongDuration": [
+        "7:08",
+        "7:52",
+        "6:25",
+        "7:56",
+        "7:58",
+        "6:40",
+        "7:47",
+        "8:01",
+        "9:58",
+        "5:01"
+      ],
+      "description": [
+        "Death Magnetic là album phòng thu thứ 9 của ban nhạc heavy metal đến từ Mỹ Metallica, phát hành ngày 12 tháng 9 năm 2008 bởi Warner Bros. Records. Đây là album đầu tiên của nhóm có sự góp mặt của tay Bass Robert Trujillo, và nhà sản xuất Rick Rubin. Đây cũng là album phòng thu đầu tiên của Metallica hợp tác với Warner Bros. Records. Album này sau khi phát hành đã leo lên vị trí số 1 tại bảng xếp hạng Billboard 200 của Mỹ với 490.000 bản được tiêu thụ ngay tuần đầu tiên. Với thành tích này Metallica là ban nhạc đầu tiên có tới 5 album liên tiếp đều đứng đầu bảng bảng xếp hạng danh tiếng này.",
+        "Death Magnetic đã được đề cử cho bốn giải Grammy năm 2009 bao gồm: Album nhạc rock xuất sắc nhất, Trình diễn metal xuất sắc nhất, Trình diễn nhạc đệm rock xuất sắc nhất, Trình bày đĩa hát đẹp nhất. Và đã chiến thấng tại 2 hạng mục là Trình diễn metal xuất sắc nhất và Trình bày đĩa hát đẹp nhất. "
+      ],
+      "albumFolder": "album-cover-and-audio/Death_Magnetic",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FDeath_Magnetic%2Fcover.jpg?alt=media&token=6033d84f-d2de-4456-9611-71e136aad05d",
+      "price": "999.000"
+    },
+    {
+      "id": "9",
+      "albumName": "Hardwired...to Self-Destruct",
+      "releaseYear": "2016",
+      "bandName": "Metallica",
+      "country": "Quốc Tế",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FHardwired_To_Self-Destruct%2FHardwired-Sample.mp3?alt=media&token=73489884-6538-4885-bfc3-c5f26502eed3",
+      "previewSongName": "Hardwired",
+      "listSong": [
+        "Hardwired",
+        "Atlas, Rise!",
+        "Now That We're Dead",
+        "Moth into Flame",
+        "Dream No More",
+        "Halo on Fire",
+        "Confusion",
+        "ManUNkind",
+        "Here Comes Revenge",
+        "Am I Savage?",
+        "Murder One",
+        "Spit Out the Bone"
+      ],
+      "listSongDuration": [
+        "3:10",
+        "6:30",
+        "7:00",
+        "5:52",
+        "6:30",
+        "8:16",
+        "6:42",
+        "6:56",
+        "7:18",
+        "6:30",
+        "5:46",
+        "7:10"
+      ],
+      "description": [
+        "Hardwired ... to Self-Desturation là album phòng thu thứ mười của ban nhạc heavy metal Mỹ Metallica, được phát hành dưới dạng album đôi vào ngày 18 tháng 11 năm 2016 bởi Blackened Recordings. Đây là album phòng thu đầu tiên của họ sau tám năm kể từ album Death Magnetic (2008), đánh dấu khoảng cách dài nhất giữa hai album phòng thu trong sự nghiệp của ban nhạc. Đây cũng là album phòng thu đầu tiên của họ được phát hành thông qua Blackened. Hardwired ... to Self-Desturation sản xuất bởi Greg Fidelman, người đã thiết kế và mix Death Magnetic.",
+        "Album này là album phòng thu thứ sáu liên tiếp của Metallica ra mắt ở vị trí số một trên Billboard 200 của Mỹ, bán được 291.000 bản ngay trong tuần đầu tiên và đứng đầu các bảng xếp hạng ở 57 quốc gia. Sự thành công của album này đánh dấu lần thứ hai trong lịch sử rằng bất kỳ ban nhạc thuộc bất kỳ thể loại nào cũng đã có sáu album liên tiếp ra mắt ở vị trí số một, chỉ sau Dave Matthews Band. "
+      ],
+      "albumFolder": "album-cover-and-audio/Hardwired_To_Self-Destruct",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FHardwired_To_Self-Destruct%2Fcover.jpg?alt=media&token=cd7517fd-a455-4c9a-9ae7-4e9ff02b91bb",
+      "price": "1.200.000"
+    },
+    {
+      "id": "10",
+      "albumName": "Lối Thoát",
+      "releaseYear": "2005",
+      "bandName": "Microwave",
+      "country": "Việt Nam",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FLoi_Thoat%2FTimLai-Sample.mp3?alt=media&token=b635f1cb-a412-42e2-8b38-f2caca34ecb3",
+      "previewSongName": "Tìm Lại",
+      "listSong": [
+        "Mộng Du",
+        "Trái Tim Dũng Cảm",
+        "Ước Mơ",
+        "Bão Đêm",
+        "Chiến Tranh",
+        "Sóng",
+        "Sói",
+        "Tìm Lại",
+        "Lối Thoát"
+      ],
+      "listSongDuration": [
+        "04:06",
+        "03:36",
+        "03:35",
+        "04:42",
+        "04:19",
+        "03:03",
+        "04:10",
+        "03:35",
+        "03:53"
+      ],
+      "description": [
+        "Lối thoát là album phòng thu đầu tiên của Microwave. Ca khúc nổi tiếng Tìm lại nằm trong album này. Album được ra mắt vào ngày 25 tháng 12 năm 2005",
+        "\"Tìm lại\" là một trong những ca khúc thành công nhất của nhóm nhạc rock nu metal Việt Nam Microwave. Đây là ca khúc thứ 9 trong album Lối thoát. Trong năm 2006, ca khúc này được phát trên sóng radio và ngay lập tức đã trở thành một hit. Ca khúc nhận được rất nhiều yêu cầu đề nghị phát trên radio của những người yêu nhạc. Trong suốt mùa hè năm 2007, ca khúc này đã thống trị các chương trình ca nhạc trên các sóng phát thanh Việt Nam. \"Tìm lại\" cũng đã đạt đến vị trí quán quân trên bảng xếp hạng âm nhạc VN10 của kênh âm nhạc Xone FM."
+      ],
+      "albumFolder": "album-cover-and-audio/Loi_Thoat",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FLoi_Thoat%2Fcover.jpg?alt=media&token=2f2b1685-3c19-4a11-99f4-269028d2813d",
+      "price": "200.000"
+    },
+    {
+      "id": "11",
+      "albumName": "Thời Gian",
+      "releaseYear": "2009",
+      "bandName": "Microwave",
+      "country": "Việt Nam",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FThoi_Gian%2FChiLaGiacMo-Sample.mp3?alt=media&token=591a2d9d-e9d9-4274-8727-de177fc568ad",
+      "previewSongName": "Chỉ Là Giấc Mơ",
+      "listSong": [
+        "Bay",
+        "Cô Đơn",
+        "Chỉ Là Giấc Mơ",
+        "Liar",
+        "Hạt Cát",
+        "Người Mẹ",
+        "Không Tên",
+        "Chuyến Xe Đêm",
+        "Thời Gian"
+      ],
+      "listSongDuration": [
+        "03:39",
+        "04:21",
+        "04:57",
+        "04:13",
+        "03:54",
+        "04:52",
+        "03:57",
+        "04:21",
+        "03:34"
+      ],
+      "description": [
+        "Thời gian là album phòng thu thứ hai của nhóm nhạc rock Microwave ra mắt vào ngày 13 tháng 9 năm 2009, trước đó họ đã thông báo sẽ phát hành album vào một ngày rất đặc biệt là ngày 9 tháng 9 năm 2009. Album này được ra mắt sau 4 năm kể từ thành công của Lối thoát năm 2005. Các nhà phê bình nhận định phong cách âm nhạc của Thời gian khác với Lối thoát, đã không còn thấy bóng dáng âm nhạc của Linkin Park nhiều như trong album phong thu đầu tiên của MW[3]. Có thể nói đây là một album có thời gian thu âm khá dài khi những bản thu âm demo đầu tiên được Anh Tuấn up lên YouTube từ năm 2006 [4]. Một điều lạ lùng nữa đó là khoảng thời gian từ khi phát hành single đầu tiên Chỉ là giấc mơ và khi ra mắt album cách nhau hơn 13 tháng.",
+        "Album được thu tại phòng thu âm của hãng Music Face, do nhạc sĩ Đức trí sáng lập, cũng là nơi Ngọc Lĩnh làm việc với tư cách là một kỹ sư."
+      ],
+      "albumFolder": "album-cover-and-audio/Thoi_Gian",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FThoi_Gian%2Fcover.jpg?alt=media&token=6114dda7-1d15-42fa-a028-2e83b92ce16b",
+      "price": "250.000"
+    },
+    {
+      "id": "12",
+      "albumName": "10",
+      "releaseYear": "2015",
+      "bandName": "Microwave",
+      "country": "Việt Nam",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2F10%2FBay2-sample.mp3?alt=media&token=08a3aeb7-b2c1-4277-940e-e8ea2a6c2efc",
+      "previewSongName": "Bay 2",
+      "listSong": [
+        "Bay 2",
+        "Chung một con đường",
+        "Phai",
+        "Say",
+        "Đừng",
+        "Quên",
+        "Sai",
+        "Nhớ",
+        "Xin",
+        "Khúc xuân thịnh vượng"
+      ],
+      "listSongDuration": [
+        "04:04",
+        "03:31",
+        "04:05",
+        "04:08",
+        "03:58",
+        "05:09",
+        "03:56",
+        "05:14",
+        "03:44",
+        "03:10"
+      ],
+      "description": [
+        "10 là album phòng thu thứ ba của Microwave. Album được ra mắt vào năm 2015. Album 10 cũng như cột mốc kỷ niệm 10 năm phát hành album đầu tay lối thoát vào 2005. 10 thiên về tình ca, chất liệu âm nhạc trầm lắng hơn, không dữ dội như hai album trước. Ca từ cũng sẽ “thấm” hơn. Vì nội dung album mới lần này cũng như tên album sẽ mang ý nghĩa thể hiện ban nhạc Microwave một cách ngắn gọn và xúc tích nhất.",
+        "Album được thu âm tại phòng thu riêng của ban nhạc. Khâu sản xuất do Chris Hesse, tay trống kiêm nhà sản xuất của nhóm rock nổi tiếng Hoobastank, từng có 3 đề cử giải Grammy cho hạng mục Nhà sản xuất âm nhạc đảm nhận. Nên album được đánh giá là đĩa nhạc rock có chất lượng ghi âm tiêu chuẩn quốc tế."
+      ],
+      "albumFolder": "album-cover-and-audio/10",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2F10%2Fcover.jpg?alt=media&token=e0aa550d-5bf5-4a78-a0e4-2e06a9fe8b20",
+      "price": "299.000"
+    },
+    {
+      "id": "13",
+      "albumName": "Tái Sinh",
+      "releaseYear": "2007",
+      "bandName": "UnlimiteD",
+      "country": "Việt Nam",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FTai_Sinh%2FNoiVongTayLon-Sample.mp3?alt=media&token=1e4b1ca4-f911-44fe-bf5f-54ec8833489e",
+      "previewSongName": "Nối Vòng Tay Lớn",
+      "listSong": [
+        "Tái Sinh",
+        "Nối Vòng Tay Lớn",
+        "Linh Hồn Vẫn Tồn Tại",
+        "Mộ Gió",
+        "UTD Jam",
+        "Sự Cứu Chuộc",
+        "Wing Of Destiny (Cover)",
+        "Sự Sống",
+        "Lời Nguyền",
+        "The Final Countdown (Cover)"
+      ],
+      "listSongDuration": [
+        "01:56",
+        "04:33",
+        "06:11",
+        "08:46",
+        "05:18",
+        "04:44",
+        "04:23",
+        "07:09",
+        "05:04",
+        "04:29"
+      ],
+      "description": [
+        "Album tái sinh được phát hành vào ngày 23 tháng 11 năm 2007, sau gần 10 năm thành lập, thăng trầm với dòng chảy rock Việt ( từ năm 1998 ) đây mới là album đầu tiên của nhóm. ",
+        "Tái sinh (tên album) cũng là ca khúc chủ đề mà nhóm muốn truyền đạt đến người nghe, với những triết lý nhân sinh, số phận con người, sự sống, cái chết... Tái sinh gồm 10 ca khúc: Linh hồn vẫn tồn tại, Mộ gió, Sự cứu chuộc, Lời nguyền... mang phong cách power metal, khá dễ nghe và cảm nhận. Đặc biệt có cả ca khúc Nối vòng tay lớn của Trịnh Công Sơn được nhóm mạnh dạn cover bằng chất rock mạnh mẽ và hùng tráng. Trong album còn có hai ca khúc nước ngoài cover lại là Wings of Destiny (Rhapsody) và Final countdown (Europe)."
+      ],
+      "albumFolder": "album-cover-and-audio/Tai_Sinh",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FTai_Sinh%2Fcover.jpg?alt=media&token=40dbcbdc-ed80-452a-9fef-ff208712d545",
+      "price": "150.000"
+    },
+    {
+      "id": "14",
+      "albumName": "Unlimited Giáng sinh",
+      "releaseYear": "2013",
+      "bandName": "UnlimiteD",
+      "country": "Việt Nam",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FGiang_Sinh%2FJoyToTheWorld-Sample.mp3?alt=media&token=4b1565b7-6a46-4385-b559-684d9c3abb6f",
+      "previewSongName": "Joy To The World",
+      "listSong": [
+        "Joy To The World",
+        "Little Drumer Boy",
+        "We Wish You A Merry Christmas",
+        "Ngôi Sao Từ Behelem",
+        "Christmas Cannon"
+      ],
+      "listSongDuration": ["04:33", "03:52", "03:27", "03:28", "05:14"],
+      "description": [
+        "Album tái sinh được phát hành vào ngày 23 tháng 11 năm 2007, sau gần 10 năm thành lập, thăng trầm với dòng chảy rock Việt ( từ năm 1998 ) đây mới là album đầu tiên của nhóm. ",
+        "Tái sinh (tên album) cũng là ca khúc chủ đề mà nhóm muốn truyền đạt đến người nghe, với những triết lý nhân sinh, số phận con người, sự sống, cái chết... Tái sinh gồm 10 ca khúc: Linh hồn vẫn tồn tại, Mộ gió, Sự cứu chuộc, Lời nguyền... mang phong cách power metal, khá dễ nghe và cảm nhận. Đặc biệt có cả ca khúc Nối vòng tay lớn của Trịnh Công Sơn được nhóm mạnh dạn cover bằng chất rock mạnh mẽ và hùng tráng. Trong album còn có hai ca khúc nước ngoài cover lại là Wings of Destiny (Rhapsody) và Final countdown (Europe)."
+      ],
+      "albumFolder": "album-cover-and-audio/Giang_Sinh",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FGiang_Sinh%2Fcover.jpg?alt=media&token=90446a9e-e6e8-4f86-a0d1-d1eea9ea1c75",
+      "price": "180.000"
+    },
+    {
+      "id": "15",
+      "albumName": "Nắng Mới",
+      "releaseYear": "2003",
+      "bandName": "Thủy Triều Đỏ",
+      "country": "Việt Nam",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FNang_Moi%2FThoiGian%20-%20Sample.mp3?alt=media&token=2819355f-abe6-42f6-8ee3-529067e21cb0",
+      "previewSongName": "Joy To The World",
+      "listSong": [
+        "Ánh Sáng Núi Rừng",
+        "Nắng Mới",
+        "Dặn Đời",
+        "Người Hát Rong",
+        "Bạn Bè",
+        "Hát Về Anh",
+        "Ngắn Ngủi",
+        "Thời Gian",
+        "Vượt Qua Chính Mình",
+        "Cánh Thư Cuối Cùng",
+        "Thời Gian (Instrumental)",
+        "Ánh Sáng Núi Rừng (Instrumental)"
+      ],
+      "listSongDuration": [
+        "07:00",
+        "05:53",
+        "04:48",
+        "06:30",
+        "08:14",
+        "05:56",
+        "07:36",
+        "04:43",
+        "06:13",
+        "04:45",
+        "04:39",
+        "07:01"
+      ],
+      "description": [
+        "Đây là album đầu tay mà các thành viên Lê Hiếu, Trần Quốc Khánh, Lê Cường, Phạm Hoàng Long, Hoàng Minh Việt đã \"thai nghén\" hơn 5 năm. \"Nắng mới\" đan xen giữa thể loại ballad và heavy metal cùng lối đi bè tinh tế của guitar trên nền trống mạnh mẽ...",
+        "Cây guitar Lê Hiếu, trưởng nhóm rock Thuỷ Triều Đỏ, cho biết: \"Nắng mới là lời nhắn nhủ hãy tin vào một ngày mới, một tương lai tươi sáng và rằng con người luôn là nhân tố quyết định cho sự thành công hay thất bại. Hãy sống với bầu nhiệt huyết sục sôi nhưng đồng thời cũng phải có cái đầu tỉnh táo, biết phân biệt tốt xấu, chính tà. Và luôn tự hỏi: Ngày hôm qua chúng ta đã làm được gì còn ngày hôm nay chúng ta sẽ phải làm gì?”.12 tác phẩm trong album (như Ánh sáng nơi núi rừng, Nắng mới, Đàn dơi (hòa tấu), Người hát rong, Bạn bè, Ngắn ngủi, Thời gian, Vượt qua chính mình, Cánh thư cuối cùng, Hát về anh (remix)... ) đều là những câu chuyện riêng lẻ, có phân đoạn rõ ràng, mỗi đoạn thể hiện một cảm xúc khác nhau."
+      ],
+      "albumFolder": "album-cover-and-audio/Nang_Moi",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FNang_Moi%2Fcover.jpg?alt=media&token=949da8d0-8fc5-46aa-8125-87f4bda14225",
+      "price": "180.000"
+    },
+    {
+      "id": "16",
+      "albumName": "Sau Cơn Mưa",
+      "releaseYear": "2006",
+      "bandName": "Thủy Triều Đỏ",
+      "country": "Việt Nam",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FSau_Con_Mua%2FChuyenTinhChiecDayDan-Sample.mp3?alt=media&token=e7bad364-759d-4cce-b9e1-8eb24339c28c",
+      "previewSongName": "Chuyện Tình Chiếc Dây Đàn",
+      "listSong": [
+        "Chuyện Tình Chiếc Dây Đàn",
+        "Sau Cơn Mưa",
+        "Giây Phút Uyên Ương",
+        "Lời Ru Người Mẹ",
+        "Nơi Tuổi Thơ Tôi Qua",
+        "Nhịp Sống",
+        "Đi Nghỉ Mát",
+        "Backstreet Man (Remix Người Hát Rong)",
+        "Cái Chết Trắng",
+        "Mái Ấm"
+      ],
+      "listSongDuration": [
+        "04:42",
+        "05:32",
+        "04:36",
+        "06:23",
+        "05:27",
+        "04:56",
+        "06:41",
+        "06:06",
+        "04:51",
+        "04:48"
+      ],
+      "description": [
+        "\"Sau cơn mưa\" là album thứ hai của ban nhạc Heavy Metal đến từ Hà Nội - Thuỷ Triều Đỏ. Được phát hành vào trung tuần tháng 11 năm 2006.",
+        "“Toàn bộ album “Sau Cơn Mưa” như là một “cuốn sách” có nội dung vươn tới sự lạc quan. Nhiều câu chuyện được kể ra với các góc nhìn khác nhau của cuộc sống đời thường. Điểm xuyên suốt của toàn bộ các ca khúc trong Album, đó chính là mơ ước. Điều này luôn ẩn chứa trong mỗi con người cho dù họ sống ở những hoàn cảnh khác nhau, cảm nhận cuộc đời với nhiều cách nhìn khác nhau và khi hạnh phúc hay khổ đau thì MƠ ƯỚC luôn hướng tất cả chúng ta tới điều tốt đẹp nhất.” – Thủy Triều Đỏ đã chia sẻ về album thứ hai của mình"
+      ],
+      "albumFolder": "album-cover-and-audio/Sau_Con_Mua",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FSau_Con_Mua%2Fcover.jpg?alt=media&token=ce497707-4f9f-4726-9478-482bfda34ac5",
+      "price": "249.000"
+    },
+    {
+      "id": "17",
+      "albumName": "Hybrid Theory",
+      "releaseYear": "2000",
+      "bandName": "Linkin Park",
+      "country": "Quốc Tế",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FHybrid_Theory%2FInTheEnd-Sample.mp3?alt=media&token=14b9cfe4-f366-4a19-a44e-410933ddc988",
+      "previewSongName": "In The End",
+      "listSong": [
+        "Papercut",
+        "One Step Closer",
+        "With You",
+        "Points of Authority",
+        "Crawling",
+        "Runaway",
+        "By Myself",
+        "In the End",
+        "A Place for My Head",
+        "Forgotten",
+        "Cure for the Itch",
+        "Pushing Me Away"
+      ],
+      "listSongDuration": [
+        "3:04",
+        "2:37",
+        "3:23",
+        "3:20",
+        "3:29",
+        "3:04",
+        "3:09",
+        "3:36",
+        "3:04",
+        "3:14",
+        "2:37",
+        "3:11"
+      ],
+      "description": [
+        "Hybrid Theory là album đầu tay của ban nhạc nu metal từ Mỹ, Linkin Park. Phát hành vào ngày 24 tháng 10 năm 2000 bởi hãng thu âm Warner Bros., Hybrid Theory nhận được nhiều sự hoan nghênh và ủng hộ, chứng tỏ được là một thành công trên toàn thế giới, vươn lên hạng 2 ở bảng xếp hạng Billboard 200 của Mỹ và xếp hạng trong 11 nước khác. Album này cũng đã giúp Linkin Park trở thành một trong những band dẫn đầu thể loại nu metal.",
+        "Hybrid Theory sản xuất với 4 đĩa đơn loại hit \"One Step Closer\", bài hát đoạt giải Grammy \"Crawling\", \"Papercut\" và \"In The End\". Album được chứng nhận hạng kim cương này đã được bán 24 triệu bản[1] trên toàn cầu đến năm 2006, khiến nó trở thành album đầu tay có doanh số bán cao nhất thế kỷ 21[cần dẫn nguồn] và là album bán chạy nhất của band.Tại giải Grammy lần thứ 44, nó được đề cử cho album Rock hay nhất.",
+        "Sự cộng hưởng độc đáo đến từ những cú riff metal sắc như lưỡi dao cạo, tiết tấu điện tử tinh tế, các đoạn twist rap uyển chuyển, giọng thét nảy lửa kèm với đó là một dự cảm âm nhạc đầy tinh tường đã mang sáu con người từ bóng tối vô danh này bước ra ngoài ánh sáng và trở thành một trong những tượng đài không gì có thể sánh nổi."
+      ],
+      "albumFolder": "album-cover-and-audio/Hybrid_Theory",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FHybrid_Theory%2Fcover.jpg?alt=media&token=7b6661e5-c74a-4c48-ad7c-167dd30905a6",
+      "price": "249.000"
+    },
+    {
+      "id": "18",
+      "albumName": "Meteora",
+      "releaseYear": "2003",
+      "bandName": "Linkin Park",
+      "country": "Quốc Tế",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FMeteora%2FNumb-Sample.mp3?alt=media&token=08ba0285-4b06-4820-9f9d-d90b5b5f17a2",
+      "previewSongName": "Numb",
+      "listSong": [
+        "Foreword",
+        "Don't Stay",
+        "Somewhere I Belong",
+        "Lying from You",
+        "Hit the Floor",
+        "Easier to Run",
+        "Faint",
+        "Figure.09",
+        "Breaking the Habit",
+        "From the Inside",
+        "Nobody's Listening",
+        "Session",
+        "Numb"
+      ],
+      "listSongDuration": [
+        "0:13",
+        "3:07",
+        "3:33",
+        "2:55",
+        "2:44",
+        "3:24",
+        "2:42",
+        "3:17",
+        "3:16",
+        "2:53",
+        "2:58",
+        "2:23",
+        "3:05"
+      ],
+      "description": [
+        "Meteora là album phòng thu thứ hai của ban nhạc nu metal Linkin Park, phát hành lần đầu vào 25 tháng 3 năm 2003, ngay sau album Reanimation. Linkin Park phát hành các đĩa đơn từ Meteora trong vòng hơn 1 năm, gồm có: \"Somewhere I Belong\", \"Faint\", \"Breaking the Habit\" và \"Numb\". Meteora cũng là studio album ngắn nhất của Linkin Park. Âm nhạc trong Meteora có sự thay đổi đáng kể so với Hybrid Theory. Nó khác biệt bởi sự ảnh hưởng từ rapcore (\"Lying from You\", \"Hit the Floor\", \"Figure.09\"), nhạc hip hop (\"Nobody's Listening\") và electronica (\"Breaking the Habit\"). Bài hát không lời \"Session\" được đề cử Giải Grammy cho Bài hát rock hay nhất năm 2003. Đây là album thành công nhất trong lịch sử của bảng xếp hạng Modern Rock Tracks – một bảng xếp hạng chuyên về các bài rock alternative phát sóng qua đài. \"Numb\" là bài hát nổi tiếng nhất năm trên bảng xếp hạng. Album đã bán được 5,5 triệu bản ở Mỹ và hơn 11 triệu bản trên thế giới cho đến nay."
+      ],
+      "albumFolder": "album-cover-and-audio/Meteora",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FMeteora%2Fcover.jpg?alt=media&token=929f0094-ec52-4923-b83d-d84e27247dc8",
+      "price": "520.000"
+    },
+    {
+      "id": "19",
+      "albumName": "Living Things",
+      "releaseYear": "2012",
+      "bandName": "Linkin Park",
+      "country": "Quốc Tế",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FLiving_Things%2FBurnItDown-LinkinParkd.mp3?alt=media&token=7bfa2792-422a-4f87-9eb1-1eb1e0b2a21b",
+      "previewSongName": "Burn It Down",
+      "listSong": [
+        "LOST IN THE ECHO",
+        "IN MY REMAINS",
+        "BURN IT DOWN",
+        "LIES GREED MISERY",
+        "I'LL BE GONE",
+        "CASTLE OF GLASS",
+        "VICTIMIZED",
+        "ROADS UNTRAVELED",
+        "SKIN TO BONE",
+        "UNTIL IT BREAKS",
+        "TINFOIL",
+        "POWERLESS"
+      ],
+      "listSongDuration": [
+        "3:25",
+        "3:20",
+        "3:50",
+        "2:26",
+        "3:31",
+        "3:25",
+        "1:46",
+        "3:49",
+        "2:48",
+        "3:43",
+        "1:11",
+        "3:44"
+      ],
+      "description": [
+        "Living Things là album phòng thu thứ năm của nhóm nhạc rock Mỹ Linkin Park. Album sẽ được phát hành vào ngày 26 tháng 6 năm 2012. Living Things ra mắt ở vị trí số một trên Billboard 200 với doanh số 223.000 bản tại Hoa Kỳ trong tuần lễ khai trương. Đĩa đơn thứ hai cho album, \"Lost in the Echo\", được phát hành vào ngày 19 tháng 10 năm 2012. Đĩa đơn thứ ba \"Powerless\" được phát hành vào ngày 31 tháng 10 năm 2012. Đĩa đơn thứ tư và cuối cùng cho album, \"Castle of Glass\" , đã được phát hành vào ngày 1 tháng 2 năm 2013. Album được chứng nhận Platinum bởi RIAA vào tháng 8 năm 2017.",
+        "Ban nhạc tuyên bố rằng Living Things kết hợp các yếu tố từ bốn album phòng thu trước đó của họ để tạo ra một phong cách mới. Họ nói rằng cuối cùng họ cũng cảm thấy họ ở trong \"lãnh địa quen thuộc\" và \"thoải mái trong chính làn da của họ\" sau nhiều năm thử nghiệm của hai album phòng thu trước đó của họ, Minutes to Midnight và A Thousand Suns. Living Things được chọn làm tiêu đề của album vì có nhiều chủ đề cá nhân của các thành viên trong album. "
+      ],
+      "albumFolder": "album-cover-and-audio/Living_Things",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FLiving_Things%2Fcover.jpg?alt=media&token=7f740d00-f263-41b2-a9e7-ddd9a4146b1c",
+      "price": "450.000"
+    },
+    {
+      "id": "20",
+      "albumName": "One More Light",
+      "releaseYear": "2017",
+      "bandName": "Linkin Park",
+      "country": "Quốc Tế",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FOne_More_Light%2FTalkingToMyself%20-Sampe.mp3?alt=media&token=fcd22c6d-31f3-491a-8476-572fbb978f8d",
+      "previewSongName": "Talking To Myself",
+      "listSong": [
+        "Nobody Can Save Me",
+        "Good Goodbye (feat. Pusha T and Stormzy)",
+        "Talking to Myself",
+        "Battle Symphony",
+        "Invisible",
+        "Heavy (feat. Kiiara) [Explicit]",
+        "Sorry for Now",
+        "Halfway Right",
+        "One More Light",
+        "Sharp Edges"
+      ],
+      "listSongDuration": [
+        "3:45",
+        "3:31",
+        "3:51",
+        "3:36",
+        "3:34",
+        "2:49",
+        "3:23",
+        "3:37",
+        "4:15",
+        "2:58"
+      ],
+      "description": [
+        "One More Light là album phòng thu thứ bảy của ban nhạc rock Mỹ Linkin Park. Nó được phát hành vào ngày 19 tháng 5 năm 2017, thông qua Warner Records and Machine Shop. Đây là album Linkin Park cuối cùng có sự góp mặt của giọng ca chính Chester Bennington trước khi qua đời vào ngày 20 tháng 7 năm 2017.",
+        "Ban nhạc đã thu âm album từ tháng 9 năm 2015 đến tháng 2 năm 2017 tại nhiều phòng thu. Các thành viên ban nhạc Brad Delson và Mike Shinoda từng là nhà sản xuất chính của album. Âm thanh của One More Light đã được mô tả là tập trung nhiều nhạc pop hơn, không giống như phong cách alternative rock hoặc alternative metal như trong các album trước của họ. Album có sự xuất hiện của các ca sĩ khách mời từ Pusha T, Stormzy và Kiiara, và sự hợp tác sản xuất và sáng tác với JR Rotem, Julia Michaels, Justin Tranter, Ross Golan, Andrew Goldstein, blackbear và Eg White. Album này cũng là lần đầu tiên một album của ban nhạc có ca khúc chủ đề , vì họ cảm thấy bài hát \"One More Light\" là trái tim của album."
+      ],
+      "albumFolder": "album-cover-and-audio/One_More_Light",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FOne_More_Light%2Fcover.jpg?alt=media&token=8a284e63-3505-4ae2-be5b-4d3d9f11e13c",
+      "price": "800.000"
+    },
+    {
+      "id": "21",
+      "albumName": "Fire House",
+      "releaseYear": "1990",
+      "bandName": "Firehouse",
+      "country": "Quốc Tế",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FFire_House%2FLoveOfMyLife-Sample.mp3?alt=media&token=edb1c2eb-e3b5-452e-8c9b-11d6b92cddbd",
+      "previewSongName": "Love Of My Life",
+      "listSong": [
+        "Rock On the Radio",
+        "All She Wrote (Live)",
+        "Shake & Tumble",
+        "Don't Treat Me Bad",
+        "Oughta Be A Law (Album Version)",
+        "Lover's Lane (Album Version)",
+        "Home Is Where the Heart Is",
+        "Don't Walk Away (Album Version)",
+        "Seasons Of Change (Album Version)",
+        "Overnight Sensation (Live) (Album Version)",
+        "Love of a Lifetime",
+        "Helpless (Album Version)"
+      ],
+      "listSongDuration": [
+        "4:45",
+        "4:27",
+        "3:30",
+        "3:55",
+        "3:54",
+        "4:02",
+        "4:48",
+        "4:32",
+        "1:29",
+        "3:56",
+        "4:46",
+        "4:25"
+      ],
+      "description": [
+        "FireHouse là album đầu tay của ban nhạc glam metal của Mỹ FireHouse. Được phát hành vào năm 1990, nó đã đưa nhanh chóng đưa nhóm nhạc trở thành những ngôi sao. Album này được chứng nhận Double Platinum ở Hoa Kỳ Gold vàng ở Canada, Nhật Bản và Singapore.",
+        "Với sự thành công từ album này, ban nhạc đã dành được một loạt các giải thưởng như American Music Award cho hạng mục Best New Hard Rock/Heavy Metal Band of 1991, Metal Edge Magazine's Best New Band of 1991, Young Guitar Magazine's Best Newcomer of 1991. Đĩa đơn \"Love of a Lifetime\" cũng đạt được thành công vang dội với hơn 500.000 bản được bán ra. "
+      ],
+      "albumFolder": "album-cover-and-audio/Fire_House",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FFire_House%2Fcover.jpg?alt=media&token=a49e9ee6-876f-4bda-892a-b66839e879e8",
+      "price": "1.000.000"
+    },
+    {
+      "id": "22",
+      "albumName": "Hold Your Fire",
+      "releaseYear": "1992",
+      "bandName": "Firehouse",
+      "country": "Quốc Tế",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FHold_Your_Fire%2FWhenILookIntoYourEyes-Sample.mp3?alt=media&token=7cb7adad-47f7-432e-9769-20d19f1eda00",
+      "previewSongName": "When I Look Into Your Eyes",
+      "listSong": [
+        "Reach for the Sky",
+        "Rock You Tonight (Album Version)",
+        "Sleeping With You (Album Version)",
+        "You're Too Bad (Album Version)",
+        "When I Look Into Your Eyes",
+        "Get In Touch (Album Version)",
+        "Hold Your Fire (Album Version)",
+        "The Meaning Of Love (Album Version)",
+        "Talk Of The Town (Album Version)",
+        "Life In the Real World",
+        "Mama Didn't Raise No Fool",
+        "Hold the Dream"
+      ],
+      "listSongDuration": [
+        "4:46",
+        "4:35",
+        "3:50",
+        "3:38",
+        "3:59",
+        "5:23",
+        "3:51",
+        "4:11",
+        "4:38",
+        "3:36",
+        "4:00",
+        "5:02"
+      ],
+      "description": [
+        "Hold Your Fire là album phòng thu thứ hai của ban nhạc rock FireHouse. Nó được phát hành vào tháng 6 năm 1992. Album đã nằm hơn ba mươi tuần trong bảng xếp hạng Top Album của Billboard 200, đứng ở vị trí cao nhất là thứ 23. Album đã tạo ra một số đĩa đơn nổi tiếng như \"Reach for the Sky\", \"Sleeping With You\" và \"When I Look Into Your Eyes\". Album được chứng nhận Gold bởi RIAA tại Hoa Kỳ.",
+        "Album này chủ yếu tập trung và những bản power ballad, nó đã giúp cho FireHouse trở thành một trong những nhóm nhạc chính của thể loại pop-metal trong giai đoạn này. Nhóm đã xây dựng album này trở thành một sản phẩm đáng nghe cho tất cả người hâm mộ thể loại này."
+      ],
+      "albumFolder": "album-cover-and-audio/Hold_Your_Fire",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FHold_Your_Fire%2Fcover.jpg?alt=media&token=c149fdae-b553-4a83-bbfa-ff8c9b943a66",
+      "price": "600.000"
+    },
+    {
+      "id": "23",
+      "albumName": "Good Acoustics",
+      "releaseYear": "1996",
+      "bandName": "Firehouse",
+      "country": "Quốc Tế",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FGood_Acoustic%2FHereForYou-Sample.mp3?alt=media&token=e48c117e-8e57-43b3-aeb5-78dafa372957",
+      "previewSongName": "Here For You",
+      "listSong": [
+        "You Are My Religion",
+        "Love Don't Care",
+        "In Your Perfect World (Album Version)",
+        "No One At All",
+        "Love Of A Lifetime (Album Version)",
+        "All She Wrote (Album Version)",
+        "When I Look Into Your Eyes",
+        "Don't Treat Me Bad (Acoustic Version)",
+        "Her for You",
+        "I Live My Life for You (Album Version)",
+        "Seven Bridges Road (Album Version)"
+      ],
+      "listSongDuration": [
+        "4:03",
+        "4:42",
+        "4:08",
+        "3:34",
+        "4:10",
+        "3:45",
+        "4:04",
+        "4:17",
+        "3:52",
+        "4:21",
+        "2:39"
+      ],
+      "description": [
+        "Good Acoustics là album phòng thu thứ tư của ban nhạc hard rock FireHouse. Được phát hành vào năm 1996 bởi Epic Records. Album bao gồm các phiên bản acoustic của một số hit lớn nhất của ban nhạc. Đồng thời nhóm cũng giới thiệu bốn ca khúc mới trong album này.",
+        "Album được sản xuất bởi người chơi guitar của nhóm Bill Leverty, đã đạt chứng nhận Gold tại 6 quốc gia trên toàn thế giới bao gồm Malaysia, Thái Lan và Indonesia. "
+      ],
+      "albumFolder": "album-cover-and-audio/Good_Acoustic",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FGood_Acoustic%2Fcover.jpg?alt=media&token=df8f45bb-9ba2-4f61-85ef-31c9294f1e27",
+      "price": "1.200.000"
+    },
+    {
+      "id": "24",
+      "albumName": "Prime Time",
+      "releaseYear": "2003",
+      "bandName": "Firehouse",
+      "country": "Quốc Tế",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FPrime_Time%2FPerfectLie-Sample.mp3?alt=media&token=486d9c99-8222-4c4c-bb80-5749cb7618c9",
+      "previewSongName": "Perfect Lie",
+      "listSong": [
+        "Prime Time",
+        "Crash",
+        "Door to Door",
+        "Perfect Lie",
+        "Holding On",
+        "Body Language",
+        "I'm the One",
+        "Take Me Away",
+        "Home Tonight",
+        "Let Go"
+      ],
+      "listSongDuration": [
+        "4:34",
+        "4:33",
+        "5:27",
+        "4:30",
+        "4:06",
+        "3:53",
+        "5:24",
+        "3:55",
+        "3:31",
+        "4:39"
+      ],
+      "description": [
+        "Prime Time là album phòng thu thứ bảy của ban nhạc rock FireHouse. Nó được phát hành vào năm 2003 bởi Pony Canyon ở Nhật Bản và năm 2004 tại Hoa Kỳ."
+      ],
+      "albumFolder": "album-cover-and-audio/Prime_Time",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FPrime_Time%2Fcover.jpg?alt=media&token=64201db1-8f54-4aad-9f4a-906683d8b577",
+      "price": "900.000"
+    },
+    {
+      "id": "25",
+      "albumName": "Angels Fall First",
+      "releaseYear": "1997",
+      "bandName": "Nightwish",
+      "country": "Quốc Tế",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FAngels_Fall_First%2FAngelsFallFirst-sample.mp3?alt=media&token=597df6b9-e6ca-43ba-9dd1-3c2215efa00c",
+      "previewSongName": "Angels Fall First",
+      "listSong": [
+        "Elvenpath",
+        "Beauty and the Beast",
+        "The Carpenter",
+        "Astral Romance",
+        "Angels Fall First",
+        "Tutankhamen",
+        "Nymphomaniac Fantasia",
+        "Know Why the Nightingale Sings",
+        "Lappi (Lapland)"
+      ],
+      "listSongDuration": [
+        "4:40",
+        "6:24",
+        "5:58",
+        "5:13",
+        "5:34",
+        "5:32",
+        "4:47",
+        "4:14",
+        "9:20"
+      ],
+      "description": [
+        "Angels Fall First là album phòng thu đầu tay của ban nhạc symphonic metal Phần Lan Nightwish. Phiên bản giới hạn 500 bản gốc có bảy bản nhạc, hai trong số đó không có trên phiên bản thường. Phiên bản này được các nhà sưu tập tìm kiếm rất nhiều và vào năm 2012, một bản sao đã được bán với giá $ 1137,23 trên eBay. Album được phát hành tại Mỹ bởi Century Media vào tháng 11 năm 1997.",
+        "Angel Fall First là một album power metal pha trộn cùng các yếu tố gothic, folk và classical. Các ca khúc trong album được Tuomas Holopainen viết trong thời gian phục vụ trong quân đội."
+      ],
+      "albumFolder": "album-cover-and-audio/Angels_Fall_First",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FAngels_Fall_First%2Fcover.jpg?alt=media&token=2d1d0615-51c1-4970-888b-d9550ee55b64",
+      "price": "400.000"
+    },
+    {
+      "id": "26",
+      "albumName": "Century Child",
+      "releaseYear": "2002",
+      "bandName": "Nightwish",
+      "country": "Quốc Tế",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FCentury_Child%2FThePhantomOfTheOpera-Sample.mp3?alt=media&token=3afd202c-bc83-42d3-9574-467a4f7f3516",
+      "previewSongName": "The Phantom Of The Opera",
+      "listSong": [
+        "Bless the Child",
+        "End of All Hope",
+        "Dead to the World",
+        "Ever Dream",
+        "Slaying the Dreamer",
+        "Forever Yours",
+        "Ocean Soul",
+        "Feel for You",
+        "The Phantom of the Opera (Andrew Lloyd Webber cover)",
+        "Beauty of the Beast"
+      ],
+      "listSongDuration": [
+        "6:12",
+        "3:55",
+        "4:20",
+        "4:44",
+        "4:32",
+        "3:50",
+        "4:15",
+        "3:44",
+        "4:10",
+        "10:22"
+      ],
+      "description": [
+        "Century Child là album phòng thu thứ tư của ban nhạc giao hưởng Phần Lan Nightwish, được phát hành năm 2002 thông qua Spinefarm Records. Đây là album đầu tiên có bassist và nam ca sĩ hiện tại Marco Hietala. Đây cũng là album mà lần đầu tiên Nightwish thu âm cùng dàn nhạc giao hưởng.",
+        "Album được chứng nhận Double Platinum ở Phần Lan với hơn 60.000 bản được bán và là album bán chạy thứ hai ở Phần Lan năm 2002. Century Child đã bán được hơn 80.000 bản chỉ riêng ở Phần Lan và bán được hơn 350.000 bản trên toàn thế giới từ năm 2002 đến 2003."
+      ],
+      "albumFolder": "album-cover-and-audio/Century_Child",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FCentury_Child%2Fcover.jpg?alt=media&token=a21ad686-28ee-4cf3-9b07-06e716edbc59",
+      "price": "420.000"
+    },
+    {
+      "id": "27",
+      "albumName": "Once",
+      "releaseYear": "2004",
+      "bandName": "Nightwish",
+      "country": "Quốc Tế",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FOnce%2FIWishIHadAnAngel-Sample.mp3?alt=media&token=bde8bae7-6cd0-4bde-968a-8549ab18c7fb",
+      "previewSongName": "I Wish I Had An Angel",
+      "listSong": [
+        "Dark Chest of Wonders",
+        "Wish I Had an Angel",
+        "Nemo",
+        "Planet Hell",
+        "Creek Mary's Blood (featuring John Two-Hawks)",
+        "The Siren",
+        "Dead Gardens (featuring Jouni Hynynen)",
+        "Romanticide",
+        "Ghost Love Score",
+        "Kuolema Tekee Taiteilijan",
+        "Higher Than Hope (in memory of Marc Brueland)"
+      ],
+      "listSongDuration": [
+        "4:29",
+        "4:06",
+        "4:36",
+        "4:39",
+        "8:29",
+        "4:45",
+        "4:28",
+        "4:58",
+        "10:02",
+        "3:59",
+        "5:35"
+      ],
+      "description": [
+        "Once là album phòng thu thứ năm của ban nhạc symphonic metal Phần Lan Nightwish, được phát hành vào ngày 7 tháng 6 năm 2004 bởi Spinefarm Records và Nucle Blast. Đây là album cuối cùng có Tarja Turunen xuất hiện với tư cách là ca sĩ hát chính. Tính đến năm 2013, Once đã bán được 2,3 triệu bản trên toàn thế giới, là album thành công nhất của Nightwish cho đến nay.",
+        "Album tiếp tục cách tiếp cận âm nhạc hợp lý hơn xuất hiện lần đầu tiên trên album trước của nhóm Century Child, cố gắng tách xa dần sự ảnh hưởng bởi power metal như các album trước của họ, mang lại một cảm giác gần gũi, dễ tiếp cận hơn. Khác với Century Child, Nightwish chọn một dàn nhạc bên ngoài Phần Lan, Dàn nhạc giao hưởng London, để thu âm cùng nhóm."
+      ],
+      "albumFolder": "album-cover-and-audio/Once",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FOnce%2Fcover.jpg?alt=media&token=6cf386ca-0b74-4260-8fd7-1f8411f41fb1",
+      "price": "630.000"
+    },
+    {
+      "id": "28",
+      "albumName": "Endless Forms Most Beautiful",
+      "releaseYear": "2015",
+      "bandName": "Nightwish",
+      "country": "Quốc Tế",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FEndless_Forms_Most_Beautiful%2FElan-Sample.mp3?alt=media&token=2a1c0d2a-8393-4426-8d1a-bb49d2b457ee",
+      "previewSongName": "Élan",
+      "listSong": [
+        "Shudder Before the Beautiful",
+        "Weak Fantasy",
+        "Élan",
+        "Yours Is an Empty Hope",
+        "Our Decades in the Sun",
+        "My Walden",
+        "Endless Forms Most Beautiful",
+        "Edema Ruh",
+        "Alpenglow",
+        "The Eyes of Sharbat Gula (instrumental)",
+        "The Greatest Show on Earth"
+      ],
+      "listSongDuration": [
+        "6:29",
+        "5:23",
+        "4:45",
+        "5:34",
+        "6:37",
+        "4:38",
+        "5:07",
+        "5:15",
+        "4:45",
+        "6:03",
+        "24:00"
+      ],
+      "description": [
+        "Endless Forms Most Beautiful là album phòng thu thứ tám của ban nhạc symphonic metal Phần Lan Nightwish. Nó được phát hành vào ngày 27 tháng 3 năm 2015 tại Argentina và hầu hết Châu Âu, ngày 30 tháng 3 tại Vương quốc Anh và ngày 31 tháng 3 tại Hoa Kỳ. Album này lần đầu tiên ban nhạc thu âm với ca sĩ mới Floor Jansen và người chơi sáo Troy Donockley. Đó cũng là lần đầu tiên không có sự tham gia của tay trống Jukka Nevalainen, người đã nghỉ ngơi do bị mất ngủ trầm trọng. Người chơi trống trong album này là Kai Hahto của ban nhạc Wintersun. Album chỉ bao gồm năm thành viên Nightwish.",
+        "Không giống như album trước \"Imaginaerum\", nơi có chủ đề về trí tưởng tượng và những điều huyền diệu, Endless Forms Most Beautiful đề cập đến khoa học và lý trí. Tập trung vào các lý thuyết tiến hóa của Charles Darwin và Richard Dawkins, phần sau của album thậm chí trích dẫn các trích đoạn từ sách của họ. Cả hai tác giả đều ảnh hưởng đến rất nhiều các bài hát trong album."
+      ],
+      "albumFolder": "album-cover-and-audio/Endless_Forms_Most_Beautiful",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FEndless_Forms_Most_Beautiful%2Fcover.jpg?alt=media&token=b3261c0d-d3a2-4f86-8d8d-19b5c17c08a6",
+      "price": "870.000"
+    },
+    {
+      "id": "29",
+      "albumName": "Valley of the Damned",
+      "releaseYear": "2003",
+      "bandName": "DragonForce",
+      "country": "Quốc Tế",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FValley_Of_The_Damned%2FValleyOfTheDamned-Sample.mp3?alt=media&token=389269e4-ba5f-4417-b87a-e1349a203836",
+      "previewSongName": "Valley Of The Damned",
+      "listSong": [
+        "Invocation Of The Apocalyptic Evil",
+        "Valley of the Damned",
+        "Black Fire",
+        "Black Winter Night",
+        "Starfire ",
+        "Disciples Of Babylon",
+        "Revelations",
+        "Evening Star",
+        "Heart of a Dragon",
+        "When Dragons Rule"
+      ],
+      "listSongDuration": [
+        "0:14",
+        "7:12",
+        "5:47",
+        "6:30",
+        "5:53",
+        "7:16",
+        "6:52",
+        "6:39",
+        "5:24",
+        "5:49"
+      ],
+      "description": [
+        "Valley of the Damned là album phòng thu đầu tay của ban nhạc power metal Anh DragonForce. Vào năm 2000, khi mà ban nhạc vẫn được biết đến với cái tên DragonHeart, một bản demo cùng tên đã được ghi lại và gửi đến Noise Records, sau đó một thỏa thuận giữa ban nhạc với hãng đĩa này đã được kí kết. Tiếp đó, nó đã được thu âm lại vào cuối năm 2002 và được phát hành dưới dạng album phòng thu đầy đủ vào ngày 25 tháng 2 năm 2003, sau khi ban nhạc đạt được thỏa thuận với Noise Records và đổi tên thành DragonForce. Album được chuẩn bị để được làm lại và phát hành với một bản DVD đặc biệt vào ngày 24 tháng 9 năm 2007, nhưng sau đó đã bị trì hoãn và cuối cùng được phát hành vào ngày 22 tháng 2 năm 2010, cùng với việc phát hành lại album thứ hai của ban nhạc."
+      ],
+      "albumFolder": "album-cover-and-audio/Valley_Of_The_Damned",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FValley_Of_The_Damned%2Fcover.jpg?alt=media&token=28948926-ad58-4d9d-aa73-0e10886e8748",
+      "price": "270.000"
+    },
+    {
+      "id": "30",
+      "albumName": "Inhuman Rampage",
+      "releaseYear": "2006",
+      "bandName": "DragonForce",
+      "country": "Quốc Tế",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FInhuman_Rampage%2FTrailOfBrokenHearts-Sample.mp3?alt=media&token=a7657bad-3bc3-4013-a663-8beb1b623219",
+      "previewSongName": "Trail Of Broken Hearts",
+      "listSong": [
+        "Through the Fire and Flames",
+        "Revolution Deathsquad",
+        "Storming the Burning Fields",
+        "Operation Ground and Pound",
+        "Body Breakdown",
+        "Cry for Eternity",
+        "The Flame of Youth",
+        "Trail of Broken Hearts"
+      ],
+      "listSongDuration": [
+        "7:21",
+        "7:51",
+        "5:18",
+        "7:43",
+        "6:57",
+        "8:11",
+        "6:40",
+        "5:54"
+      ],
+      "description": [
+        "Inhuman Rampage là album phòng thu thứ ba của ban nhạc power metal Anh DragonForce, được phát hành vào ngày 6 tháng 1 năm 2006 thông qua hãng thu âm Noise Records. Đĩa đơn đầu tiên của nó, \"Through the Fire and Flames\", đã nhận được giải thưởng Rock and Fuse TV, và đã xuất hiện dưới dạng một bản nhạc có thể chơi trên các trò chơi video Guitar Hero III: Legends of Rock and Rocksmith 2014 Edition - Remastered. Đây là album đầu tiên của ban nhạc có sự tham gia của giọng hát khác, được thu âm bởi giọng ca Demoniac Lindsay Dawson; album này cũng là album cuối cùng có sự tham gia của tay bass Adrian Lambert, người đã rời nhóm vào năm 2005 và được thay thế bởi Frédéric Leclercq trước khi phát hành album.",
+        "Ở Hoa Kỳ, Inhuman Rampage đã đạt được vị trí số 1 trên bảng xếp hạng Billboard Heatseekers và vị trí số 103 trên bảng xếp hạng Billboard 200. Album được chứng nhận Silver bởi ngành công nghiệp ghi âm Anh khi bán hơn 60.000 bản tại Vương quốc Anh và đã bán được hơn 350.000 bản tại Hoa Kỳ. Metal Hammer đã đưa album vào danh sách năm 2016 gồm mười album Power Metal tiêu biểu."
+      ],
+      "albumFolder": "album-cover-and-audio/Inhuman_Rampage",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FInhuman_Rampage%2Fcover.jpg?alt=media&token=60c40a97-e52a-41ad-adf6-09445cae836d",
+      "price": "299.000"
+    },
+    {
+      "id": "31",
+      "albumName": "Ultra Beatdown",
+      "releaseYear": "2008",
+      "bandName": "DragonForce",
+      "country": "Quốc Tế",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FUltra_Beatdown%2FHeroesOfOurTime-Sample.mp3?alt=media&token=2c17c54f-9e6e-463b-b57c-738c34d6d7f8",
+      "previewSongName": "Heroes Of Our Time",
+      "listSong": [
+        "Heroes of Our Time",
+        "The Fire Still Burns",
+        "Reasons to Live",
+        "Heartbreak Armageddon",
+        "The Last Journey Home",
+        "A Flame For Freedom",
+        "Inside The Winter Storm",
+        "The Warrior Inside"
+      ],
+      "listSongDuration": [
+        "7:15",
+        "7:50",
+        "6:25",
+        "7:40",
+        "8:12",
+        "5:20",
+        "8:11",
+        "7:14"
+      ],
+      "description": [
+        "Ultra Beatdown là album phòng thu thứ tư của ban nhạc power metal Anh DragonForce, được phát hành vào ngày 20 tháng 8 năm 2008 tại Nhật Bản thông qua JVC và vào ngày 26 tháng 8 năm 2008 trên toàn thế giới thông qua Roadrunner Recordsvà Spinefarm Records. Ultra Beatdown là album phòng thu cuối cùng với sự xuất hiện ZP Theart là giọng hát chính và là album đầu tiên có Frédéric Leclercq chơi guitar bass.",
+        "Bài hát \"Heroes of Our Time\" đã được đề cử cho giải Grammy Award for Best Metal Performance, nhưng đã thua cuộc bởi ca khúc \"My Apocalypse\" của Metallica. Vào ngày 28 tháng 8 năm 2008, album được xếp ở vị trí thứ 9 tại Nhật Bản, nó cũng lọt vào bảng xếp hạng của Úc trong tuần đầu tiên của tháng 9 ở vị trí 19 và cùng ở vị trí thứ 18 trong cả hai bảng xếp hạng UK Albums Chart và Billboard 200."
+      ],
+      "albumFolder": "album-cover-and-audio/Ultra_Beatdown",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FUltra_Beatdown%2Fcover.jpg?alt=media&token=8b9edca0-2bec-4eb3-b6aa-58ba1fb6982d",
+      "price": "499.000"
+    },
+    {
+      "id": "32",
+      "albumName": "Maximum Overload",
+      "releaseYear": "2014",
+      "bandName": "DragonForce",
+      "country": "Quốc Tế",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FMaximum_Overload%2FTheGame-Sample.mp3?alt=media&token=d7ce14b8-33c4-4080-b8ec-0c4d30910400",
+      "previewSongName": "The Game",
+      "listSong": [
+        "The Game",
+        "Tomorrow's Kings",
+        "No More",
+        "Three Hammers",
+        "Symphony of the Night",
+        "The Sun Is Dead",
+        "Defenders",
+        "Extraction Zone",
+        "City of Gold",
+        "Ring of Fire"
+      ],
+      "listSongDuration": [
+        "4:56",
+        "4:13",
+        "3:50",
+        "5:50",
+        "5:20",
+        "6:34",
+        "5:47",
+        "5:06",
+        "4:43",
+        "3:15"
+      ],
+      "description": [
+        "Maximum Overload là album phòng thu thứ sáu của ban nhạc power metal Anh DragonForce, được phát hành ở châu Âu vào ngày 18 tháng 8 năm 2014 và ở Bắc Mỹ vào ngày hôm sau. Ca sĩ của nhóm Trivium, Matt Heafy đã đóng góp backing vocal cho ba bài hát, bao gồm đĩa đơn đầu tiên của album, \"The Game\". Album được sản xuất bởi Jens Bogren, đây là lần đầu tiên ban nhạc quyết định không thu âm trong phòng thu của riêng họ mà hợp tác với một nhà sản xuất bên ngoài. Album được phát hành với ba phiên bản: phiên bản DVD thường, phiên bản DVD đặc biệt (với năm bài hát bổ sung và DVD bonus) và phiên bản đĩa vinyl. Đây cũng là album cuối cùng của DragonForce có sự tham gia của tay trống Dave Mackffy, người đã tuyên bố rời khỏi ban nhạc vào ngày 3 tháng 6 năm 2014, và sau đó đã được thay thế bởi Gee Anzalone"
+      ],
+      "albumFolder": "album-cover-and-audio/Maximum_Overload",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FMaximum_Overload%2Fcover.jpg?alt=media&token=9a9167ac-15d7-4de0-83a7-eb8cc7e00aa1",
+      "price": "799.000"
+    },
+    {
+      "id": "33",
+      "albumName": "Đám Cưới Chuột",
+      "releaseYear": "2006",
+      "bandName": "Gạt Tàn Đầy",
+      "country": "Việt Nam",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FDam_Cuoi_Chuot%2FDamCuoiChuot-sample.mp3?alt=media&token=7c80710e-df39-4ad2-ade1-cbadf7aaff88",
+      "previewSongName": "Đám Cưới Chuột",
+      "listSong": [
+        "Đám Cưới Chuột",
+        "Buổi Sáng",
+        "Lại Một Bài Tình Ca Nữa",
+        "Người Hóa Cáo",
+        "Mứt",
+        "Phở",
+        "Chùm Nho Chín Mọng",
+        "5000 Ngày",
+        "Lão Cô Đơn",
+        "Nhớ",
+        "Mứt Hoa Quả Các Loại",
+        "Phàn Nàn",
+        "Mỗi Người Một Ý"
+      ],
+      "listSongDuration": [
+        "4:18",
+        "3:41",
+        "5:11",
+        "4:39",
+        "1:45",
+        "3:38",
+        "4:15",
+        "4:30",
+        "3:48",
+        "4:56",
+        "2:45",
+        "3:52",
+        "3:38"
+      ],
+      "description": [
+        "Là album đầu tiên cũng như duy nhất của ban nhạc, được ra mắt vào đầu năm 2006.",
+        "Ca khúc chủ đề \"Đám cưới chuột\" dựa trên hình ảnh về một bức tranh dân gian Đông Hồ cùng tên đã trở nên rất nổi tiếng và xuất hiện trong cả chương trình \"Bài Hát Việt\". Các ca khúc khác khai thác rất nhiều các chủ đề trong cuộc sống \"Phở\", \"Mứt\" hoặc câu chuyện ngụ ngôn khác như \"Chùm Nho Chín Mọng\", thậm chí là cả những bài báo về những sự oan khuất trong xã hội “14 năm đòi xoá tội giết con” cũng trở thành cảm hứng cho ban nhạc viết ca khúc \"5000 ngày\"."
+      ],
+      "albumFolder": "album-cover-and-audio/Dam_Cuoi_Chuot",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FDam_Cuoi_Chuot%2Fcover.jpg?alt=media&token=c1a44d93-80d5-4f7e-be40-2c5bb35f0692",
+      "price": "299.000"
+    },
+    {
+      "id": "34",
+      "albumName": "Human. :II: Nature",
+      "releaseYear": "2020",
+      "bandName": "Nightwish",
+      "country": "Quốc Tế",
+      "previewSong": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FHuman_Nature%2FHarvest-Sample.mp3?alt=media&token=a7bd836a-3c41-4d8b-9075-034fa2cad6e5",
+      "previewSongName": "Harvest",
+      "listSong": [
+        "Music",
+        "Noise",
+        "Shoemaker",
+        "Harvest",
+        "Pan",
+        "How's the Heart?",
+        "Procession",
+        "Tribal",
+        "Endlessness"
+      ],
+      "listSongDuration": [
+        "7:23",
+        "5:40",
+        "5:19",
+        "5:13",
+        "5:18",
+        "5:02",
+        "5:31",
+        "3:56",
+        "7:11"
+      ],
+      "description": [
+        "Human. :II: Nature là album thứ 9 của ban nhạc symphonic metal Nightwish, được ra mắt vào ngày 10 tháng 4 năm 2020 thông qua hãng đĩa Nuclear Blast. Sau sự ra đi của tay trống Jukka Nevalainen, đây là album đầu tiên Kai Hahto chới với tư cách là thành viên chính thức của ban nhạc, mặc dù anh đã từng đóng vai trò thay thế Nevalainen trong một vài ca khúc ở album thứ 8 của nhóm.",
+        "Ca khúc được thực hiện với sự góp giọng của Jansen, Marco Hietala and Troy Donockley, \"Sự kết hợp này mang đến một âm thanh khác biệt hoàn toàn của album\"- ca sĩ chính của nhóm Jansen cho biết.",
+        "Các ca khúc trong album xoay quanh chủ đề về Bản Chất Của Con Người, về sự đồng cảm, vị tha, lòng biết ơn, đặt ra những câu hỏi về bản chất thật sự của chúng ta, liệu chúng ta có thể trở nên tốt hơn hay sẽ bị biến đổi trở thành tồi tệ hơn ? ."
+      ],
+      "albumFolder": "album-cover-and-audio/Human_Nature",
+      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FHuman_Nature%2Fcover.jpg?alt=media&token=4fa1e9d4-0713-440c-b7a1-1fc072d6b6fd",
+      "price": "1.300.000"
+    }
+  ]
+}

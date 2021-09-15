@@ -1,0 +1,161 @@
+@import "../../scss/setting/variables";
+@import "../../scss/setting/mixin";
+
+.previewModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.75);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.activeMode {
+    visibility: visible;
+    opacity: 1;
+    width: calc(100% - 17px);
+  }
+  .previewModalContainer {
+    width: 920px;
+    height: 430px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: white;
+    border-right: 0px;
+    background-color: white;
+    box-sizing: content-box;
+    position: relative;
+    .loadingScreenModal {
+      position: absolute;
+      width: calc(100% - 15px);
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(228, 228, 228);
+      > img {
+        width: 80px;
+        height: 80px;
+      }
+      &.turnOff {
+        display: none;
+      }
+    }
+    .closeButton {
+      position: absolute;
+      top: -25px;
+      left: calc(100% - 15px);
+      font-size: 30px;
+      width: 25px;
+      height: 25px;
+      background-color: white;
+      color: $color-active;
+      border-radius: 99px;
+      :hover {
+        cursor: pointer;
+      }
+    }
+    .previewModalPhoto {
+      width: 430px;
+      height: 430px;
+      position: relative;
+      div {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .previewModalContent {
+      width: 450px;
+      height: 430px;
+      overflow: auto;
+      scrollbar-width: thin;
+      scrollbar-color: #c4c4c4;
+      &::-webkit-scrollbar {
+        width: 7px;
+      }
+      &::-webkit-scrollbar-track {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+      }
+      &::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: #c4c4c4;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+        .albumName {
+          display: inline-block;
+          height: 30px;
+          line-height: 30px;
+          font-size: 25px;
+          font-weight: 600;
+          margin-top: 5px;
+          margin-bottom: 10px;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .albumBandName {
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #b4b4b4;
+        margin-bottom: 10px;
+      }
+      .albumPrice {
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        font-size: 28px;
+        font-weight: bold;
+        color: $color-active;
+        margin-bottom: 30px;
+      }
+      .buttonAddToCart {
+        @include button;
+        width: 200px;
+        height: 40px;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 16px;
+        margin-top: 30px;
+        user-select: none;
+      }
+      .audioPlayerContainer {
+        padding-right: 10px;
+        .audioPlayerDetail {
+          margin-left: 20px;
+        }
+      }
+      .previewModalPresentation {
+        width: 100%;
+        // overflow: hidden;
+        // &.turn-off{
+        //     overflow: auto;
+        // }
+        .previewModalPresentationTitle {
+          font-size: 20px;
+          margin-top: 25px;
+          margin-top: 15px;
+        }
+        .albumDescription {
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}

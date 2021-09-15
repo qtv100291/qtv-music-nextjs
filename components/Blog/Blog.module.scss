@@ -1,0 +1,157 @@
+@import "../../scss/setting/variables";
+@import "../../scss/setting/mixin";
+
+.blogSection {
+  width: 100%;
+  max-width: 1200px;
+  margin: 72px auto 80px auto;
+  @include desktop {
+    width: 95%;
+  }
+  @include large-tablet {
+    margin-top: 62px;
+    width: 95%;
+  }
+  @include tablet {
+    margin-top: 62px;
+    width: 95%;
+  }
+  @include mobile {
+    margin-top: 68px;
+    margin-bottom: 40px;
+    width: 95%;
+  }
+  .articleSection {
+    width: 100%;
+    .articleItem {
+      margin-top: 80px;
+      width: 100%;
+      background-color: #f1f2f2;
+      border-radius: 10px;
+      overflow: hidden;
+      @include desktop {
+        height: 410px;
+      }
+      @include large-tablet {
+        flex-wrap: wrap !important;
+        margin-top: 60px;
+      }
+      @include tablet {
+        flex-wrap: wrap !important;
+        margin-top: 50px;
+      }
+      @include mobile {
+        flex-wrap: wrap !important;
+        margin-top: 25px;
+      }
+      .articleItemPhoto {
+        width: 100%;
+        max-width: 575px;
+        @include large-tablet {
+          max-width: 100%;
+        }
+        @include tablet {
+          max-width: 100%;
+        }
+        @include mobile {
+          max-width: 100%;
+        }
+        .articleItemPhotoContainer {
+          width: 100%;
+          position: relative;
+         
+          div{
+            display: block!important;
+            img{
+              object-fit: cover;
+            }
+          }
+          
+        }
+      }
+      .articleDescription {
+        width: 100%;
+        max-width: 575px;
+        margin: 0 20px 0 30px;
+        @include large-tablet {
+          max-width: 100%;
+        }
+        @include tablet {
+          max-width: 100%;
+        }
+        @include mobile {
+          max-width: 100%;
+          margin: 0 10px 0 10px;
+        }
+        .articleDescriptionTitle {
+          margin-top: 25px;
+          font-size: 30px;
+          line-height: 40px;
+          font-weight: 700;
+          margin-bottom: 0;
+          @include mobile {
+            font-size: 25px;
+          }
+        }
+        .articleDescriptionInfo {
+          margin: 10px auto;
+          .articleItemDate {
+            font-size: 14px;
+            font-weight: 300;
+            img {
+              width: 16px;
+              height: 16px;
+            }
+            p {
+              margin: 0;
+              margin-left: 10px;
+              margin-top: 3px;
+            }
+          }
+          .articleItemAuthor {
+            margin-left: 15px;
+            font-size: 14px;
+            font-weight: 300;
+            img {
+              width: 16px;
+              height: 16px;
+            }
+            p {
+              margin: 0;
+              margin-left: 5px;
+              margin-top: 3px;
+            }
+          }
+        }
+        .articleDescriptionSummary {
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25px;
+          }
+        }
+        a {
+          text-decoration: none;
+          .buttonAccessArticle {
+            @include button;
+            width: 150px;
+            height: 40px;
+            border-radius: 99px;
+            @include large-tablet {
+              margin-bottom: 20px;
+            }
+            @include tablet {
+              margin-bottom: 20px;
+            }
+            @include mobile {
+              margin-bottom: 20px;
+              width: 130px;
+              height: 35px;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

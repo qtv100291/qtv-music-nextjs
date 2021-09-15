@@ -1,0 +1,91 @@
+@import "../../scss/setting/mixin" ;
+@import "../../scss/setting/variables" ;
+
+.albumTheWeekContainer{
+    @include mobile {
+        flex-wrap: wrap;
+    }
+    .albumTheWeekPhoto{
+        position: relative;
+        width: calc(50% - 20px);
+        @include tablet {
+            width: calc(50% - 10px);
+        }
+        @include mobile {
+            width: 100%;
+        }
+ 
+    }
+    .albumTheWeekContent{
+        width: calc(50% - 20px);
+        @include tablet {
+            width: calc(50% - 10px);
+        }
+        @include mobile {
+            width: 100%;
+        }
+        .albumName{
+            width: 100%;
+            line-height: 35px;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 0;
+            @include tablet {
+                line-height: 30px;
+            }
+        }
+        .albumBandName{
+            width: 100%;
+            line-height: 35px;
+            font-size: 20px;
+            font-weight: 00;
+            color: #B4B4B4;
+            margin-bottom: 0;
+            @include tablet {
+                line-height: 30px;
+            }
+        }
+        .albumPrice{
+            width: 100%;
+            line-height: 35px;
+            font-size: 25px;
+            font-weight: bold;
+            color: $color-active;
+            margin-bottom: 0;
+            @include tablet {
+                line-height: 30px;
+            }
+        }
+        .albumTheWeekDescription {
+            margin-top: 20px;
+            @include tablet {
+                margin-top: 10px;
+            }
+            p{
+                margin-bottom: 10px;
+            }
+        }
+        a{
+            text-decoration: none;
+            .buttonSeeMore{
+                margin-top: 25px;
+                width: 150px;
+                height: 40px;
+                border-radius: 999px;
+                background-color: $color-active;
+                color: white;
+                font-weight: 500;
+                &:hover{
+                    background-color: $color-active-hover;
+                    cursor: pointer;
+                }
+                @include mobile {
+                    margin-top: 15px;
+                    width: 120px;
+                    height: 35px;
+                }
+            }
+        }
+        
+    }
+}

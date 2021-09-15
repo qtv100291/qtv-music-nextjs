@@ -1,0 +1,121 @@
+@import "../../scss/setting/variables";
+@import "../../scss/setting/mixin";
+
+.shoppingCartMain {
+  width: 100%;
+  max-width: 1200px;
+  margin: 112px auto 22px auto;
+  @include desktop {
+    width: 95%;
+  }
+  @include large-tablet {
+    margin-top: 92px;
+    width: 95%;
+  }
+  @include tablet {
+    margin-top: 62px;
+    width: 95%;
+  }
+  @include mobile {
+    margin-top: 68px;
+    width: 95%;
+  }
+  .shoppingCartTitle {
+    font-size: 30px;
+    span {
+      font-size: 18px;
+      color: rgb(167, 167, 167);
+    }
+  }
+  .shoppingCartContainer {
+    margin-top: 40px;
+    width: 100%;
+    align-items: flex-start;
+    @include large-tablet {
+      flex-wrap: wrap;
+    }
+    @include tablet {
+      flex-wrap: wrap;
+    }
+    @include mobile {
+      flex-wrap: wrap;
+    }
+    .listItemSection {
+      width: 100%;
+      max-width: 850px;
+      @include desktop {
+        width: calc(100% - 300px);
+      }
+      @include large-tablet {
+        max-width: 100%;
+      }
+      @include tablet {
+        max-width: 100%;
+      }
+      @include mobile {
+        max-width: 100%;
+      }
+      > h3 {
+        text-align: center;
+      }
+    }
+    .totalMoney {
+      width: 90%;
+      max-width: 325px;
+      text-align: right;
+      font-size: 16px;
+      font-weight: 500;
+      @include desktop {
+        max-width: 275px;
+      }
+      @include large-tablet {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      @include tablet {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      @include mobile {
+        width: 100%;
+        max-width: 100%;
+      }
+      .totalMoneyContainer {
+        background-color: rgb(224, 224, 224);
+        border-radius: 5px;
+        p {
+          width: 90%;
+          margin: 0px auto;
+          padding: 15px 0;
+          letter-spacing: 0.5px;
+          span {
+            letter-spacing: 1px;
+          }
+        }
+        .totalMoneyTax {
+          padding-bottom: 20px;
+          border-bottom: 1px solid white;
+        }
+        .totalMoneyValue {
+          span {
+            letter-spacing: 1px;
+            color: $color-active;
+            font-size: 18px;
+          }
+        }
+      }
+      a {
+        text-decoration: none;
+        .payoutButton {
+          @include button;
+          user-select: none;
+          margin-top: 20px;
+          border-radius: 5px;
+          width: 100%;
+          height: 50px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

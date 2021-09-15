@@ -1,0 +1,168 @@
+@import "../../scss/setting/variables";
+@import "../../scss/setting/mixin";
+
+.accountMain {
+  width: 100%;
+  max-width: 1200px;
+  margin: 102px auto 42px auto;
+  @include desktop {
+    width: 95%;
+  }
+  @include large-tablet {
+    margin-top: 92px;
+    width: 95%;
+  }
+  @include tablet {
+    margin-top: 82px;
+    width: 90%;
+  }
+  @include mobile {
+    margin-top: 68px;
+    width: 95%;
+  }
+  .accountContainer {
+    width: 100%;
+    @include tablet {
+      flex-wrap: wrap;
+    }
+    @include mobile {
+      flex-wrap: wrap;
+    }
+    .accountSideBar {
+      width: 100%;
+      max-width: 250px;
+      @include tablet {
+        max-width: 100%;
+      }
+      @include mobile {
+        max-width: 100%;
+      }
+      .accountMenuMemberGeneral {
+        width: 243px;
+        height: 45px;
+        padding-left: 7px;
+        margin-bottom: 20px;
+        .avatarContainer {
+          > input[type="file"] {
+            display: none;
+          }
+          .avatarPicture {
+            width: 60px;
+            height: 60px;
+            border-radius: 999px;
+            box-sizing: border-box;
+            border: 1px solid rgb(192, 192, 192);
+            font-size: 22px;
+            position: relative;
+            @include mobile {
+              width: 45px;
+              height: 45px;
+            }
+            div {
+              > img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 999px;
+                box-sizing: border-box;
+                border: 1px solid rgb(192, 192, 192);
+              }
+            }
+
+            &:hover {
+              cursor: pointer;
+            }
+            .avatarSpinLoading {
+              z-index: 10;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              background-color: white;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              border-radius: 999px;
+              div {
+                > img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+
+        .welcomeMember {
+          margin-left: 12px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 15px;
+          color: #000000;
+          > strong {
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 400;
+            display: block;
+            margin-top: 5px;
+            width: 180px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+          }
+        }
+      }
+      .accountMenuSidebar {
+        width: 100%;
+        margin-bottom: 25px;
+        li {
+          list-style: none;
+          padding: 7px 18px;
+          display: flex;
+          align-items: center;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 15px;
+          &:hover {
+            cursor: pointer;
+          }
+          > svg {
+            width: 17px;
+            margin-right: 22px;
+          }
+        }
+        .activeMenu {
+          background-color: rgb(221, 221, 221);
+        }
+      }
+      .logOutButton {
+        @include button;
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+      }
+    }
+    .accountContent {
+      width: 100%;
+      max-width: 875px;
+      @include desktop {
+        width: calc(100% - 300px);
+      }
+      @include large-tablet {
+        width: calc(100% - 275px);
+      }
+      @include tablet {
+        max-width: 100%;
+        margin-top: 30px;
+      }
+      @include mobile {
+        max-width: 100%;
+        margin-top: 30px;
+      }
+    }
+  }
+}

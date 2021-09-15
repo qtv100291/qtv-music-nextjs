@@ -1,0 +1,14 @@
+@import "../../scss/setting/mixin" ;
+
+.mainContainer{
+    margin-top: 72px;
+    @include large-tablet {
+        margin-top: 62px;
+    }
+    @include tablet {
+        margin-top: 62px;
+    }
+    @include mobile {
+        margin-top: 68px;
+    }
+}

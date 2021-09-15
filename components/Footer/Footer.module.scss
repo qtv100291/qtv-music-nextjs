@@ -1,0 +1,147 @@
+@import "../../scss/setting/variables.scss";
+@import "../../scss/setting/mixin";
+
+.Footer {
+  width: 100%;
+}
+
+.footerDesktop {
+  width: 100%;
+  background-color: $color-bg-navbar;
+  .footerContainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 72px;
+    @include desktop {
+      width: 95%;
+    }
+    @include large-tablet {
+      flex-wrap: wrap;
+      height: auto;
+    }
+    @include tablet {
+      flex-wrap: wrap;
+      height: auto;
+    }
+    @include mobile {
+      flex-wrap: wrap;
+      height: auto;
+    }
+    .footerLogo {
+      text-decoration: none;
+
+      margin: 0;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      font-family: $font-catamaran;
+      color: white;
+      @include large-tablet {
+        font-size: 32px;
+        text-align: center;
+      }
+      @include tablet {
+        font-size: 32px;
+        text-align: center;
+      }
+      @include mobile {
+        font-size: 28px;
+        text-align: center;
+      }
+
+      @include large-tablet {
+        width: 95%;
+        padding: 10px 0;
+        margin: 0 auto;
+      }
+      @include tablet {
+        width: 95%;
+        padding: 10px 0;
+        margin: 0 auto;
+      }
+      @include mobile {
+        font-size: 28px;
+        width: 95%;
+        padding: 10px 0;
+        margin: 0 auto;
+      }
+    }
+    .footerPage {
+      display: flex;
+      @include large-tablet {
+        width: 95%;
+        justify-content: center;
+      }
+      @include tablet {
+        width: 95%;
+        justify-content: center;
+      }
+      @include mobile {
+        flex-wrap: wrap;
+        width: 95%;
+        justify-content: center;
+        margin: 0px 0 15px 0;
+      }
+      .footerPageItem {
+        margin-left: 20px;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        &:hover {
+          color: $color-active;
+        }
+        &.activeLink {
+          color: $color-active;
+        }
+      }
+      .navbarPageItem:nth-child(1) {
+        margin: 0;
+      }
+    }
+    .footerIcon {
+      a {
+        display: inline-block;
+        margin-left: 35px;
+        font-size: 30px;
+      }
+      a:nth-child(1) {
+        margin-left: 0;
+      }
+      @include large-tablet {
+        width: 95%;
+        justify-content: center;
+      }
+      @include tablet {
+        width: 95%;
+        justify-content: center;
+      }
+      @include mobile {
+        width: 95%;
+        justify-content: center;
+      }
+    }
+  }
+}
+.footerAboutWebsite {
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  > h5 {
+    margin: 0;
+    line-height: 30px;
+    font-weight: 800;
+    font-size: 16px;
+    font-family: $font-catamaran;
+    > span {
+      font-size: 16px;
+      font-family: $font-catamaran;
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+}

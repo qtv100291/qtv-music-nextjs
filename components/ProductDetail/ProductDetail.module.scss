@@ -1,0 +1,202 @@
+@import "../../scss/setting/variables";
+@import "../../scss/setting/mixin";
+
+.sectionAlbumDetail {
+  width: 100%;
+  max-width: 1200px;
+  margin: 72px auto 0 auto;
+  @include desktop {
+    width: 95%;
+  }
+  @include large-tablet {
+    margin-top: 62px;
+    width: 95%;
+  }
+  @include tablet {
+    margin-top: 62px;
+    width: 95%;
+  }
+  @include mobile {
+    margin-top: 68px;
+    width: 95%;
+  }
+  .banner-breadcrumb {
+    background-image: url("/san-pham-detail-banner.jpg");
+  }
+  .sectionAlbumDetailContainer {
+    margin-top: 70px;
+    width: 100%;
+    @include large-tablet {
+      margin-top: 55px;
+    }
+    @include tablet {
+      flex-wrap: wrap;
+      margin-top: 50px;
+    }
+    @include mobile {
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    .albumCoverPhoto {
+      width: 100%;
+      max-width: 475px;
+      @include desktop {
+        width: calc(40% - 20px);
+      }
+      @include large-tablet {
+        width: calc(40% - 15px);
+      }
+      @include tablet {
+        width: 80%;
+        margin: 0 auto;
+      }
+      @include mobile {
+        max-width: 100%;
+      }
+      .albumCoverPhotoContainer {
+        width: 100%;
+        padding-top: 100%;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 102px;
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .albumDetail {
+      width: 100%;
+      max-width: 650px;
+      @include desktop {
+        width: calc(60% - 20px);
+      }
+      @include large-tablet {
+        width: calc(60% - 15px);
+      }
+      @include tablet {
+        margin-top: 40px;
+        width: 100%;
+      }
+      @include mobile {
+        width: 100%;
+        margin-top: 30px;
+      }
+      .albumName {
+        width: 100%;
+        line-height: 35px;
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 10;
+        @include mobile {
+          font-size: 25px;
+        }
+      }
+      .albumBandName {
+        width: 100%;
+        line-height: 35px;
+        font-size: 24px;
+        font-weight: 600;
+        color: #b4b4b4;
+        margin-bottom: 10px;
+        @include mobile {
+          font-size: 22px;
+        }
+      }
+      .albumPrice {
+        width: 100%;
+        line-height: 35px;
+        font-size: 30px;
+        font-weight: bold;
+        color: $color-active;
+        margin-bottom: 30px;
+        @include mobile {
+          font-size: 28px;
+          margin-bottom: 20px;
+        }
+      }
+      .buttonAddToCart {
+        @include button;
+        width: 200px;
+        border-radius: 5px;
+        height: 40px;
+        font-weight: 500;
+        font-size: 16px;
+        margin-top: 40px;
+        @include mobile {
+          width: 100%;
+          margin-top: 25px;
+        }
+      }
+      .productPresentation {
+        width: 100%;
+        margin-top: 40px;
+        .productPresentationHeader {
+          width: 100%;
+          height: 38px;
+          border-bottom: solid 1px #c4c4c4;
+          .headerItem {
+            width: 110px;
+            margin-right: 20px;
+            height: 38px;
+            border-bottom: 2px solid transparent;
+            font-weight: 600;
+            font-size: 18px;
+            &:hover {
+              cursor: pointer;
+              border-bottom: 2px solid black;
+            }
+          }
+          .headerItem.activeTab {
+            background-color: white;
+            border-bottom: 2px solid black;
+          }
+        }
+      }
+      .productPresentationContent {
+        width: 100%;
+        padding-top: 20px;
+        .tabContent {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 25px;
+          display: none;
+          opacity: 0;
+        }
+        .albumDescription {
+          p {
+            margin-bottom: 10px;
+          }
+        }
+        .albumDescription.activeTabContent {
+          display: block;
+          opacity: 1;
+        }
+        .albumTrackList {
+          width: 100%;
+          .albumTrackListSong {
+            width: 100%;
+            p {
+              margin-bottom: 0;
+              padding: 15px 0px;
+            }
+            p:nth-child(2) {
+              min-width: 60px;
+              text-align: right;
+            }
+          }
+        }
+        .albumTrackList.activeTabContent {
+          display: flex;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .relatedAlbum {
+    margin-bottom: 45px;
+  }
+}

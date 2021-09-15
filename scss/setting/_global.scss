@@ -1,0 +1,68 @@
+@import "./variables";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+html{
+  font-size: 100%;
+}
+.on-top {
+  scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+}
+
+.bread-crumb-line{
+  width: 95%;
+  margin: 0 auto;
+  > a {
+      font-weight: 600;
+      color: black;
+      text-decoration: none;
+      &:hover {
+          color: $color-active;
+      }
+  }
+}
+.swiper-container > .swiper-button-next{
+  height: 100%;
+  right: 0;
+  top:calc(50% + 7px) ;
+  padding: 0 30px;
+  transform: translateY(-45%);
+  outline: none;
+}
+.swiper-container > .swiper-button-prev{
+  height: 100%;
+  left: 0;
+  top:calc(50% + 7px) ;
+  padding: 0 30px;
+  transform: translateY(-45%);
+  outline: none;
+}
+
+.turn-off{
+  display: none;
+}
+
+#dropdown-basic:focus {
+  //remove button outline Bootstrap
+  box-shadow: none;
+}
+.dropdown-menu.show {
+  width: 100%;
+  a:hover {
+    background-color: rgb(194, 194, 194);
+  }
+}
+
+footer.fixed {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 30px;
+}

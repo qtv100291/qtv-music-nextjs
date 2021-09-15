@@ -1,0 +1,234 @@
+@import "../../scss/setting/variables.scss";
+@import "../../scss/setting/mixin";
+
+.payoutMain {
+  width: 100%;
+  max-width: 1200px;
+  margin: 102px auto 50px auto;
+  @include desktop {
+    width: 95%;
+  }
+  @include large-tablet {
+    margin-top: 92px;
+    width: 95%;
+  }
+  @include tablet {
+    margin-top: 62px;
+    width: 95%;
+  }
+  @include mobile {
+    margin-top: 68px;
+    width: 95%;
+  }
+  h2 {
+    font-size: 30px;
+    @include mobile {
+      font-size: 25px;
+    }
+  }
+  h3 {
+    font-size: 25px !important;
+    @include mobile {
+      font-size: 22px !important;
+    }
+  }
+  .payoutContainer {
+    margin-top: 25px;
+    align-items: flex-start;
+    @include tablet {
+      flex-direction: column-reverse;
+    }
+    @include mobile {
+      flex-direction: column-reverse;
+    }
+  }
+  .payoutUserInfo {
+    width: 100%;
+    max-width: 825px;
+    @include desktop {
+      width: calc(100% - 350px);
+    }
+    @include large-tablet {
+      width: calc(100% - 325px);
+    }
+    .payoutForm {
+      width: 100%;
+      .payoutUserInfoDetail {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 30px;
+        border-radius: 10px;
+        border: 1px solid #afafaf;
+        @include tablet {
+          padding: 15px;
+        }
+        @include mobile {
+          padding: 10px;
+        }
+        h3 {
+          margin-bottom: 25px;
+        }
+      }
+      .paymentMethod {
+        margin-top: 35px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 30px;
+        border-radius: 10px;
+        border: 1px solid #afafaf;
+        @include tablet {
+          padding: 15px;
+        }
+        @include mobile {
+          padding: 15px;
+        }
+        .cardMethodContent {
+          margin-top: 25px;
+          margin-left: 27px;
+          @include tablet {
+            margin-left: 0px;
+          }
+          @include mobile {
+            margin-left: 0px;
+          }
+        }
+      }
+      button {
+        @include button;
+        display: block;
+        margin: 40px auto 0 auto;
+        width: 200px;
+        height: 50px;
+        font-size: 22px;
+        border: none;
+        outline: none;
+        @include mobile {
+          width: 160px;
+          height: 40px;
+          font-size: 20px;
+        }
+        &:disabled {
+          opacity: 0.7;
+        }
+        &:disabled:hover {
+          background-color: $color-active;
+          cursor: auto;
+        }
+      }
+      .noteOrderButton {
+        margin-top: 15px;
+        font-style: italic;
+        text-align: center;
+      }
+    }
+  }
+  .payoutShoppingCart {
+    width: 100%;
+    max-width: 350px;
+    @include desktop {
+      max-width: 325px;
+    }
+    @include large-tablet {
+      max-width: 300px;
+    }
+    @include tablet {
+      max-width: 100%;
+      padding: 15px;
+      margin-bottom: 40px;
+    }
+    @include mobile {
+      max-width: 100%;
+      padding: 10px;
+      margin-bottom: 25px;
+    }
+    box-sizing: border-box;
+    border: 1px solid #afafaf;
+    border-radius: 10px;
+    padding: 10px;
+    .payoutShoppingContainer {
+      .payoutShoppingHeader {
+        padding: 15px 0;
+        border-bottom: 1px solid #afafaf;
+        a {
+          text-decoration: none;
+          color: black;
+          width: 80px;
+          height: 35px;
+          border: 1px solid #afafaf;
+          border-radius: 5px;
+          &:hover {
+            background-color: rgb(223, 223, 223);
+          }
+          
+          .backToCartButton {
+            font-size: 18px;
+            line-height: 35px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .payoutShoppingBody {
+      padding: 5px 0;
+      .itemList {
+        font-size: 14px;
+        border-bottom: 1px solid #afafaf;
+        p {
+          padding: 5px;
+          margin: 0;
+        }
+        p:nth-child(2) {
+          text-align: right;
+        }
+      }
+    }
+    .payoutShoppingFooter {
+      padding: 5px 0;
+      div {
+        padding: 5px 0;
+      }
+      .totalMoney {
+        font-size: 18px;
+        span {
+          color: $color-active;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.cardMethodContent {
+  display: none;
+}
+.cardMethodContent.displaying {
+  display: block;
+}
+
+.swal2-actions {
+  > .swal2-styled.swal2-confirm {
+    @include button;
+    width: 250px;
+    outline: none;
+  }
+}
+
+.receiverDistrict,
+.receiverCommune {
+  position: relative;
+  z-index: 1;
+  > span {
+    background-image: url("/loading-icon-small.gif");
+    background-size: cover;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    right: 20px;
+    top: 7px;
+    display: none;
+    z-index: 5;
+  }
+}
+.obligationMark {
+  color: red;
+}

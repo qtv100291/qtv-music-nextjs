@@ -1,0 +1,23 @@
+@import "../../scss/setting/variables";
+@import "../../scss/setting/mixin";
+
+.previewModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.75);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.activeMode {
+    visibility: visible;
+    opacity: 1;
+    width: calc(100% - 17px);
+  }
+}

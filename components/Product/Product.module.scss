@@ -1,0 +1,172 @@
+@import "../../scss/setting/variables";
+@import "../../scss/setting/mixin";
+
+.productSection {
+  width: 100%;
+  max-width: 1200px;
+  margin: 72px auto 0px auto;
+  @include desktop {
+    width: 95%;
+  }
+  @include large-tablet {
+    margin-top: 62px;
+    width: 95%;
+  }
+  @include tablet {
+    margin-top: 62px;
+    width: 95%;
+  }
+  @include mobile {
+    margin-top: 68px;
+    width: 95%;
+  }
+  > .productSectionContainer {
+    width: 100%;
+    margin-top: 30px;
+    @include mobile {
+      margin-top: 20px;
+    }
+    .filterPart {
+      .filterPartTitle {
+        line-height: 40px;
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      width: 100%;
+      max-width: 280px;
+      @include desktop {
+        max-width: 270px;
+      }
+      @include large-tablet {
+        display: none;
+      }
+      @include tablet {
+        display: none;
+      }
+      @include mobile {
+        display: none;
+      }
+    }
+    .productPart {
+      width: 100%;
+      max-width: 880px;
+      @include desktop {
+        margin-left: 20px;
+      }
+      @include large-tablet {
+        max-width: 100%;
+      }
+      .productPartSort {
+        height: 40px;
+        margin-bottom: 20px;
+        @include mobile {
+          height: 35px;
+          margin-bottom: 30px;
+        }
+        .filterIcon {
+          width: 40px;
+          height: 40px;
+          background-color: $color-active;
+          border-radius: 3px;
+          font-size: 20px;
+          color: white;
+          @include super-large-desktop {
+            display: none !important;
+          }
+          @include large-desktop {
+            display: none !important;
+          }
+          @include desktop {
+            display: none !important;
+          }
+          @include mobile {
+            width: 35px;
+            height: 35px;
+            font-size: 18px;
+          }
+        }
+        :global(.dropdown) {
+          width: 290px;
+          @include mobile {
+            width: 250px;
+          }
+          :global(.dropdown-toggle) {
+            @include mobile {
+              padding: 5px;
+            }
+          }
+          span {
+            width: 110px;
+            margin-right: 10px;
+            display: inline-block;
+            @include mobile {
+              width: 90px;
+              font-size: 14px;
+            }
+          }
+          strong {
+            display: inline-block;
+            width: 130px;
+            @include mobile {
+              width: 115px;
+              font-size: 14px;
+            }
+          }
+          button {
+            width: 100%;
+            background-color: white;
+            outline: none;
+            color: black;
+            border-color: #bdb4b4;
+            height: 40px;
+          }
+        }
+      }
+      .productPartContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        @include super-large-desktop {
+          gap: 35px 35px;
+        }
+        @include large-desktop {
+          gap: 35px 35px;
+        }
+        @include desktop {
+          > .album-item {
+            width: 100%;
+          }
+          gap: 25px 25px;
+        }
+        @include large-tablet {
+          > .album-item {
+            width: 100%;
+          }
+          gap: 30px 30px;
+        }
+        @include tablet {
+          > .album-item {
+            width: 100%;
+            > .album-name {
+              font-size: 16px;
+            }
+            > .album-band-name {
+              font-size: 14px;
+            }
+            > .album-price {
+              font-size: 20px;
+            }
+          }
+          gap: 30px 30px;
+        }
+        @include mobile {
+          grid-template-columns: repeat(1, 1fr);
+          > .album-item {
+            width: 80%;
+          }
+          gap: 30px 30px;
+        }
+      }
+    }
+  }
+}
