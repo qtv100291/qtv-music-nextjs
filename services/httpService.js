@@ -2,27 +2,48 @@ import axios from "axios";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import additionalFunctionDom from "../utils/additionalFunctionDom";
-import { getCookie } from "../utils/cookie";
+import { getCookie, setCookie } from "../utils/cookie";
 
 export const axiosInner = axios.create({
   baseURL: process.env.NEXT_PUBLIC_API_BASE_URL_DEV,
-}) 
+});
 
 export const axiosFb = axios.create({
-  baseURL: "https://graph.facebook.com"
-})
+  baseURL: "https://graph.facebook.com",
+});
 
-const axiosOuter = axios.create({
-  baseURL : process.env.NEXT_PUBLIC_API_BASE_URL_DEV,
-  
-})
+let axiosOuter = axios.create({
+  baseURL: process.env.NEXT_PUBLIC_API_BASE_URL_DEV,
+});
 
 if (typeof window !== "undefined") {
   axiosOuter.defaults.headers.common["Authorization"] =
-  "Bearer " + getCookie("token_qtv");
+    "Bearer " + getCookie("token_qtv");
 }
 
-axiosOuter.interceptors.response.use(null, (error) => {
+axiosOuter.interceptors.response.use(null, async (error) => {
+  // console.log(error);
+  const originalRequest = error.config;
+  if (
+    error.response.status === 401 &&
+    error.response.data.message === "jwt expired"
+  ) {
+    const { data: userToken } = await axiosInner.post(
+      "/api/auth/refresh-token",
+      {
+        refreshToken: getCookie("refreshToken_qtv"),
+      }
+    );
+    setCookie("token_qtv", userToken.accessToken, 2);
+    setCookie("refreshToken_qtv", userToken.refreshToken, 14);
+    if (typeof window !== "undefined") {
+      axiosOuter.defaults.headers.common["Authorization"] =
+        "Bearer " + userToken.accessToken;
+    }
+    originalRequest.headers['Authorization'] = "Bearer " + userToken.accessToken
+    return axiosOuter(originalRequest);
+  }
+
   const expectedError =
     error.response &&
     error.response.status >= 400 &&
@@ -40,7 +61,5 @@ axiosOuter.interceptors.response.use(null, (error) => {
   }
   return Promise.reject(error);
 });
-
-
 
 export default axiosOuter;

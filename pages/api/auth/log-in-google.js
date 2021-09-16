@@ -1,10 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { v4 as uuidv4 } from "uuid";
-import jwt from "jsonwebtoken";
 import jwtDecode from "jwt-decode";
-import { axiosFb } from "../../../services/httpService";
-import { getDataFacebook } from "../../../services/facebookService";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return;

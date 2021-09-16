@@ -12,6 +12,7 @@ export default function handler(req, res) {
   const secretKey = process.env.NEXT_PUBLIC_JWT_SECRET_KEY;
   try {
     const decode = jwt.verify(token, secretKey);
+    console.log("decoded")
     const { id } = decode.data;
     for (let i = 0; i < data.users.length; i++) {
       if (data.users[i].id === id) {
@@ -21,7 +22,7 @@ export default function handler(req, res) {
       }
     }
   } catch (err) {
-    return res.status(403).json({message:err.message});
+    return res.status(401).json({message:err.message});
   }
   return res.status(404).json({message:"User not found"});
 }

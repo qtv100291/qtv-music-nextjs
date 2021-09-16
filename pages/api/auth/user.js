@@ -20,6 +20,6 @@ export default function handler(req, res) {
       }
     }
   } catch (err) {
-    res.status(403).json(err.message);
+    res.status(401).json({message:err.message});
   }
 }

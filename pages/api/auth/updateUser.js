@@ -18,11 +18,11 @@ export default function handler(req, res) {
         data.users[i].address = { ...address };
         data.users[i].payment = { ...payment };
         fs.writeFileSync(filePath, JSON.stringify(data))
-        return res.status(200).json("User Updated");
+        return res.status(200).json({message:"User Updated"});
       }
     }
   } catch (err) {
-    return res.status(403).json(err.message);
+    return res.status(401).json({message:err.message});
   }
-  return res.status(404).json("User not found");
+  return res.status(404).json({message:"User not found"});
 }

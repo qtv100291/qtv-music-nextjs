@@ -1,7 +1,6 @@
 import fs from "fs";
 import path from "path";
 import { v4 as uuidv4 } from "uuid";
-import jwt from "jsonwebtoken";
 import { axiosFb } from "../../../services/httpService";
 import { getDataFacebook } from "../../../services/facebookService";
 

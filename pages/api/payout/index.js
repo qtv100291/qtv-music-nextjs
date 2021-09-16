@@ -33,6 +33,6 @@ export default function handler(req, res) {
       }
     }
   } catch (err) {
-    return res.status(403).json(err.message);
+    return res.status(401).json({message:err.message});
   }
 }
