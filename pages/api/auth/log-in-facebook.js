@@ -3,6 +3,7 @@ import path from "path";
 import { v4 as uuidv4 } from "uuid";
 import { axiosFb } from "../../../services/httpService";
 import { getDataFacebook } from "../../../services/facebookService";
+import generateToken from "../../../utils/generateToken";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return;
@@ -22,11 +23,11 @@ export default async function handler(req, res) {
   const { data: dataToken } = await axiosFb.get(
     `/debug_token?input_token=${accessToken}&access_token=${appAccessToken.access_token}`
   );
-  console.log("dataToken", dataToken);
+  // console.log("dataToken", dataToken);
   // get user data from facebook
   const option = `/${userID}?fields=id,name,email&access_token=${accessToken}`;
   const { data: userData } = await getDataFacebook(option);
-  console.log("userData", userData);
+  // console.log("userData", userData);
   // check user id and app id
   const { user_id, app_id } = dataToken.data;
 

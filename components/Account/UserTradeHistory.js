@@ -19,7 +19,7 @@ const UserTradeHisotry = () => {
           <h3>Chưa Thực Hiện Giao Dịch</h3>
         ) : (
           <ul className={styles.tradeHistoryList}>
-            {tradeHistory.map((item, index) => (
+            {tradeHistory.slice(0).reverse().map((item, index) => (
               <li className={styles.tradeHistoryItem} key={index}>
                 <h3>{item.name}</h3>
                 <p>Số lượng: {item.count}</p>

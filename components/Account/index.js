@@ -42,7 +42,8 @@ const Account = ({ activeTab }) => {
   };
 
   const handleLogOut = () => {
-    deleteCookie("token");
+    deleteCookie("token_qtv");
+    deleteCookie("refreshToken_qtv");
     window.location = "/";
   };
 

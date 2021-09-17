@@ -11,5 +11,5 @@ const UnseenRoute = (WrappedComponent) => (props) => {
   }
   return null
 }
- 
+
 export default UnseenRoute;

@@ -12,6 +12,21 @@ import { loginFacebook } from "../../services/facebookService";
 import { loginGoogle } from "../../services/googleService";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
+import additionalFunctionDom from "../../utils/additionalFunctionDom";
+import { connect } from "react-redux";
+import { openLoadingModal, closeLoadingModal } from "../../store/loadingModal";
+
+const mapDispatchToProps = (dispatch) => ({
+  openLoadingModalPage: () => {
+    additionalFunctionDom.fixBody();
+    dispatch(openLoadingModal());
+  },
+  closeLoadingModalPage: function() {
+    additionalFunctionDom.releaseBody();
+    dispatch(closeLoadingModal());
+    console.log("inside");
+  },
+});
 
 class LogIn extends Form {
   state = {
@@ -58,16 +73,7 @@ class LogIn extends Form {
         { theme: "filled_blue", size: "large", width: "320" } // customization attributes
       );
       google.accounts.id.prompt(); // also display the One Tap dialog
-      console.log("hhehe");
     };
-  }
-
-  componentDidUpdate(prevProps) {
-    console.log(prevProps.router.pathname);
-    console.log(this.props.router.pathname);
-    if (prevProps.router.pathname !== this.props.router.pathname)
-      this.componentDidMount();
-    return prevProps.router.pathname !== this.props.router.pathname;
   }
 
   doSubmit = async () => {
@@ -95,9 +101,16 @@ class LogIn extends Form {
       }
       this.setState({ disabled: false, isLoading: false });
     }
+    this.setState({ disabled: false, isLoading: false });
   };
 
+  hehe = () => {
+    this.props.closeLoadingModalPage()
+  }
+
   loginByFacebook = async () => {
+    this.props.openLoadingModalPage();
+
     const MySwal = withReactContent(Swal);
     FB.login(
       async function (response) {
@@ -109,6 +122,7 @@ class LogIn extends Form {
         };
         try {
           await loginFacebook(data);
+          this.hehe()
           MySwal.fire({
             icon: "success",
             html: "Đăng Nhập Thành Công",
@@ -131,7 +145,6 @@ class LogIn extends Form {
   };
 
   render() {
-    console.log("heoheo")
     const buttonLoginGoogle = document.getElementById("buttonDiv");
     if (buttonLoginGoogle) {
       const MySwal = withReactContent(Swal);
@@ -234,4 +247,7 @@ class LogIn extends Form {
   }
 }
 
-export default UnseenRoute(withRouter(LogIn));
+export default connect(
+  null,
+  mapDispatchToProps
+)(UnseenRoute(withRouter(LogIn)));

@@ -4,7 +4,6 @@ import styles from "./Payout.module.scss";
 import addfunc from "../../utils/additionalFunction";
 import payoutService from "../../services/payoutService";
 import Link from "next/link";
-import sendOrder from "../../services/orderService";
 import additionalFunctionDom from "../../utils/additionalFunctionDom";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
@@ -17,7 +16,6 @@ import {
   selectShoppingCart,
   removeAllItem,
 } from "../../store/shoppingCart";
-import updateUserHistoryTrade from "../../services/updateService";
 import { connect } from "react-redux";
 import Head from "next/head";
 
@@ -211,9 +209,8 @@ class Payout extends Form {
     additionalFunctionDom.fixBody();
     const MySwal = withReactContent(Swal);
     const { data } = this.state;
-    const { data: tradeHistory } = await payoutService.orderService(data);
-    console.log(tradeHistory);
-    this.props.onTradeHistory(tradeHistory);
+    const { data : dataTradeHistory } = await payoutService.orderService(data);
+    this.props.onTradeHistory(dataTradeHistory.tradeHistory);
     MySwal.fire({
       icon: "success",
       text: "Cảm ơn quý khách đã tin tưởng QTV Music, nhân viên của chúng tôi sẽ liên lạc với quý khách trong thời gian sớm nhất.",

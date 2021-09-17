@@ -4,7 +4,6 @@ import AlbumHomePage from "./AlbumHomePage";
 import AlbumOfTheWeek from "./AlbumOfTheWeek";
 import FamousArtist from "./FamousArtist";
 import Subscription from "./Subscription";
-import additionalFunctionDom from "../../utils/additionalFunctionDom";
 import styles from "./HomePage.module.scss";
 import Head from "next/head";
 

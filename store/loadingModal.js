@@ -1,11 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
-import additionalFunctionDom from "../utils/additionalFunctionDom";
 
 const slice = createSlice({
   name: "loadingModal",
   initialState: {
     isOpening: false,
-    quickViewId: null,
   },
   reducers: {
     openLoadingModal: (loadingModal) => {

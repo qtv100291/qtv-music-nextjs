@@ -1,5 +1,5 @@
 import React from "react";
-import AlbumItem from "../common/albumItem";
+import AlbumItem from "../Common/AlbumItem";
 import styles from "./AlbumHomePage.module.scss";
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";

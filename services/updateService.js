@@ -4,7 +4,6 @@ import store from "../store/configureStore";
 const apiEndpoint = "/api/auth/updateUser";
 const apiEndpointAvatar = "/api/auth/updateAvatar";
 const apiEndpointShoppingCart = "/api/shopping-cart/update";
-const apiEndpointPayout = "/api/payout";
 
 async function updateUser() {
   const userDataAddress = { ...store.getState().user.userData.address };

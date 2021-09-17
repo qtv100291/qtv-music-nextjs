@@ -7,7 +7,7 @@ import dragonForce from "../../assets/band/dragonforce-1.jpg";
 import unlimited from "../../assets/band/unlimited.jpg";
 import linkinPark from "../../assets/band/linkin-park.jpg";
 import nightWish from "../../assets/band/night-wish-1.jpg";
-import "./SwiperSilderArtist.module.scss";
+import styles from "./SwiperSilderArtist.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -54,12 +54,14 @@ const SwiperSliderArtist = ({ windowWidth }) => {
           }}
           passHref
         >
-          <div className="slider-artist-item">
-            <Image src={bucTuong} alt="Bức Tường"/>
-            <h4 className="overlay-slider-item d-flex align-items-center">
-              Bức Tường
-            </h4>
-          </div>
+          <a>
+            <div className={styles.sliderArtistItem }>
+              <Image src={bucTuong} alt="Bức Tường" />
+              <h4 className={`${styles.overlaySliderItem} d-flex align-items-center`}>
+                Bức Tường
+              </h4>
+            </div>
+          </a>
         </Link>
       </SwiperSlide>
       <SwiperSlide>
@@ -70,12 +72,14 @@ const SwiperSliderArtist = ({ windowWidth }) => {
           }}
           passHref
         >
-          <div className="slider-artist-item">
-            <Image src={metallica} alt="Metallica" />
-            <h4 className="overlay-slider-item d-flex align-items-center">
-              Metallica
-            </h4>
-          </div>
+          <a>
+            <div className={styles.sliderArtistItem }>
+              <Image src={metallica} alt="Metallica" />
+              <h4 className={`${styles.overlaySliderItem} d-flex align-items-center`}>
+                Metallica
+              </h4>
+            </div>
+          </a>
         </Link>
       </SwiperSlide>
       <SwiperSlide>
@@ -86,12 +90,14 @@ const SwiperSliderArtist = ({ windowWidth }) => {
           }}
           passHref
         >
-          <div className="slider-artist-item">
-            <Image src={nightWish} alt="Nightwish" />
-            <h4 className="overlay-slider-item d-flex align-items-center">
-              Nightwish
-            </h4>
-          </div>
+          <a>
+            <div className={styles.sliderArtistItem }>
+              <Image src={nightWish} alt="Nightwish" />
+              <h4 className={`${styles.overlaySliderItem} d-flex align-items-center`}>
+                Nightwish
+              </h4>
+            </div>
+          </a>
         </Link>
       </SwiperSlide>
       <SwiperSlide>
@@ -102,12 +108,14 @@ const SwiperSliderArtist = ({ windowWidth }) => {
           }}
           passHref
         >
-          <div className="slider-artist-item">
-            <Image src={unlimited} alt="Unlimited"/>
-            <h4 className="overlay-slider-item d-flex align-items-center">
-              UnlimiteD
-            </h4>
-          </div>
+          <a>
+            <div className={styles.sliderArtistItem }>
+              <Image src={unlimited} alt="Unlimited" />
+              <h4 className={`${styles.overlaySliderItem} d-flex align-items-center`}>
+                UnlimiteD
+              </h4>
+            </div>
+          </a>
         </Link>
       </SwiperSlide>
       <SwiperSlide>
@@ -118,12 +126,14 @@ const SwiperSliderArtist = ({ windowWidth }) => {
           }}
           passHref
         >
-          <div className="slider-artist-item">
-            <Image src={linkinPark} alt="Linkin Park" />
-            <h4 className="overlay-slider-item d-flex align-items-center">
-              Linkin Park
-            </h4>
-          </div>
+          <a>
+            <div className={styles.sliderArtistItem }>
+              <Image src={linkinPark} alt="Linkin Park" />
+              <h4 className={`${styles.overlaySliderItem} d-flex align-items-center`}>
+                Linkin Park
+              </h4>
+            </div>
+          </a>
         </Link>
       </SwiperSlide>
       <SwiperSlide>
@@ -134,12 +144,14 @@ const SwiperSliderArtist = ({ windowWidth }) => {
           }}
           passHref
         >
-          <div className="slider-artist-item">
-            <Image src={dragonForce} alt="DragonForce" />
-            <h4 className="overlay-slider-item d-flex align-items-center">
-              DragonForce
-            </h4>
-          </div>
+          <a>
+            <div className={styles.sliderArtistItem }>
+              <Image src={dragonForce} alt="DragonForce" />
+              <h4 className={`${styles.overlaySliderItem} d-flex align-items-center`}>
+                DragonForce
+              </h4>
+            </div>
+          </a>
         </Link>
       </SwiperSlide>
     </Swiper>
