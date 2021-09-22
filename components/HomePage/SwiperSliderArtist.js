@@ -56,7 +56,7 @@ const SwiperSliderArtist = ({ windowWidth }) => {
         >
           <a>
             <div className={styles.sliderArtistItem }>
-              <Image src={bucTuong} alt="Bức Tường" />
+              <Image loading="eager" src={bucTuong} alt="Bức Tường" />
               <h4 className={`${styles.overlaySliderItem} d-flex align-items-center`}>
                 Bức Tường
               </h4>
@@ -74,7 +74,7 @@ const SwiperSliderArtist = ({ windowWidth }) => {
         >
           <a>
             <div className={styles.sliderArtistItem }>
-              <Image src={metallica} alt="Metallica" />
+              <Image loading="eager" src={metallica} alt="Metallica" />
               <h4 className={`${styles.overlaySliderItem} d-flex align-items-center`}>
                 Metallica
               </h4>
@@ -92,7 +92,7 @@ const SwiperSliderArtist = ({ windowWidth }) => {
         >
           <a>
             <div className={styles.sliderArtistItem }>
-              <Image src={nightWish} alt="Nightwish" />
+              <Image loading="eager" src={nightWish} alt="Nightwish" />
               <h4 className={`${styles.overlaySliderItem} d-flex align-items-center`}>
                 Nightwish
               </h4>
@@ -110,7 +110,7 @@ const SwiperSliderArtist = ({ windowWidth }) => {
         >
           <a>
             <div className={styles.sliderArtistItem }>
-              <Image src={unlimited} alt="Unlimited" />
+              <Image loading="eager" src={unlimited} alt="Unlimited" />
               <h4 className={`${styles.overlaySliderItem} d-flex align-items-center`}>
                 UnlimiteD
               </h4>
@@ -128,7 +128,7 @@ const SwiperSliderArtist = ({ windowWidth }) => {
         >
           <a>
             <div className={styles.sliderArtistItem }>
-              <Image src={linkinPark} alt="Linkin Park" />
+              <Image loading="eager" src={linkinPark} alt="Linkin Park" />
               <h4 className={`${styles.overlaySliderItem} d-flex align-items-center`}>
                 Linkin Park
               </h4>
@@ -146,7 +146,7 @@ const SwiperSliderArtist = ({ windowWidth }) => {
         >
           <a>
             <div className={styles.sliderArtistItem }>
-              <Image src={dragonForce} alt="DragonForce" />
+              <Image loading="eager" src={dragonForce} alt="DragonForce" />
               <h4 className={`${styles.overlaySliderItem} d-flex align-items-center`}>
                 DragonForce
               </h4>

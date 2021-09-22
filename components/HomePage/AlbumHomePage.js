@@ -33,7 +33,7 @@ const AlbumHomePage = ({ title, album, onOpen, windowWidth }) => {
       </div>
 
       <div
-        className={`${styles.albumContainer} d-flex justify-content-between`}
+        className={`album-container d-flex justify-content-between`}
       >
         <Swiper spaceBetween={40} slidesPerView={slideNumber} navigation>
           {album.length > 0 &&

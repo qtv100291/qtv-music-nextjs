@@ -15,11 +15,23 @@ export default function articlePreprocessor(article) {
         output.push(
           <div className="article-description-info d-flex" key={++i}>
             <div className="article-item-date d-flex justify-content-between align-items-center">
-              <Image src="/Blog/calendar-1.png" alt="lịch" width={16} height={16} />
+              <Image
+                loading="eager"
+                src="/Blog/calendar-1.png"
+                alt="lịch"
+                width={16}
+                height={16}
+              />
               <p>{elementArray[1]}</p>
             </div>
             <div className="article-item-author d-flex justify-content-between align-items-center">
-              <Image src="/Blog/pen-1.png" alt="tác giả" width={16} height={16} />
+              <Image
+                loading="eager"
+                src="/Blog/pen-1.png"
+                alt="tác giả"
+                width={16}
+                height={16}
+              />
               <p>{elementArray[2]}</p>
             </div>
           </div>
@@ -28,7 +40,12 @@ export default function articlePreprocessor(article) {
       case "headerFig":
         output.push(
           <figure className="article-header-photo" key={++i}>
-            <Image src={`${elementArray[2]}`} alt={`${elementArray[3]}`} layout="fill" />
+            <Image
+              loading="eager"
+              src={`${elementArray[2]}`}
+              alt={`${elementArray[3]}`}
+              layout="fill"
+            />
             <figcaption>{elementArray[4]}</figcaption>
           </figure>
         );
@@ -37,22 +54,40 @@ export default function articlePreprocessor(article) {
       case "fig":
         output.push(
           <figure className="article-photo" key={++i}>
-            <Image src={`${elementArray[2]}`} alt={`${elementArray[3]}`} layout="fill" objectFit="contain"/>
+            <Image
+              loading="eager"
+              src={`${elementArray[2]}`}
+              alt={`${elementArray[3]}`}
+              layout="fill"
+              objectFit="contain"
+            />
             <figcaption>{elementArray[4]}</figcaption>
           </figure>
         );
         break;
 
       case "intro":
-        output.push(<p className="article-header-intro" key={++i}>{elementArray[1]}</p>);
+        output.push(
+          <p className="article-header-intro" key={++i}>
+            {elementArray[1]}
+          </p>
+        );
         break;
 
       case "para":
-        output.push(<p className="article-paragraph" key={++i}>{elementArray[1]}</p>);
+        output.push(
+          <p className="article-paragraph" key={++i}>
+            {elementArray[1]}
+          </p>
+        );
         break;
 
       case "paraTitle":
-        output.push(<h3 className="article-title-part" key={++i}>{elementArray[1]}</h3>);
+        output.push(
+          <h3 className="article-title-part" key={++i}>
+            {elementArray[1]}
+          </h3>
+        );
         break;
 
       case "YTVid":
@@ -70,12 +105,16 @@ export default function articlePreprocessor(article) {
         break;
 
       case "source":
-        output.push(<p className="article-source" key={++i}>{elementArray[1]}</p>);
+        output.push(
+          <p className="article-source" key={++i}>
+            {elementArray[1]}
+          </p>
+        );
         break;
       default:
         break;
     }
   }
 
-  return output
+  return output;
 }

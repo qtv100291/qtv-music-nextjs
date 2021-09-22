@@ -5,7 +5,6 @@ import UserTradeHistory from "./UserTradeHistory";
 import additionalFunctionDom from "../../utils/additionalFunctionDom";
 import styles from "./Account.module.scss";
 import { useState } from "react";
-import storageRef from "../../services/firebaseStorage";
 import { userData, updateAvatar } from "../../store/authentication";
 import { useSelector, useDispatch } from "react-redux";
 import { updateAvatarUser } from "../../services/updateService";
@@ -48,17 +47,16 @@ const Account = ({ activeTab }) => {
   };
 
   const uploadAvatarToServer = async ({ currentTarget: input }) => {
-    const userAvatarFolderRef = storageRef.child("userAvatar");
-    const userAvatarRef = userAvatarFolderRef.child(`${id}-avatar`);
-    if (avatar) userAvatarRef.delete();
+    const formData = new FormData();
+
     if (input.files.length === 0) return;
-    setIsLoadingAvatar(true)
+    setIsLoadingAvatar(true);
     const file = input.files[0];
-    await userAvatarRef.put(file);
-    let urlAvatar;
-    await userAvatarRef.getDownloadURL().then((url) => (urlAvatar = url));
+    console.log("file", file);
+    formData.append("imageUpload", file);
+    const { data } = await updateAvatarUser(formData);
+    const urlAvatar = data.urlAvatar;
     dispatch(updateAvatar(urlAvatar));
-    updateAvatarUser(urlAvatar);
   };
 
   const inputButton = useRef();
@@ -96,11 +94,12 @@ const Account = ({ activeTab }) => {
               >
                 {isLoadingAvatar && (
                   <div className={styles.avatarSpinLoading}>
-                    <Image alt="Avatar" src={spinIcon} />
+                    <Image loading="eager" alt="Avatar" src={spinIcon} />
                   </div>
                 )}
                 {avatar ? (
                   <Image
+                    loading="eager"
                     src={avatar}
                     alt="avatar"
                     layout="fill"
@@ -115,6 +114,7 @@ const Account = ({ activeTab }) => {
                 id="upload-image"
                 accept="image/*"
                 ref={inputButton}
+                name="upload_file"
                 onChange={uploadAvatarToServer}
               />
             </div>

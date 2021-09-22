@@ -13,6 +13,7 @@ import shoppingCartFunc from "../../utils/shoppingCartFunc";
 import { initFacebookSdk } from "../FacebookSDK";
 import LoadingModalRender from '../LoadingModal'
 import { isRunningLoadingModal } from "../../store/loadingModal";
+import NavbarMobile from "../NavbarMobile";
 
 const Layout = (props) => {
   const dispatch = useDispatch();
@@ -46,6 +47,7 @@ const Layout = (props) => {
       {isOpening && <PreviewModalRender />}
       {isOpeningLoadingModal && <LoadingModalRender isOpening={isOpeningLoadingModal} />}
       <NavBar />
+      <NavbarMobile/>
       {props.children}
       <ScrollTopIcon />
       <Footer />

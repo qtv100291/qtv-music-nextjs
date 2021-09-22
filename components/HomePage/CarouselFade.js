@@ -17,15 +17,17 @@ const CarouselHomePage = () => {
     >
       <Carousel.Item id={styles.carouselMainItem}>
         <Link href="/san-pham" passHref>
-          <div className={styles.carouselBanner}>
-            <div className={styles.carouselBannerPhoto}>
-              <Image
-                className="d-block w-100"
-                src={Banner1}
-                alt="First slide"
-              />
+          <a>
+            <div className={styles.carouselBanner}>
+              <div className={styles.carouselBannerPhoto}>
+                <Image loading="eager"
+                  className="d-block w-100"
+                  src={Banner1}
+                  alt="First slide"
+                />
+              </div>
             </div>
-          </div>
+          </a>
         </Link>
         <Carousel.Caption>
           <h3>Let{`'`}s Rock On With QTV Music</h3>
@@ -33,15 +35,17 @@ const CarouselHomePage = () => {
       </Carousel.Item>
       <Carousel.Item>
         <Link href="/blog/Chester-Bennington-một-cuộc-đời-để-nhớ-1" passHref>
-          <div className={styles.carouselBanner}>
-            <div className={styles.carouselBannerPhoto}>
-              <Image
-                className="d-block w-100"
-                src={Banner2}
-                alt="First slide"
-              />
+          <a>
+            <div className={styles.carouselBanner}>
+              <div className={styles.carouselBannerPhoto}>
+                <Image loading="eager"
+                  className="d-block w-100"
+                  src={Banner2}
+                  alt="First slide"
+                />
+              </div>
             </div>
-          </div>
+          </a>
         </Link>
         <Carousel.Caption>
           <h3>Kỷ Niệm Ba Năm Ngày Mất Chester Bennington</h3>
@@ -53,15 +57,17 @@ const CarouselHomePage = () => {
       </Carousel.Item>
       <Carousel.Item>
         <Link href="/san-pham/Human.-:II:-Nature-34" passHref>
-          <div className={styles.carouselBanner}>
-            <div className={styles.carouselBannerPhoto}>
-              <Image
-                className="d-block w-100"
-                src={Banner3}
-                alt="First slide"
-              />
+          <a>
+            <div className={styles.carouselBanner}>
+              <div className={styles.carouselBannerPhoto}>
+                <Image loading="eager"
+                  className="d-block w-100"
+                  src={Banner3}
+                  alt="First slide"
+                />
+              </div>
             </div>
-          </div>
+          </a>
         </Link>
         <Carousel.Caption>
           <h3>Human. :II: Nature</h3>

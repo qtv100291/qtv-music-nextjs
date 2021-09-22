@@ -34,12 +34,16 @@ class ScrollTopIcon extends Component {
     return (
       <div
         className={
-          this.state.isDisplaying ? `${styles.scrollTopIcon}` : `${styles.scrollTopIcon} ${styles.onTop}`
+          this.state.isDisplaying
+            ? `${styles.scrollTopIcon}`
+            : `${styles.scrollTopIcon} ${styles.onTop}`
         }
         onClick={this.handleScrollToTop}
       >
-        <div className={`${styles.scrollTopIconContainer} d-flex justify-content-center align-items-center`}>
-          <Image src={scrollTopIcon} alt="icon" />
+        <div
+          className={`${styles.scrollTopIconContainer} d-flex justify-content-center align-items-center`}
+        >
+          <Image loading="eager" src={scrollTopIcon} alt="icon" />
         </div>
       </div>
     );

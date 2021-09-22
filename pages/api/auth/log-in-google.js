@@ -58,14 +58,15 @@ export default async function handler(req, res) {
     },
     tradeHistory: [],
   };
-  const [tokenKey, refreshTokenKey] = generateToken(payload);
-  newUser.refreshToken = refreshTokenKey;
-  data.users.push(newUser);
-  fs.writeFileSync(filePath, JSON.stringify(data));
   const payload = {
     email,
     id,
   };
+  const [tokenKey, refreshTokenKey] = generateToken(payload);
+  newUser.refreshToken = refreshTokenKey;
+  data.users.push(newUser);
+  fs.writeFileSync(filePath, JSON.stringify(data));
+
   return res
     .status(200)
     .json({ accessToken: tokenKey, refreshToken: refreshTokenKey });

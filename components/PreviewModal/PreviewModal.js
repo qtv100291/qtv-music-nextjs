@@ -102,6 +102,7 @@ class PreviewModal extends Component {
             }
           >
             <Image
+              loading="eager"
               src={loadingIconSmall}
               alt="loading icon"
               width={80}
@@ -115,7 +116,14 @@ class PreviewModal extends Component {
             <FontAwesomeIcon icon="times-circle" />
           </div>
           <div className={styles.previewModalPhoto}>
-            {imagePath && <Image src={imagePath} alt={albumName} layout="fill" />}
+            {imagePath && (
+              <Image
+                loading="eager"
+                src={imagePath}
+                alt={albumName}
+                layout="fill"
+              />
+            )}
           </div>
           <div className={styles.previewModalContent} ref={this.myModal}>
             <Link href={productPath} passHref onClick={this.props.closeModal}>

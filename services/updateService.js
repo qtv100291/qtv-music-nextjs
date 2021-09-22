@@ -12,8 +12,12 @@ async function updateUser() {
   await http.patch(apiEndpoint, userDataUpdate);
 }
 
-export async function updateAvatarUser(avatarLink) {
-  await http.patch(apiEndpointAvatar, { avatarLink });
+export async function updateAvatarUser(formData) {
+  await http.patch(apiEndpointAvatar, formData ,{
+    headers:{
+      "Content-type":"multipart/form-data"
+    }
+  });
 }
 
 export async function updateShoppingCart() {

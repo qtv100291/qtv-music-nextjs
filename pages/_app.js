@@ -3,24 +3,26 @@ import { Provider, useDispatch } from "react-redux";
 import store from "../store/configureStore";
 import Layout from "../components/Layout";
 import IconLibrary from "../utils/addIcon";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import additionalFunctionDom from "../utils/additionalFunctionDom";
 import { loginGoogle } from "../services/googleService";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
+import LoadingScreen from "../components/LoadingScreen";
 
 IconLibrary.addIcon();
 
 function MyApp({ Component, pageProps }) {
+  const [isLoadingScreen, setIsLoadingScreen] = useState(false);
   const router = useRouter();
 
-  useEffect(()=>{
+  useEffect(() => {
     const resizeObserver = new ResizeObserver(() => {
       additionalFunctionDom.checkhtmlHeight();
     });
     resizeObserver.observe(document.documentElement);
-  },[])
+  }, []);
 
   useEffect(() => {
     const resizeObserver = new ResizeObserver(() => {
@@ -63,8 +65,35 @@ function MyApp({ Component, pageProps }) {
     }
   }, [router.pathname]);
 
+  useEffect(() => {
+    router.events.on("routeChangeStart", handleStart);
+    router.events.on("routeChangeComplete", handleComplete);
+    router.events.on("routeChangeError", handleComplete);
+    return () => {
+      router.events.off("routeChangeStart", handleStart);
+      router.events.off("routeChangeComplete", handleComplete);
+      router.events.off("routeChangeError", handleComplete);
+    };
+  }, []);
+
+  const handleStart = (url) => {
+    const [baseUrl, hashUrl] = url.split("?");
+    if (baseUrl === "/san-pham" && hashUrl !== undefined) {
+      setIsLoadingScreen(false);
+    } else {
+      additionalFunctionDom.fixBody()
+      setIsLoadingScreen(true);
+    }
+  };
+  const handleComplete = (url) =>
+    setTimeout(() => {
+      additionalFunctionDom.releaseBody();
+      setIsLoadingScreen(false);
+    }, 1000);
+
   return (
     <Provider store={store}>
+      <LoadingScreen isLoadingScreen={isLoadingScreen} />
       <Layout>
         <Component {...pageProps} />
       </Layout>

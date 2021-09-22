@@ -1,51 +1,132 @@
 @import "./variables";
-
+@import "./mixin";
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-html{
+html {
   font-size: 100%;
 }
 .on-top {
   scroll-behavior: smooth;
 }
 body {
-    margin: 0;
+  margin: 0;
 }
 
-.bread-crumb-line{
+.bread-crumb-line {
   width: 95%;
   margin: 0 auto;
   > a {
-      font-weight: 600;
-      color: black;
-      text-decoration: none;
-      &:hover {
-          color: $color-active;
-      }
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    &:hover {
+      color: $color-active;
+    }
   }
 }
-.swiper-container > .swiper-button-next{
-  height: 100%;
-  right: 0;
-  top:calc(50% + 7px) ;
-  padding: 0 30px;
-  transform: translateY(-45%);
-  outline: none;
-}
-.swiper-container > .swiper-button-prev{
-  height: 100%;
-  left: 0;
-  top:calc(50% + 7px) ;
-  padding: 0 30px;
-  transform: translateY(-45%);
-  outline: none;
+.swiper-container {
+  .swiper-button-next {
+    height: 100%;
+    right: 0;
+    top: calc(50% + 7px);
+    padding: 0 30px;
+    transform: translateY(-45%);
+    outline: none;
+    &::after {
+        @include desktop {
+          font-size: 30px;
+        }
+        @include large-tablet {
+          font-size: 30px;
+        }
+        @include tablet {
+          font-size: 30px;
+        }
+        @include mobile {
+          font-size: 30px;
+        }
+      }
+  }
+} 
+.swiper-container {
+  .swiper-button-prev {
+    height: 100%;
+    left: 0;
+    top: calc(50% + 7px);
+    padding: 0 30px;
+    transform: translateY(-45%);
+    outline: none;
+    &::after {
+      @include desktop {
+        font-size: 30px;
+      }
+      @include large-tablet {
+        font-size: 30px;
+      }
+      @include tablet {
+        font-size: 30px;
+      }
+      @include mobile {
+        font-size: 30px;
+      }
+    }
+  }
+}  
+
+.album-container {
+  width: 100%;
+  .swiper-container {
+    width: 100%;
+    .swiper-button-next,
+    .swiper-button-prev {
+      visibility: hidden;
+      padding: 0;
+      border-radius: 99px;
+      background-color: white;
+      border: 1px solid;
+      @include desktop {
+        visibility: visible;
+        height: 50px;
+        width: 50px;
+      }
+      @include large-tablet {
+        visibility: visible;
+        height: 45px;
+        width: 45px;
+      }
+      @include tablet {
+        visibility: visible;
+        height: 45px;
+        width: 45px;
+      }
+      @include mobile {
+        visibility: visible;
+        height: 40px;
+        width: 40px;
+      }
+      &::after {
+        @include desktop {
+          font-size: 30px;
+        }
+        @include large-tablet {
+          font-size: 25px;
+        }
+        @include tablet {
+          font-size: 25px;
+        }
+        @include mobile {
+          font-size: 20px;
+        }
+      }
+    }
+  }
 }
 
-.turn-off{
+.turn-off {
   display: none;
 }
 

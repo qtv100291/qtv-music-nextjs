@@ -32,7 +32,7 @@ class AlbumDetail extends Component {
     windowWidth: null,
   };
 
-  componentDidMount(){
+  componentDidMount() {
     const windowWidth = window.innerWidth;
     window.addEventListener("resize", this.updateWindowWidth);
     this.setState({
@@ -109,7 +109,12 @@ class AlbumDetail extends Component {
         >
           <div className={styles.albumCoverPhoto}>
             <div className={styles.albumCoverPhotoContainer}>
-              <Image src={imagePath} alt={albumName} layout="fill" />
+              <Image
+                loading="eager"
+                src={imagePath}
+                alt={albumName}
+                layout="fill"
+              />
             </div>
           </div>
           <div className={styles.albumDetail}>
@@ -186,7 +191,7 @@ class AlbumDetail extends Component {
             </div>
           </div>
         </section>
-        <section className="related-album">
+        <section className={styles.relatedAlbum}>
           <AlbumHomePage
             title={"Có Thể Bạn Cũng Thích"}
             album={relatedAlbum}

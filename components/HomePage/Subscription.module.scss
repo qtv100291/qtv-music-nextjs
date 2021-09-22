@@ -72,7 +72,8 @@
         }
     }
     .emailSubscriptionForm{
-        width: 600px;
+        width: 615px;
+        justify-content: space-between;
         @include tablet{
             width: 500px;
         }

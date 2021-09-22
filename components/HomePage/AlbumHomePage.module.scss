@@ -41,51 +41,5 @@
       }
     }
   }
-  .albumContainer {
-    width: 100%;
-    > :global(.swiper-container) {
-      width: 100%;
-      > :global(.swiper-button-next, .swiper-button-prev) {
-        visibility: hidden;
-        padding: 0;
-        border-radius: 99px;
-        background-color: white;
-        border: 1px solid black;
-        @include desktop {
-          visibility: visible;
-          height: 50px;
-          width: 50px;
-        }
-        @include large-tablet {
-          visibility: visible;
-          height: 45px;
-          width: 45px;
-        }
-        @include tablet {
-          visibility: visible;
-          height: 45px;
-          width: 45px;
-        }
-        @include mobile {
-          visibility: visible;
-          height: 40px;
-          width: 40px;
-        }
-        &::after {
-          @include desktop {
-            font-size: 30px;
-          }
-          @include large-tablet {
-            font-size: 25px;
-          }
-          @include tablet {
-            font-size: 25px;
-          }
-          @include mobile {
-            font-size: 20px;
-          }
-        }
-      }
-    }
-  }
+  
 }

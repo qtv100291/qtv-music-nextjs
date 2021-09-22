@@ -5,7 +5,7 @@ import additionalFunctionDom from "../utils/additionalFunctionDom";
 import { getCookie, setCookie } from "../utils/cookie";
 
 export const axiosInner = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_BASE_URL_DEV,
+  baseURL: process.env.NEXT_PUBLIC_API_BASE_URL_DEV || "http://localhost:3000",
 });
 
 export const axiosFb = axios.create({
@@ -13,7 +13,7 @@ export const axiosFb = axios.create({
 });
 
 let axiosOuter = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_BASE_URL_DEV,
+  baseURL: process.env.NEXT_PUBLIC_API_BASE_URL_DEV || "http://localhost:3000",
 });
 
 if (typeof window !== "undefined") {
@@ -28,20 +28,26 @@ axiosOuter.interceptors.response.use(null, async (error) => {
     error.response.status === 401 &&
     error.response.data.message === "jwt expired"
   ) {
-    const { data: userToken } = await axiosInner.post(
-      "/api/auth/refresh-token",
-      {
-        refreshToken: getCookie("refreshToken_qtv"),
+    try{
+      const { data: userToken } = await axiosInner.post(
+        "/api/auth/refresh-token",
+        {
+          refreshToken: getCookie("refreshToken_qtv"),
+        }
+      );
+      setCookie("token_qtv", userToken.accessToken, 2);
+      setCookie("refreshToken_qtv", userToken.refreshToken, 14);
+      if (typeof window !== "undefined") {
+        axiosOuter.defaults.headers.common["Authorization"] =
+          "Bearer " + userToken.accessToken;
       }
-    );
-    setCookie("token_qtv", userToken.accessToken, 2);
-    setCookie("refreshToken_qtv", userToken.refreshToken, 14);
-    if (typeof window !== "undefined") {
-      axiosOuter.defaults.headers.common["Authorization"] =
-        "Bearer " + userToken.accessToken;
+      originalRequest.headers['Authorization'] = "Bearer " + userToken.accessToken
+      return axiosOuter(originalRequest);
     }
-    originalRequest.headers['Authorization'] = "Bearer " + userToken.accessToken
-    return axiosOuter(originalRequest);
+    catch(err){
+      return Promise.reject(error)
+    }
+    
   }
 
   const expectedError =

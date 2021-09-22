@@ -8,7 +8,6 @@ import item4 from "../../assets/blog/thrash-metal.jpg";
 import calendar from "../../assets/blog/calendar-1.png";
 import pen from "../../assets/blog/pen-1.png";
 import BreadCrumb from "../Common/BreadCrumb";
-import additionalFunctionDom from "../../utils/additionalFunctionDom";
 import Image from "next/image";
 import Head from "next/head";
 
@@ -44,6 +43,7 @@ const Blog = ({ onLoadingScreen }) => {
           <div className={styles.articleItemPhoto}>
             <div className={styles.articleItemPhotoContainer}>
               <Image
+                loading="eager"
                 src={item1}
                 alt="chester-bennington"
                 height={410}
@@ -59,13 +59,13 @@ const Blog = ({ onLoadingScreen }) => {
               <div
                 className={`${styles.articleItemDate} d-flex justify-content-between align-items-center`}
               >
-                <Image src={calendar} alt="lịch" />
+                <Image loading="eager" src={calendar} alt="lịch" />
                 <p>20 Tháng 07, 2021</p>
               </div>
               <div
                 className={`${styles.articleItemAuthor} d-flex justify-content-between align-items-center`}
               >
-                <Image src={pen} alt="tác giả" />
+                <Image loading="eager" src={pen} alt="tác giả" />
                 <p>Admin</p>
               </div>
             </div>
@@ -93,7 +93,7 @@ const Blog = ({ onLoadingScreen }) => {
         <div className={`${styles.articleItem} d-flex justify-content-between`}>
           <div className={styles.articleItemPhoto}>
             <div className={styles.articleItemPhotoContainer}>
-              <Image src={item2} alt="Metal" />
+              <Image loading="eager" src={item2} alt="Metal" />
             </div>
           </div>
           <div className={styles.articleDescription}>
@@ -104,13 +104,13 @@ const Blog = ({ onLoadingScreen }) => {
               <div
                 className={`${styles.articleItemDate} d-flex justify-content-between align-items-center`}
               >
-                <Image src={calendar} alt="lịch" />
+                <Image loading="eager" src={calendar} alt="lịch" />
                 <p>02 Tháng 07, 2021</p>
               </div>
               <div
                 className={`${styles.articleItemAuthor} d-flex justify-content-between align-items-center`}
               >
-                <Image src={pen} alt="tác giả" />
+                <Image loading="eager" src={pen} alt="tác giả" />
                 <p>Admin</p>
               </div>
             </div>
@@ -139,7 +139,7 @@ const Blog = ({ onLoadingScreen }) => {
         >
           <div className={styles.articleItemPhoto}>
             <div className={styles.articleItemPhotoContainer}>
-              <Image src={item3} alt="Hac San" />
+              <Image loading="eager" src={item3} alt="Hac San" />
             </div>
           </div>
           <div className={styles.articleDescription}>
@@ -150,13 +150,13 @@ const Blog = ({ onLoadingScreen }) => {
               <div
                 className={`${styles.articleItemDate} d-flex justify-content-between align-items-center`}
               >
-                <Image src={calendar} alt="lịch" />
+                <Image loading="eager" src={calendar} alt="lịch" />
                 <p>25 Tháng 06, 2021</p>
               </div>
               <div
                 className={`${styles.articleItemAuthor} d-flex justify-content-between align-items-center`}
               >
-                <Image src={pen} alt="tác giả" />
+                <Image loading="eager" src={pen} alt="tác giả" />
                 <p>Admin</p>
               </div>
             </div>
@@ -182,7 +182,7 @@ const Blog = ({ onLoadingScreen }) => {
         <div className={`${styles.articleItem} d-flex justify-content-between`}>
           <div className={styles.articleItemPhoto}>
             <div className={styles.articleItemPhotoContainer}>
-              <Image src={item4} alt="Thrash Metal" />
+              <Image loading="eager" src={item4} alt="Thrash Metal" />
             </div>
           </div>
           <div className={styles.articleDescription}>
@@ -193,13 +193,13 @@ const Blog = ({ onLoadingScreen }) => {
               <div
                 className={`${styles.articleItemDate} d-flex justify-content-between align-items-center`}
               >
-                <Image src={calendar} alt="lịch" />
+                <Image loading="eager" src={calendar} alt="lịch" />
                 <p>08 Tháng 06, 2021</p>
               </div>
               <div
                 className={`${styles.articleItemAuthor} d-flex justify-content-between align-items-center`}
               >
-                <Image src={pen} alt="tác giả" />
+                <Image loading="eager" src={pen} alt="tác giả" />
                 <p>Admin</p>
               </div>
             </div>

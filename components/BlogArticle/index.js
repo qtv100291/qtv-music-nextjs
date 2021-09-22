@@ -7,7 +7,6 @@ import articlePreprocessor from "../../utils/articlePreprocessor";
 import Image from "next/image";
 
 class BlogArticle extends Component {
-
   async componentDidMount() {
     // this.props.onLoadingScreen();
     // additionalFunctionDom.fixBody();
@@ -47,7 +46,7 @@ class BlogArticle extends Component {
   // }
 
   render() {
-    const { articleContent } = this.props
+    const { articleContent } = this.props;
     const article_1 = {
       title: "Chester Bennington một cuộc đời để nhớ",
       id: 1,
@@ -82,7 +81,6 @@ class BlogArticle extends Component {
       );
     } else return null;
 
-    
     // console.log("article", articleContent)
     return (
       <main className={styles.blogDetail}>

@@ -60,7 +60,7 @@ const ShoppingCartItem = ({ id, name, count, image, price, bandName }) => {
     <div className={`${styles.shoppingCartItem} d-flex justify-content-center`}>
       <div className={styles.itemPhoto}>
         <div className={styles.itemPhotoContainer}>
-          <Image src={image} alt={name} layout="fill" />
+          <Image loading="eager" src={image} alt={name} layout="fill" />
         </div>
       </div>
       <div className={`${styles.itemInfo} d-flex justify-content-between`}>

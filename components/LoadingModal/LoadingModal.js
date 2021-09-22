@@ -3,7 +3,7 @@ import loadingIcon from "../../assets/homepage-assets/Rolling-0.9s-200px.gif";
 import styles from "./LoadingModal.module.scss";
 import Image from "next/image";
 
-const LoadingModal = ({isOpening}) => {
+const LoadingModal = ({ isOpening }) => {
   return (
     <div
       className={
@@ -12,7 +12,13 @@ const LoadingModal = ({isOpening}) => {
           : `${styles.previewModal}`
       }
     >
-      <Image src={loadingIcon} alt="loading icon" width={60} height={60} />
+      <Image
+        loading="eager"
+        src={loadingIcon}
+        alt="loading icon"
+        width={60}
+        height={60}
+      />
     </div>
   );
 };

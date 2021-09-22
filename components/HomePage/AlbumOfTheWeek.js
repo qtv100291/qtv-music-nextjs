@@ -27,7 +27,7 @@ const AlbumOfTheWeek = ({
       >
         <div className={styles.albumTheWeekPhoto}>
           {imagePath && (
-            <Image src={imagePath} alt={albumName} width={580} height={580} />
+            <Image loading="eager" src={imagePath} alt={albumName} width={580} height={580} />
           )}
         </div>
         <div className={styles.albumTheWeekContent}>

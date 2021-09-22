@@ -12,22 +12,25 @@ class Subscription extends Form {
     errors: {},
   };
 
-  handleSubmit = (data, e) => {
+  handleSubmit = async (data, e) => {
     e.preventDefault();
     const MySwal = withReactContent(Swal);
-    additionalFunctionDom.fixBody();
     try {
-      subscrible(data);
+      await subscrible(data);
+      additionalFunctionDom.fixBody();
       MySwal.fire({
         icon: "success",
         html: "Đăng Ký Thành Công",
         showConfirmButton: false,
         timer: 1250,
       }).then(() => {
+        this.setState({ data: {} });
         additionalFunctionDom.releaseBody();
       });
-    } catch (ex) {
-      if (ex.reponse && ex.response.status === 400) {
+    } catch (err) {
+      console.log(err)
+      if (err.response && err.response.status === 401) {
+        additionalFunctionDom.fixBody();
         MySwal.fire({
           icon: "error",
           html: "Email Này Đã Được Sử Dụng",

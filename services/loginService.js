@@ -20,7 +20,7 @@ export async function login(user) {
 
 export function checkToken() {
   try {
-    const jwtUser = getCookie(tokenKey);
+    const jwtUser = getCookie("refreshToken_qtv");
     return jwtDecode(jwtUser);
   } catch (ex) {
     return null;

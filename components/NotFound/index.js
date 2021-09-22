@@ -15,7 +15,7 @@ const NotFoundPage = () => {
         className={`${styles.notFoundContainer} d-flex justify-content-center align-items-center`}
       >
         <div className={styles.notFoundPhoto}>
-          <Image src={brokenGuitar} alt="broken-guitar" />
+          <Image loading="eager" src={brokenGuitar} alt="broken-guitar" />
         </div>
         <div className={styles.notFoundMessenger}>
           <h2>404 MUSIC NOT FOUND</h2>

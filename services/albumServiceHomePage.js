@@ -1,6 +1,5 @@
 import http from './httpService';
 import _ from 'lodash';
-import addfunc from '../../../React_Study/qtv-music-redux/src/ultis/additionalFunction';
 import { axiosInner } from './httpService';
 
 const apiEndpoint ='/api/album';
@@ -40,7 +39,8 @@ export async function getRelatedAlbum( bandName, country, albumId){ //get 2 othe
 }
 
 export async function getSearchAlbum(inputRaw){
-    const albumList = await http.get(apiEndpointSearch + "?keyword" + inputRaw)
+    const {data : albumList} = await axiosInner.get(apiEndpointSearch + "?keyword=" + inputRaw)
+    return albumList
 }
 
 

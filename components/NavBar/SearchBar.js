@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import styles from "./NavbarIconItem.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import  Link  from "next/link";
+import Link from "next/link";
 import addfunc from "../../utils/additionalFunction";
 import { createRef } from "react";
 import { withRouter } from "next/router";
 import loadingIconSmall from "../../assets/homepage-assets/loading-icon-small.gif";
-import Image from 'next/image'
+import Image from "next/image";
+import { getSearchAlbum } from "../../services/albumServiceHomePage";
 
 class SearchBar extends Component {
   state = {
@@ -17,7 +18,7 @@ class SearchBar extends Component {
   };
 
   myInput = createRef();
-  
+
   handleChangeIcon = () => {
     const isDisplaying = this.state.isDisplaying ? false : true;
     this.setState({ isDisplaying, keyword: "", searchResult: null });
@@ -32,7 +33,7 @@ class SearchBar extends Component {
       this.setState({ isLoading: true });
       const keyword = input.value;
       this.setState({ keyword, isSearching: true });
-      const searchResult = await searchAlbum(input.value);
+      const searchResult = await getSearchAlbum(input.value);
       this.setState({ searchResult, isLoading: false });
     }
   };
@@ -88,12 +89,14 @@ class SearchBar extends Component {
       indexOfTextColored + searchInput.length
     );
     return (
-      <Link to={resultPath} key={result.id} className={styles.linkSearchBar}>
-        <div className="link-container">
-          {result.albumName.slice(0, indexOfTextColored)}
-          <span className="text-colored">{textColored}</span>
-          {result.albumName.slice(indexOfTextColored + searchInput.length)}
-        </div>
+      <Link href={resultPath} key={result.id} passHref>
+        <a className={styles.linkSearchBar}>
+          <div className="link-container">
+            {result.albumName.slice(0, indexOfTextColored)}
+            <span className={styles.textColored}>{textColored}</span>
+            {result.albumName.slice(indexOfTextColored + searchInput.length)}
+          </div>
+        </a>
       </Link>
     );
   };
@@ -101,7 +104,10 @@ class SearchBar extends Component {
   render() {
     const { searchResult, keyword, isDisplaying, isLoading } = this.state;
     return (
-      <div className={`${styles.searchBarIconPart} ${styles.navbarIconItem}`} title="Tìm Kiếm">
+      <div
+        className={`${styles.searchBarIconPart} ${styles.navbarIconItem}`}
+        title="Tìm Kiếm"
+      >
         <div
           className={`${styles.searchBarIcon} d-flex justify-content-center align-items-center`}
           onClick={this.handleChangeIcon}
@@ -144,10 +150,16 @@ class SearchBar extends Component {
             />
             <div
               className={
-                isLoading ? `${styles.loadingSearchBar}` : `${styles.loadingSearchBar} turn-off`
+                isLoading
+                  ? `${styles.loadingSearchBar}`
+                  : `${styles.loadingSearchBar} turn-off`
               }
             >
-              <Image src={loadingIconSmall} alt="loading-icon" />
+              <Image
+                loading="eager"
+                src={loadingIconSmall}
+                alt="loading-icon"
+              />
             </div>
           </div>
           <div className={styles.result}>

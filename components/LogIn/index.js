@@ -21,7 +21,7 @@ const mapDispatchToProps = (dispatch) => ({
     additionalFunctionDom.fixBody();
     dispatch(openLoadingModal());
   },
-  closeLoadingModalPage: function() {
+  closeLoadingModalPage: function () {
     additionalFunctionDom.releaseBody();
     dispatch(closeLoadingModal());
     console.log("inside");
@@ -47,9 +47,11 @@ class LogIn extends Form {
   componentDidMount() {
     const MySwal = withReactContent(Swal);
     async function handleCredentialResponse(response) {
+      this.props.openLoadingModalPage();
       console.log("Encoded JWT ID token: " + response.credential);
       try {
         await loginGoogle({ googleAccessToken: response.credential });
+        this.props.closeLoadingModalPage();
         MySwal.fire({
           icon: "success",
           html: "Đăng Nhập Thành Công",
@@ -105,12 +107,11 @@ class LogIn extends Form {
   };
 
   hehe = () => {
-    this.props.closeLoadingModalPage()
-  }
+    this.props.closeLoadingModalPage();
+  };
 
   loginByFacebook = async () => {
     this.props.openLoadingModalPage();
-
     const MySwal = withReactContent(Swal);
     FB.login(
       async function (response) {
@@ -122,7 +123,7 @@ class LogIn extends Form {
         };
         try {
           await loginFacebook(data);
-          this.hehe()
+          this.hehe();
           MySwal.fire({
             icon: "success",
             html: "Đăng Nhập Thành Công",
