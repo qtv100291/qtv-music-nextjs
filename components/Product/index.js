@@ -229,7 +229,7 @@ class Product extends Component {
                 <FontAwesomeIcon icon="filter" />
               </div>
             </div>
-            <div className={styles.productPartContainer}>
+            <div className="product-part-container">
               {albums.map((album) => (
                 <AlbumItem
                   {...album}

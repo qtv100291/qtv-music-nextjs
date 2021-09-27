@@ -65,12 +65,15 @@ class Payout extends Form {
     isLoadingCommune: false,
   };
 
+  receiverDistrictKey = styles.receiverDistrict
+  receiverCommuneKey = styles.receiverCommune
+
   inputCheck = {
     receiverName: "emptyCheck",
     receiverPhone: "phoneCheck",
     receiverProvince: "selectEmptyCheck",
-    receiverDistrict: "selectEmptyCheck",
-    receiverCommune: "selectEmptyCheck",
+    [this.receiverDistrictKey]: "selectEmptyCheck",
+    [this.receiverCommuneKey]: "selectEmptyCheck",
     receiverStreet: "emptyCheck",
   };
 
@@ -111,8 +114,6 @@ class Payout extends Form {
   ];
 
   async componentDidMount() {
-    // this.props.onOpenLoadingScreen();
-    // additionalFunctionDom.fixBody();
     const { userData } = this.props;
     if (Object.keys(userData).length !== 0) {
       const userLoadProperty = [...this.userLoadProperty];
@@ -135,10 +136,6 @@ class Payout extends Form {
         await this.hanldeCommune(userLoad.receiverDistrict);
       }
       this.setState({ data: userLoad, province });
-      setTimeout(() => {
-        // this.props.onCloseLoadingScreen();
-        // additionalFunctionDom.releaseBody();
-      }, 500);
     }
   }
 
@@ -147,7 +144,6 @@ class Payout extends Form {
       Object.keys(prevProps.userData).length === 0 &&
       Object.keys(this.props.userData).length !== 0
     ) {
-      // this.props.onOpenLoadingScreen();
       additionalFunctionDom.fixBody();
       const { userData } = this.props;
       const userLoadProperty = [...this.userLoadProperty];
@@ -184,12 +180,12 @@ class Payout extends Form {
         commune: [{ ...this.communeInit }],
       });
     } else {
-      document.querySelector(".receiverDistrict > span").style.display =
+      document.querySelector(`.${styles.receiverDistrict} > span`).style.display =
         "block";
       const districtList = await payoutService.getDistrict(idProvince);
       const district = [{ ...this.districtInit }, ...districtList];
       this.setState({ district, commune: [{ ...this.communeInit }] });
-      document.querySelector(".receiverDistrict > span").style.display = "none";
+      document.querySelector(`.${styles.receiverDistrict} > span`).style.display = "none";
     }
   };
 
@@ -197,11 +193,11 @@ class Payout extends Form {
     if (idDistrict === "None") {
       this.setState({ commune: [{ ...this.communeInit }] });
     } else {
-      document.querySelector(".receiverCommune > span").style.display = "block";
+      document.querySelector(`.${styles.receiverCommune} > span`).style.display = "block";
       const communeList = await payoutService.getCommune(idDistrict);
       const commune = [{ ...this.communeInit }, ...communeList];
       this.setState({ commune });
-      document.querySelector(".receiverCommune > span").style.display = "none";
+      document.querySelector(`.${styles.receiverCommune} > span`).style.display = "none";
     }
   };
 
@@ -275,13 +271,13 @@ class Payout extends Form {
                   "idProvince"
                 )}
                 {this.renderSelect(
-                  "receiverDistrict",
+                  `${styles.receiverDistrict}`,
                   "Quận/Huyện",
                   district,
                   "idDistrict"
                 )}
                 {this.renderSelect(
-                  "receiverCommune",
+                  `${styles.receiverCommune}`,
                   "Phường/Xã",
                   commune,
                   "idCommune"

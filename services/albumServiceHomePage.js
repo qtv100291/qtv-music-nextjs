@@ -38,9 +38,15 @@ export async function getRelatedAlbum( bandName, country, albumId){ //get 2 othe
     return albumRelated
 }
 
-export async function getSearchAlbum(inputRaw){
-    const {data : albumList} = await axiosInner.get(apiEndpointSearch + "?keyword=" + inputRaw)
+export async function getSearchAlbum(inputRaw, cancelToken){
+    try {
+        const {data : albumList} = await axiosInner.get(apiEndpointSearch + "?keyword=" + inputRaw,{cancelToken : cancelToken.token})
     return albumList
+    }
+    catch(err){
+        return null
+    }
+    
 }
 
 

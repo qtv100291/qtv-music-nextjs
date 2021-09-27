@@ -17,14 +17,15 @@ import { connect } from "react-redux";
 import { openLoadingModal, closeLoadingModal } from "../../store/loadingModal";
 
 const mapDispatchToProps = (dispatch) => ({
-  openLoadingModalPage: () => {
+  openLoadingModalPage() {
     additionalFunctionDom.fixBody();
     dispatch(openLoadingModal());
+    console.log("outside dispatch");
   },
-  closeLoadingModalPage: function () {
+  closeLoadingModalPage() {
     additionalFunctionDom.releaseBody();
     dispatch(closeLoadingModal());
-    console.log("inside");
+    console.log("inside dispatch");
   },
 });
 
@@ -44,39 +45,40 @@ class LogIn extends Form {
     emailLogIn: "emailCheck",
   };
 
-  componentDidMount() {
-    const MySwal = withReactContent(Swal);
-    async function handleCredentialResponse(response) {
-      this.props.openLoadingModalPage();
-      console.log("Encoded JWT ID token: " + response.credential);
-      try {
-        await loginGoogle({ googleAccessToken: response.credential });
-        this.props.closeLoadingModalPage();
-        MySwal.fire({
-          icon: "success",
-          html: "Đăng Nhập Thành Công",
-          showConfirmButton: false,
-          timer: 1250,
-        }).then(() => {
-          window.location = "/";
-        });
-      } catch (err) {
-        console.log("error", err);
-      }
-    }
-    window.onload = function () {
-      google.accounts.id.initialize({
-        client_id:
-          "1020234478913-eptfd3u3qg9kds0ngb44tijnb77gojn8.apps.googleusercontent.com",
-        callback: handleCredentialResponse,
-      });
-      google.accounts.id.renderButton(
-        document.getElementById("buttonDiv"),
-        { theme: "filled_blue", size: "large", width: "320" } // customization attributes
-      );
-      google.accounts.id.prompt(); // also display the One Tap dialog
-    };
-  }
+  // componentDidMount() {
+  //   const MySwal = withReactContent(Swal);
+  //   async function handleCredentialResponse(response) {
+  //     console.log("inside", this)
+  //     this.props.openLoadingModalPage();
+  //     // console.log("Encoded JWT ID token: " + response.credential);
+  //     // try {
+  //     //   await loginGoogle({ googleAccessToken: response.credential });
+  //     //   this.props.closeLoadingModalPage();
+  //     //   MySwal.fire({
+  //     //     icon: "success",
+  //     //     html: "Đăng Nhập Thành Công",
+  //     //     showConfirmButton: false,
+  //     //     timer: 1250,
+  //     //   }).then(() => {
+  //     //     window.location = "/";
+  //     //   });
+  //     // } catch (err) {
+  //     //   console.log("error", err);
+  //     // }
+  //   }
+  //   window.onload = function () {
+  //     google.accounts.id.initialize({
+  //       client_id:
+  //         "1020234478913-eptfd3u3qg9kds0ngb44tijnb77gojn8.apps.googleusercontent.com",
+  //       callback: handleCredentialResponse,
+  //     });
+  //     google.accounts.id.renderButton(
+  //       document.getElementById("buttonDiv"),
+  //       { theme: "filled_blue", size: "large", width: "320" } // customization attributes
+  //     );
+  //     google.accounts.id.prompt(); // also display the One Tap dialog
+  //   };
+  // }
 
   doSubmit = async () => {
     const MySwal = withReactContent(Swal);
@@ -113,6 +115,9 @@ class LogIn extends Form {
   loginByFacebook = async () => {
     this.props.openLoadingModalPage();
     const MySwal = withReactContent(Swal);
+    const closeLoadingModalPage = this.props.closeLoadingModalPage.bind(this)
+    // console.log("outside",this)
+    console.log(FB)
     FB.login(
       async function (response) {
         const { authResponse } = response;
@@ -121,9 +126,9 @@ class LogIn extends Form {
           accessToken: authResponse.accessToken,
           userID: authResponse.userID,
         };
+        console.log("inside",this)
         try {
           await loginFacebook(data);
-          this.hehe();
           MySwal.fire({
             icon: "success",
             html: "Đăng Nhập Thành Công",
@@ -135,6 +140,7 @@ class LogIn extends Form {
         } catch (err) {
           console.log("error", err);
         }
+        closeLoadingModalPage ()
       },
       { scope: "email " }
     );

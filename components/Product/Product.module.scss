@@ -123,50 +123,6 @@
           }
         }
       }
-      .productPartContainer {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        @include super-large-desktop {
-          gap: 35px 35px;
-        }
-        @include large-desktop {
-          gap: 35px 35px;
-        }
-        @include desktop {
-          > .album-item {
-            width: 100%;
-          }
-          gap: 25px 25px;
-        }
-        @include large-tablet {
-          > .album-item {
-            width: 100%;
-          }
-          gap: 30px 30px;
-        }
-        @include tablet {
-          > .album-item {
-            width: 100%;
-            > .album-name {
-              font-size: 16px;
-            }
-            > .album-band-name {
-              font-size: 14px;
-            }
-            > .album-price {
-              font-size: 20px;
-            }
-          }
-          gap: 30px 30px;
-        }
-        @include mobile {
-          grid-template-columns: repeat(1, 1fr);
-          > .album-item {
-            width: 80%;
-          }
-          gap: 30px 30px;
-        }
-      }
     }
   }
 }

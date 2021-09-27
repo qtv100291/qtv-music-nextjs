@@ -5,6 +5,20 @@ import subscrible from "../../services/subscriptionService";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import additionalFunctionDom from "../../utils/additionalFunctionDom";
+import { openLoadingModal, closeLoadingModal } from "../../store/loadingModal";
+import { connect } from "react-redux";
+
+const mapDispatchToProps = (dispatch) => ({
+  openLoadingModalPage: () => {
+    additionalFunctionDom.fixBody();
+    dispatch(openLoadingModal());
+    console.log("outside");
+  },
+  closeLoadingModalPage: function () {
+    dispatch(closeLoadingModal());
+    console.log("inside");
+  },
+});
 
 class Subscription extends Form {
   state = {
@@ -15,9 +29,9 @@ class Subscription extends Form {
   handleSubmit = async (data, e) => {
     e.preventDefault();
     const MySwal = withReactContent(Swal);
+    this.props.openLoadingModalPage();
     try {
       await subscrible(data);
-      additionalFunctionDom.fixBody();
       MySwal.fire({
         icon: "success",
         html: "Đăng Ký Thành Công",
@@ -25,22 +39,22 @@ class Subscription extends Form {
         timer: 1250,
       }).then(() => {
         this.setState({ data: {} });
+        this.props.closeLoadingModalPage();
         additionalFunctionDom.releaseBody();
       });
     } catch (err) {
-      console.log(err)
+      console.log(err);
       if (err.response && err.response.status === 401) {
         additionalFunctionDom.fixBody();
         MySwal.fire({
           icon: "error",
-          html: "Email Này Đã Được Sử Dụng",
-          showConfirmButton: false,
-          timer: 1250,
+          html: "Email Này Đã Đăng Ký",
         }).then(() => {
           additionalFunctionDom.releaseBody();
         });
       }
     }
+    
   };
 
   render() {
@@ -61,4 +75,4 @@ class Subscription extends Form {
   }
 }
 
-export default Subscription;
+export default connect(null, mapDispatchToProps)(Subscription);

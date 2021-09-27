@@ -43,7 +43,7 @@ class ScrollTopIcon extends Component {
         <div
           className={`${styles.scrollTopIconContainer} d-flex justify-content-center align-items-center`}
         >
-          <Image loading="eager" src={scrollTopIcon} alt="icon" />
+          <Image src={scrollTopIcon} alt="icon" />
         </div>
       </div>
     );

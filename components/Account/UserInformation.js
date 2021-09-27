@@ -135,11 +135,11 @@ class UserInformation extends Form {
         commune: [{ ...this.communeInit }],
       });
     } else {
-      document.querySelector(".userDistrict > span").style.display = "block";
+      document.querySelector(`.${styles.userDistrict} > span`).style.display = "block";
       const districtList = await payoutService.getDistrict(idProvince);
       const district = [{ ...this.districtInit }, ...districtList];
       this.setState({ district, commune: [{ ...this.communeInit }] });
-      document.querySelector(".userDistrict > span").style.display = "none";
+      document.querySelector(`.${styles.userDistrict} > span`).style.display = "none";
     }
   };
 
@@ -147,11 +147,11 @@ class UserInformation extends Form {
     if (idDistrict === "None") {
       this.setState({ commune: [{ ...this.communeInit }] });
     } else {
-      document.querySelector(".userCommune > span").style.display = "block";
+      document.querySelector(`.${styles.userCommune} > span`).style.display = "block";
       const communeList = await payoutService.getCommune(idDistrict);
       const commune = [{ ...this.communeInit }, ...communeList];
       this.setState({ commune });
-      document.querySelector(".userCommune > span").style.display = "none";
+      document.querySelector(`.${styles.userCommune} > span`).style.display = "none";
     }
   };
 
@@ -218,7 +218,7 @@ class UserInformation extends Form {
             <h3>Thông Tin Cá Nhân</h3>
             {this.renderInputType3(
               "userName",
-              "Tên người nhận",
+              "Tên",
               "Nhập họ tên người nhận",
               "false",
               10,
@@ -240,14 +240,14 @@ class UserInformation extends Form {
               "false"
             )}
             {this.renderSelect(
-              "userDistrict",
+              `${styles.userDistrict}`,
               "Quận/Huyện",
               district,
               "idDistrict",
               "false"
             )}
             {this.renderSelect(
-              "userCommune",
+              `${styles.userCommune}`,
               "Phường/Xã",
               commune,
               "idCommune",

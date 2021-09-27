@@ -1,5 +1,5 @@
 import "../scss/main.scss";
-import { Provider, useDispatch } from "react-redux";
+import { Provider } from "react-redux";
 import store from "../store/configureStore";
 import Layout from "../components/Layout";
 import IconLibrary from "../utils/addIcon";
@@ -10,13 +10,13 @@ import { loginGoogle } from "../services/googleService";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import LoadingScreen from "../components/LoadingScreen";
+import { openLoadingModal, closeLoadingModal } from "../store/loadingModal";
 
 IconLibrary.addIcon();
 
 function MyApp({ Component, pageProps }) {
   const [isLoadingScreen, setIsLoadingScreen] = useState(false);
   const router = useRouter();
-
   useEffect(() => {
     const resizeObserver = new ResizeObserver(() => {
       additionalFunctionDom.checkhtmlHeight();
@@ -35,10 +35,13 @@ function MyApp({ Component, pageProps }) {
       document.readyState === "complete"
     ) {
       const MySwal = withReactContent(Swal);
+
       async function handleCredentialResponse(response) {
+        store.dispatch(openLoadingModal());
         console.log("Encoded JWT ID token: " + response.credential);
         try {
           await loginGoogle({ googleAccessToken: response.credential });
+
           MySwal.fire({
             icon: "success",
             html: "Đăng Nhập Thành Công",
@@ -50,6 +53,7 @@ function MyApp({ Component, pageProps }) {
         } catch (err) {
           console.log("error", err);
         }
+        store.dispatch(closeLoadingModal());
       }
       google.accounts.id.initialize({
         client_id:
@@ -61,7 +65,6 @@ function MyApp({ Component, pageProps }) {
         { theme: "filled_blue", size: "large", width: "320" } // customization attributes
       );
       google.accounts.id.prompt(); // also display the One Tap dialog
-      console.log("hhehe");
     }
   }, [router.pathname]);
 
@@ -77,11 +80,18 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   const handleStart = (url) => {
+    const prevUrl = window.location.pathname;
+    const prevBaseUrl = prevUrl.split("?")[0];
+    console.log(prevBaseUrl === "/san-pham");
     const [baseUrl, hashUrl] = url.split("?");
-    if (baseUrl === "/san-pham" && hashUrl !== undefined) {
+    if (
+      prevBaseUrl === "/san-pham" &&
+      baseUrl === "/san-pham" &&
+      hashUrl !== undefined
+    ) {
       setIsLoadingScreen(false);
     } else {
-      additionalFunctionDom.fixBody()
+      additionalFunctionDom.fixBody();
       setIsLoadingScreen(true);
     }
   };

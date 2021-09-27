@@ -8,7 +8,7 @@ function ProductPage(props) {
 export async function getServerSideProps(context) {
   const { query } = context;
   let queryString = "?";
-  console.log(query)
+  // console.log(query)
   for (let string in query) {
     queryString += `${string}=${query[string]}&`;
   }
@@ -22,7 +22,7 @@ export async function getServerSideProps(context) {
         albums: values[0].data.albumDisplay,
         classificationAlbum: values[1].data,
         query,
-      }, 
+      },
     };
   });
 }

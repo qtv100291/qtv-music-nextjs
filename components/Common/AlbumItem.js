@@ -21,7 +21,7 @@ class AlbumItem extends Component {
       "/san-pham/" + (albumName && albumName.replace(/ /g, "-")) + "-" + id;
     return (
       <React.Fragment>
-        <div className={styles.albumItem}>
+        <div className={`${styles.albumItem} album-item`}>
           <div className={styles.albumPhoto}>
             <Link href={productPath} passHref>
               <Image

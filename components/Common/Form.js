@@ -95,7 +95,7 @@ class Form extends Component {
     if (input.name === "receiverProvince" || input.name === "userProvince") {
       this.hanldeDistrict(input.value);
     }
-    if (input.name === "receiverDistrict" || input.name === "userDistrict") {
+    if (input.name.includes("receiverDistrict") || input.name.includes("userDistrict")) {
       this.hanldeCommune(input.value);
     }
   };

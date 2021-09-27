@@ -8,7 +8,7 @@ import { withRouter } from "next/router";
 import loadingIconSmall from "../../assets/homepage-assets/loading-icon-small.gif";
 import Image from "next/image";
 import { getSearchAlbum } from "../../services/albumServiceHomePage";
-
+import axios from "axios";
 class SearchBar extends Component {
   state = {
     isDisplaying: false,
@@ -18,6 +18,7 @@ class SearchBar extends Component {
   };
 
   myInput = createRef();
+  cancelToken = undefined;
 
   handleChangeIcon = () => {
     const isDisplaying = this.state.isDisplaying ? false : true;
@@ -26,15 +27,21 @@ class SearchBar extends Component {
   };
 
   handleSearchInput = async ({ currentTarget: input }) => {
+    if (typeof this.cancelToken != typeof undefined) {
+      this.cancelToken.cancel("Operation canceled due to new request");
+    }
+    this.cancelToken = axios.CancelToken.source();
     if (input.value === "") {
-      this.setState({ searchResult: null, keyword: "" });
+      this.setState({ searchResult: null, keyword: "", isLoading: false });
       return;
     } else {
       this.setState({ isLoading: true });
       const keyword = input.value;
       this.setState({ keyword, isSearching: true });
-      const searchResult = await getSearchAlbum(input.value);
-      this.setState({ searchResult, isLoading: false });
+      const searchResult = await getSearchAlbum(input.value, this.cancelToken);
+      if (searchResult) {
+        this.setState({ searchResult, isLoading: false });
+      }
     }
   };
 
@@ -53,8 +60,7 @@ class SearchBar extends Component {
       const queryString = keyword.replace(" ", "+");
       this.props.router.push({
         pathname: "/tim-kiem",
-        search: `?q=${queryString}`,
-        state: { keyword },
+        search: `?search=${queryString}`,
       });
       this.setState({ isDisplaying: false, keyword: "", searchResult: null });
       this.myInput.current.blur();
@@ -64,11 +70,10 @@ class SearchBar extends Component {
   handleGoToSeachPageByClickIcon = () => {
     if (this.state.keyword === "") return;
     const { keyword } = this.state;
-    const queryString = keyword.replace(" ", "+");
+    const queryString = keyword.replace(" ", "");
     this.props.router.push({
       pathname: "/tim-kiem",
-      search: `?q=${queryString}`,
-      state: { keyword },
+      search: `?search=${queryString}`,
     });
     this.setState({ isDisplaying: false, keyword: "", searchResult: null });
   };
@@ -163,14 +168,18 @@ class SearchBar extends Component {
             </div>
           </div>
           <div className={styles.result}>
-            {searchResult &&
+            {isLoading ? (
+              <p style={{ textAlign: "left", marginLeft: "10px" }}>. . . </p>
+            ) : (
+              searchResult &&
               (searchResult.length === 0 ? (
                 <p>Không có sản phẩm phù hợp</p>
               ) : (
                 searchResult.map((album) =>
                   this.renderSearchResult(album, keyword)
                 )
-              ))}
+              ))
+            )}
           </div>
         </div>
       </div>

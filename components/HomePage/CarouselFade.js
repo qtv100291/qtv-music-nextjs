@@ -13,7 +13,7 @@ const CarouselHomePage = () => {
       fade={true}
       className={styles.carouselHomePage}
       indicators={false}
-      interval={5500}
+      interval={5000}
     >
       <Carousel.Item id={styles.carouselMainItem}>
         <Link href="/san-pham" passHref>
@@ -48,7 +48,7 @@ const CarouselHomePage = () => {
           </a>
         </Link>
         <Carousel.Caption>
-          <h3>Kỷ Niệm Ba Năm Ngày Mất Chester Bennington</h3>
+          <h3>Kỷ Niệm Bốn Năm Ngày Mất Chester Bennington</h3>
           <p>
             Cùng QTV Music tìm hiểu về cuộc đời và sự nghiệp của ca sĩ chính ban
             nhạc Linkin Park{" "}

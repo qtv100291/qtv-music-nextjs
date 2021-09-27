@@ -147,3 +147,100 @@ footer.fixed {
   bottom: 0;
   z-index: 30px;
 }
+
+.result-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 40px;
+  @include desktop {
+    grid-template-columns: repeat(3, 1fr);
+    > .album-item {
+      width: 100%;
+    }
+    gap: 25px 25px;
+  }
+  @include large-tablet {
+    grid-template-columns: repeat(3, 1fr);
+    > .album-item {
+      width: 100%;
+    }
+    gap: 30px 30px;
+  }
+  @include tablet {
+    grid-template-columns: repeat(3, 1fr);
+    > .album-item {
+      width: 100%;
+      > .album-name {
+        font-size: 16px;
+      }
+      > .album-band-name {
+        font-size: 14px;
+      }
+      > .album-price {
+        font-size: 20px;
+      }
+    }
+    gap: 30px 30px;
+  }
+  @include mobile {
+    grid-template-columns: repeat(1, 1fr);
+    > .album-item {
+      width: 80%;
+    }
+    gap: 30px 30px;
+  }
+}
+
+
+.product-part-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  @include super-large-desktop {
+    gap: 35px 35px;
+  }
+  @include large-desktop {
+    gap: 35px 35px;
+  }
+  @include desktop {
+    > .album-item {
+      width: 100%;
+    }
+    gap: 25px 25px;
+  }
+  @include large-tablet {
+    > .album-item {
+      width: 100%;
+    }
+    gap: 30px 30px;
+  }
+  @include tablet {
+    > .album-item {
+      width: 100%;
+      > .album-name {
+        font-size: 16px;
+      }
+      > .album-band-name {
+        font-size: 14px;
+      }
+      > .album-price {
+        font-size: 20px;
+      }
+    }
+    gap: 30px 30px;
+  }
+  @include mobile {
+    grid-template-columns: repeat(1, 1fr);
+    > .album-item {
+      width: 80%;
+    }
+    gap: 30px 30px;
+  }
+}
+
+.swal2-actions {
+  > .swal2-styled.swal2-confirm {
+    @include button;
+    width: 250px;
+    outline: none;
+  }
+}

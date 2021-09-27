@@ -1,21 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import AlbumItem from "../Common/albumItem";
 import PaginationBasic from "../Common/Pagination";
-import PreviewModal from "../PreviewModal";
 import BreadCrumb from "../Common/BreadCrumb";
 import Dropdown from "react-bootstrap/Dropdown";
 import addfunc from "../../utils/additionalFunction";
 import additionalFunctionDom from "../../utils/additionalFunctionDom";
 import styles from "./SearchPage.module.scss";
 import Head from "next/head";
-import { add } from "lodash";
 
 const SearchPage = ({ searchAlbumList, keyword }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [isOpeningModal, setIsOpeningModal] = useState(false);
-  const [preViewId, setPreViewId] = useState(null);
   const [sortOrderBy, setSortOrderBy] = useState("Name A To Z");
-
 
   const albumPerPage = 12;
 
@@ -34,7 +29,7 @@ const SearchPage = ({ searchAlbumList, keyword }) => {
   const albumList = searchAlbumList;
   // console.log("albumlist", sortOrderBy);
   const totalAlbum = albumList.length;
-  const sortedAlbum =  addfunc.productSortBy(albumList, sortOrderBy);
+  const sortedAlbum = addfunc.productSortBy(albumList, sortOrderBy);
   // console.log("sortedAlbum",sortedAlbum)
   const albumDisplay = addfunc.albumDisplay(
     totalAlbum,
@@ -121,7 +116,7 @@ const SearchPage = ({ searchAlbumList, keyword }) => {
             </Dropdown.Menu>
           </Dropdown>
         </div>
-        <div className={styles.resultContainer}>
+        <div className={`result-container`}>
           {albumDisplay.map((album) => (
             <AlbumItem {...album} key={album.id} onOpen={handleOpening} />
           ))}

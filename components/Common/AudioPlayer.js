@@ -78,6 +78,7 @@ class AudioPlayer extends Component {
   };
 
   render() {
+    console.log("rendered")
     return (
       <div className={`${styles.audioPlayerContainer} d-flex align-items-center`}>
         <FontAwesomeIcon

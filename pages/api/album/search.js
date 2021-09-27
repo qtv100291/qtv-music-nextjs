@@ -5,7 +5,7 @@ import addfunc from "../../../utils/additionalFunction";
 export default function handler(req, res) {
   if (req.method !== "GET") return;
   const { keyword } = req.query;
-  console.log("keyword", keyword);
+  // console.log("keyword", keyword);
   const filePath = path.join(process.cwd(), "data", "album.json");
   const fileData = fs.readFileSync(filePath);
   const data = JSON.parse(fileData);
