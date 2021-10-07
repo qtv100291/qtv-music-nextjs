@@ -7,7 +7,7 @@ import Head from "next/head";
 
 const UserTradeHisotry = () => {
   const tradeHistory = useSelector(selectTradeHistory);
-  console.log("trade history", tradeHistory);
+  // console.log("trade history", tradeHistory);
   if (tradeHistory) return (
     <div className={styles.tradeHistory}>
       <Head>

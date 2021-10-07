@@ -55,7 +55,7 @@ const NavbarMobile = () => {
           <div className={styles.mobileNavbarBoardContent}>
             <div className={`${styles.mobileNavbarItem} ${styles.logIn}`}>
               {isLoggedUser ? (
-                <Link href="/tai-khoan">
+                <Link href="/account/thong-tin-tai-khoan">
                   <a>
                     <FontAwesomeIcon
                       icon="user"

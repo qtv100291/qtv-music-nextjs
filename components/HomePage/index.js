@@ -12,28 +12,11 @@ class HomePage extends Component {
     isOpeningModal: false,
     previewId: null,
     inPreView: false,
-    windowWidth: null,
-  };
-
-  componentDidMount() {
-    const windowWidth = window.innerWidth;
-    window.addEventListener("resize", this.updateWindowWidth);
-    this.setState({
-      windowWidth,
-    });
-    setTimeout(() => {
-      // this.props.onLoadingScreen();
-      // additionalFunctionDom.releaseBody();
-    }, 500);
-  }
-
-  updateWindowWidth = () => {
-    const windowWidth = window.innerWidth;
-    this.setState({ windowWidth });
   };
 
   render() {
     const { vietnameseAlbum, internationalAlbum, albumOfTheWeek } = this.props;
+    console.log(this.props.windowWidth)
     return (
       <main className={styles.mainContainer}>
         <Head>
@@ -44,16 +27,16 @@ class HomePage extends Component {
           title={"Rock/Metal Việt Nam"}
           album={vietnameseAlbum}
           onOpen={this.handleOpening}
-          windowWidth={this.state.windowWidth}
+          windowWidth={this.props.windowWidth}
         />
         <AlbumHomePage
           title={"Rock/Metal Quốc Tế"}
           album={internationalAlbum}
           onOpen={this.handleOpening}
-          windowWidth={this.state.windowWidth}
+          windowWidth={this.props.windowWidth}
         />
         <AlbumOfTheWeek {...albumOfTheWeek[0]} />
-        <FamousArtist windowWidth={this.state.windowWidth} />
+        <FamousArtist windowWidth={this.props.windowWidth} />
         <Subscription />
       </main>
     );

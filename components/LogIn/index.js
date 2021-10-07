@@ -15,6 +15,7 @@ import withReactContent from "sweetalert2-react-content";
 import additionalFunctionDom from "../../utils/additionalFunctionDom";
 import { connect } from "react-redux";
 import { openLoadingModal, closeLoadingModal } from "../../store/loadingModal";
+import { axiosInner } from "../../services/httpService";
 
 const mapDispatchToProps = (dispatch) => ({
   openLoadingModalPage() {
@@ -45,44 +46,12 @@ class LogIn extends Form {
     emailLogIn: "emailCheck",
   };
 
-  // componentDidMount() {
-  //   const MySwal = withReactContent(Swal);
-  //   async function handleCredentialResponse(response) {
-  //     console.log("inside", this)
-  //     this.props.openLoadingModalPage();
-  //     // console.log("Encoded JWT ID token: " + response.credential);
-  //     // try {
-  //     //   await loginGoogle({ googleAccessToken: response.credential });
-  //     //   this.props.closeLoadingModalPage();
-  //     //   MySwal.fire({
-  //     //     icon: "success",
-  //     //     html: "Đăng Nhập Thành Công",
-  //     //     showConfirmButton: false,
-  //     //     timer: 1250,
-  //     //   }).then(() => {
-  //     //     window.location = "/";
-  //     //   });
-  //     // } catch (err) {
-  //     //   console.log("error", err);
-  //     // }
-  //   }
-  //   window.onload = function () {
-  //     google.accounts.id.initialize({
-  //       client_id:
-  //         "1020234478913-eptfd3u3qg9kds0ngb44tijnb77gojn8.apps.googleusercontent.com",
-  //       callback: handleCredentialResponse,
-  //     });
-  //     google.accounts.id.renderButton(
-  //       document.getElementById("buttonDiv"),
-  //       { theme: "filled_blue", size: "large", width: "320" } // customization attributes
-  //     );
-  //     google.accounts.id.prompt(); // also display the One Tap dialog
-  //   };
-  // }
-
+  
   doSubmit = async () => {
     const MySwal = withReactContent(Swal);
     this.setState({ isLoading: true, disabled: true });
+    // const response = await axiosInner.get("https://acm.haiphatland.com.vn/api/abphpl/ThongKeTheoThangUser")
+    // console.log(response)
     try {
       const { data: user } = this.state;
       await authService.login(user);
@@ -103,13 +72,13 @@ class LogIn extends Form {
         const serverError = "Tài khoản không tồn tại";
         this.setState({ serverError });
       }
+      if (ex.response && ex.response.status === 409) {
+        const serverError = ex.response.data.message;
+        this.setState({ serverError });
+      }
       this.setState({ disabled: false, isLoading: false });
     }
     this.setState({ disabled: false, isLoading: false });
-  };
-
-  hehe = () => {
-    this.props.closeLoadingModalPage();
   };
 
   loginByFacebook = async () => {
@@ -117,7 +86,7 @@ class LogIn extends Form {
     const MySwal = withReactContent(Swal);
     const closeLoadingModalPage = this.props.closeLoadingModalPage.bind(this)
     // console.log("outside",this)
-    console.log(FB)
+    // console.log(FB)
     FB.login(
       async function (response) {
         const { authResponse } = response;

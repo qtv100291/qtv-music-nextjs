@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import hashPassword from "../../../utils/hashPassword";
 import { v4 as uuidv4 } from "uuid";
+import sendWelcomeEmail from "../../../utils/sendWelcomeEmail";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return;
@@ -12,7 +13,7 @@ export default async function handler(req, res) {
 
   for (let i = 0; i < data.users.length; i++) {
     if (data.users[i].email === email)
-      return res.status(409).json({message:"Your email is already used"});
+      return res.status(409).json({ message: "Your email is already used" });
   }
 
   const hashedPassword = await hashPassword(password);
@@ -23,8 +24,8 @@ export default async function handler(req, res) {
     password: hashedPassword,
     platform: "web",
     name,
-    refreshToken:"",
-    phone,
+    refreshToken: "",
+    phone: phone || "",
     shoppingCart: [],
     avatar: "",
     address: {
@@ -44,5 +45,6 @@ export default async function handler(req, res) {
   };
   data.users.push(newUser);
   fs.writeFileSync(filePath, JSON.stringify(data));
-  res.status(200).json({message:"Created User"});
+  sendWelcomeEmail(email)
+  res.status(200).json({ message: "Created User" });
 }

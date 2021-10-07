@@ -127,7 +127,9 @@ class PreviewModal extends Component {
           </div>
           <div className={styles.previewModalContent} ref={this.myModal}>
             <Link href={productPath} passHref onClick={this.props.closeModal}>
-              <h3 className={styles.albumName}>{albumName}</h3>
+              <a>
+                <h3 className={styles.albumName}>{albumName}</h3>
+              </a>
             </Link>
             <h3 className={styles.albumBandName}>{bandName}</h3>
             <h3 className={styles.albumPrice}>{price} VND</h3>

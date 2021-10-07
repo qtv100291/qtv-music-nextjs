@@ -1,4 +1,3 @@
-import { async } from "regenerator-runtime";
 import Account from "../../components/Account";
 
 export default function AccountPage(props) {
@@ -6,7 +5,14 @@ export default function AccountPage(props) {
 }
 
 export async function getServerSideProps(context) {
+  console.log("access");
   const { section } = context.params;
+  console.log(section)
+  // return {
+  //   props: {
+  //     activeTab: 1,
+  //   }
+  // }
   if (section === "thong-tin-tai-khoan") {
     return {
       props: {

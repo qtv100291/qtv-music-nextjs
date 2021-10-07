@@ -12,7 +12,7 @@ export default async function handler(req, res) {
   const { googleAccessToken } = req.body;
   const userData = jwtDecode(googleAccessToken);
 
-  const { name, email, sub: userID } = userData;
+  const { name, email, sub: userID,picture } = userData;
 
   for (let i = 0; i < data.users.length; i++) {
     if (data.users[i].email === email)
@@ -42,7 +42,7 @@ export default async function handler(req, res) {
     name,
     phone: "",
     shoppingCart: [],
-    avatar: "",
+    avatar: picture,
     address: {
       province: "",
       district: "",

@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./ShoppingCartItem.module.scss";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import addfunc from "../../utils/additionalFunction";
 import { useDispatch } from "react-redux";
 import shoppingCartFunc from "../../utils/shoppingCartFunc";
+import Modal from "react-bootstrap/Modal";
+import ModalBody from "react-bootstrap/ModalBody";
+import ModalFooter from "react-bootstrap/ModalFooter";
+import Button from "react-bootstrap/Button";
 import {
   cartMinusItem,
   cartPlusItem,
@@ -15,6 +19,7 @@ import {
 import Image from "next/image";
 
 const ShoppingCartItem = ({ id, name, count, image, price, bandName }) => {
+  const [isModalShowing, setIsModalShowing] = useState(false);
   const productPath =
     "/san-pham/" + (name && name.replace(/ /g, "-")) + "-" + id;
   const dispatch = useDispatch();
@@ -58,6 +63,17 @@ const ShoppingCartItem = ({ id, name, count, image, price, bandName }) => {
 
   return (
     <div className={`${styles.shoppingCartItem} d-flex justify-content-center`}>
+      <Modal
+        show={isModalShowing}
+        onHide={() => setIsModalShowing(false)}
+        centered={true}
+      >
+        <ModalBody>Bạn muốn xóa sản phẩm này ?</ModalBody>
+        <ModalFooter>
+          <Button variant="outline-secondary" onClick={()=> setIsModalShowing(false)}>Không</Button>
+          <Button variant="danger" onClick={deleteItem}>Đồng Ý</Button>
+        </ModalFooter>
+      </Modal>
       <div className={styles.itemPhoto}>
         <div className={styles.itemPhotoContainer}>
           <Image loading="eager" src={image} alt={name} layout="fill" />
@@ -74,7 +90,10 @@ const ShoppingCartItem = ({ id, name, count, image, price, bandName }) => {
           <h3 className={styles.albumPrice}>{price} VND</h3>
           <div
             className={`${styles.deleteButton} d-flex align-items-center`}
-            onClick={deleteItem}
+            onClick={() =>{
+              console.log("hehe")
+              setIsModalShowing(true)
+            } }
           >
             <FontAwesomeIcon icon="trash" className="real-font-awesome" />
             Xóa

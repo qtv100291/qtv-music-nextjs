@@ -18,6 +18,7 @@ import {
 } from "../../store/shoppingCart";
 import { connect } from "react-redux";
 import Head from "next/head";
+import ProtectedRoute from "../ProtectedRoute";
 
 const mapStateToProps = (state) => ({
   userData: state.user.userData,
@@ -430,4 +431,4 @@ class Payout extends Form {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Payout);
+export default connect(mapStateToProps, mapDispatchToProps)(ProtectedRoute (Payout));

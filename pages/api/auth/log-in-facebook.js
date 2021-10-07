@@ -40,8 +40,9 @@ export default async function handler(req, res) {
 
   for (let i = 0; i < data.users.length; i++) {
     if (data.users[i].email === email)
-      if (data.users[i].platform !== "facebook")
+      if (data.users[i].platform !== "facebook"){
         return res.status(409).json({ message: "Your email is already used" });
+      }
       else {
         const payload = {
           email: data.users[i].email,
@@ -65,7 +66,7 @@ export default async function handler(req, res) {
     name,
     phone: "",
     shoppingCart: [],
-    avatar: "",
+    avatar: `https://graph.facebook.com/v3.3/${userID}/picture?type=normal`,
     address: {
       province: "",
       district: "",
@@ -81,14 +82,13 @@ export default async function handler(req, res) {
     },
     tradeHistory: [],
   };
-  const [tokenKey, refreshTokenKey] = generateToken(payload)
-  newUser.refreshToken = refreshTokenKey;
-  data.users.push(newUser);
-  data.users.push(newUser);
-  fs.writeFileSync(filePath, JSON.stringify(data));
   const payload = {
     email,
     id,
   };
+  const [tokenKey, refreshTokenKey] = generateToken(payload)
+  newUser.refreshToken = refreshTokenKey;
+  data.users.push(newUser);
+  fs.writeFileSync(filePath, JSON.stringify(data));
   return res.status(200).json({ accessToken: tokenKey, refreshToken : refreshTokenKey });
 }

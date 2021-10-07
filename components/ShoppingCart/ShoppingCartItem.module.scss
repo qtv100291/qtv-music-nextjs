@@ -70,10 +70,12 @@
           @include mobile {
             font-size: 16px;
           }
+          &:hover{
+            text-decoration: underline;
+          }
         }
         &:hover {
           cursor: pointer;
-          text-decoration: underline;
         }
       }
       .bandName {

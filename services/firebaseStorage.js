@@ -7,10 +7,9 @@ const serviceAccount = require("./qtv-music-shop-firebase-adminsdk-edwcz-217f2f3
 if (admin.apps.length === 0) {
   admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
-    databaseURL: "https://qtv-music-shop.firebaseio.com",
   });
 }
-const bucketUserAvatar = admin.storage().bucket("user-avatar");
+const bucketUserAvatar = admin.storage().bucket("user-avatar-qtv-music-shop");
 
 export default bucketUserAvatar;
 // const firebaseConfig = {

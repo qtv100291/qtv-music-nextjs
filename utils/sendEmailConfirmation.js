@@ -15,25 +15,16 @@ export default async function sendEmailConfirmation(clientEmail, order) {
     },
   });
 
-  // const SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
-
-  // const TOKEN_PATH = path.join(__dirname, 'googleMailData', 'token.json') ;
-
-  // const CREDENTIALS_PATH = path.join(__dirname, 'googleMailData', 'token.json') ;
 
   const filePathProvince = path.join(process.cwd(), "data", "province.json");
   const fileDataProvince = fs.readFileSync(filePathProvince);
   const dataProvince = JSON.parse(fileDataProvince);
-  // console.log(fileDataProvince)
   const filePathDistrict = path.join(process.cwd(), "data", "district.json");
   const fileDataDistrict = fs.readFileSync(filePathDistrict);
   const dataDistrict = JSON.parse(fileDataDistrict);
-  // console.log(fileDataDistrict)
   const filePathCommune = path.join(process.cwd(), "data", "commune.json");
   const fileDataCommune = fs.readFileSync(filePathCommune);
   const dataCommune = JSON.parse(fileDataCommune);
-  // console.log(fileDataCommune)
-
   const province = dataProvince.province.find(
     (province) => province.idProvince === order.address.province
   );

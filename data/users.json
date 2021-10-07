@@ -1,1 +1,184 @@
-{"users":[{"id":"0ec7255d-fd8f-44af-a344-aafdd5b1dc95","email":"quangtuanvu19911@gmail.co21","password":"$2a$12$4esjHUbucXgmm5qYGUkNnO/iSI8ACWcwqOSYZXsZsLZFMgs3eQcJe","name":"Vu Quang","phone":"0962461650","shoppingCart":[],"avatar":"","address":{"province":"","district":"","commune":"","street":""},"payment":{"cardType":"","cardNumber":"","cardOwner":"","cardExpireDate":"","cardCvv":""},"tradeHistory":[]},{"id":"c98dfb9d-f14c-464b-9fa9-cdcc73965c05","email":"quangtuanvuhehehaha@gmail.com","password":"$2a$12$mNhFwZr9T0VjKgMW9Jpcpe5DDk/b1Wq5jq1S5HW0QkRxe1YKtOz7q","username":"conga","shoppingCart":[{"id":"33","name":"Đám Cưới Chuột","price":"299.000","image":"https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FDam_Cuoi_Chuot%2Fcover.jpg?alt=media&token=c1a44d93-80d5-4f7e-be40-2c5bb35f0692","bandName":"Gạt Tàn Đầy","count":8}],"avatar":"","address":{"province":"","district":"","commune":"","street":""},"payment":{"cardType":"","cardNumber":"","cardOwner":"","cardExpireDate":"","cardCvv":""},"tradeHistory":[]},{"id":"b2ae29fc-9f7b-4aee-bca1-72c8a95fba13","email":"user@gmail.com","password":"$2a$12$NlZwWsf6hDkgjE8LYDnGiONjfVg7ipGlSSdAJXa3I5qpMqknERdvC","name":"Vu Quang","phone":"0962461650","shoppingCart":[],"avatar":"","address":{"province":"79","district":"764","commune":"26884","street":"gfgfhêjejje"},"payment":{"cardType":"Visa","cardNumber":"565756878787","cardOwner":"heheh","cardExpireDate":"10/2022","cardCvv":"343"},"tradeHistory":[],"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJpZCI6ImIyYWUyOWZjLTlmN2ItNGFlZS1iY2ExLTcyYzhhOTVmYmExMyJ9LCJleHAiOjE2MzM0ODI2OTcsImlhdCI6MTYzMjI3MzA5N30.dtPszU4HLHLSzgsJ4ZbB3ZAJoNMzyPbquZIEKVWUkx4"},{"id":"ea75f16e-1f5a-45f1-8b40-5b5996aba020","userID":"4381857065213103","email":"xoantit@gmail.com","password":"","platform":"facebook","name":"Quang Tuấn Vũ","phone":"","shoppingCart":[{"id":"15","name":"Nắng Mới","price":"180.000","image":"https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FNang_Moi%2Fcover.jpg?alt=media&token=949da8d0-8fc5-46aa-8125-87f4bda14225","bandName":"Thủy Triều Đỏ","count":2}],"avatar":"https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/userAvatar%2Fea75f16e-1f5a-45f1-8b40-5b5996aba020-avatar?alt=media&token=a0bc272c-0331-4e42-a2bf-d72cf96acfd5","address":{"province":"01","district":"","commune":"","street":"Tran Phu"},"payment":{"cardType":"","cardNumber":"","cardOwner":"","cardExpireDate":"","cardCvv":""},"tradeHistory":[{"id":"14","name":"Unlimited Giáng sinh","price":"180.000","image":"https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FGiang_Sinh%2Fcover.jpg?alt=media&token=90446a9e-e6e8-4f86-a0d1-d1eea9ea1c75","bandName":"UnlimiteD","count":1,"time":"08/09/2021"}],"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoieG9hbnRpdEBnbWFpbC5jb20iLCJpZCI6ImVhNzVmMTZlLTFmNWEtNDVmMS04YjQwLTViNTk5NmFiYTAyMCJ9LCJleHAiOjE2MzM5Mzk4NTMsImlhdCI6MTYzMjczMDI1M30.kNwzeLQIu1b83n3aI_1BQ_Er_DYC3LexBD15XDwuXs4"},{"id":"3814588f-31c0-4dd4-984e-88646cd8c198","userID":"107347633390463361957","email":"vu.quangtuan@pharos.vn","password":"","platform":"google","name":"Vu Quang","phone":"","shoppingCart":[],"avatar":"","address":{"province":"","district":"","commune":"","street":""},"payment":{"cardType":"","cardNumber":"","cardOwner":"","cardExpireDate":"","cardCvv":""},"tradeHistory":[]},{"id":"e9c1f2ec-d431-49fb-a799-e81c4ee409d4","userID":"117669308324432881967","email":"quangtuanvu1991@gmail.com","password":"","platform":"google","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoicXVhbmd0dWFudnUxOTkxQGdtYWlsLmNvbSIsImlkIjoiZTljMWYyZWMtZDQzMS00OWZiLWE3OTktZTgxYzRlZTQwOWQ0In0sImV4cCI6MTYzMzkzOTYzNiwiaWF0IjoxNjMyNzMwMDM2fQ.D3wOLkLZDep2umEkLwEGcixSfOWYo899zzyrTl2Cz3w","name":"QUANG Tuấn Vũ","phone":"","shoppingCart":[],"avatar":"","address":{"province":"","district":"","commune":"","street":""},"payment":{"cardType":"","cardNumber":"","cardOwner":"","cardExpireDate":"","cardCvv":""},"tradeHistory":[]}]}
+{
+  "users": [
+    {
+      "id": "0ec7255d-fd8f-44af-a344-aafdd5b1dc95",
+      "email": "quangtuanvu19911@gmail.co21",
+      "password": "$2a$12$4esjHUbucXgmm5qYGUkNnO/iSI8ACWcwqOSYZXsZsLZFMgs3eQcJe",
+      "name": "Vu Quang",
+      "phone": "0962461650",
+      "shoppingCart": [],
+      "avatar": "",
+      "address": {
+        "province": "",
+        "district": "",
+        "commune": "",
+        "street": ""
+      },
+      "payment": {
+        "cardType": "",
+        "cardNumber": "",
+        "cardOwner": "",
+        "cardExpireDate": "",
+        "cardCvv": ""
+      },
+      "tradeHistory": []
+    },
+    {
+      "id": "c98dfb9d-f14c-464b-9fa9-cdcc73965c05",
+      "email": "quangtuanvuhehehaha@gmail.com",
+      "password": "$2a$12$mNhFwZr9T0VjKgMW9Jpcpe5DDk/b1Wq5jq1S5HW0QkRxe1YKtOz7q",
+      "username": "conga",
+      "shoppingCart": [
+        {
+          "id": "33",
+          "name": "Đám Cưới Chuột",
+          "price": "299.000",
+          "image": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FDam_Cuoi_Chuot%2Fcover.jpg?alt=media&token=c1a44d93-80d5-4f7e-be40-2c5bb35f0692",
+          "bandName": "Gạt Tàn Đầy",
+          "count": 8
+        }
+      ],
+      "avatar": "",
+      "address": {
+        "province": "",
+        "district": "",
+        "commune": "",
+        "street": ""
+      },
+      "payment": {
+        "cardType": "",
+        "cardNumber": "",
+        "cardOwner": "",
+        "cardExpireDate": "",
+        "cardCvv": ""
+      },
+      "tradeHistory": []
+    },
+    {
+      "id": "b2ae29fc-9f7b-4aee-bca1-72c8a95fba13",
+      "email": "user@gmail.com",
+      "password": "$2a$12$NlZwWsf6hDkgjE8LYDnGiONjfVg7ipGlSSdAJXa3I5qpMqknERdvC",
+      "name": "Vu Quang",
+      "phone": "0962461650",
+      "shoppingCart": [
+        {
+          "id": "12",
+          "name": "10",
+          "price": "299.000",
+          "image": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2F10%2Fcover.jpg?alt=media&token=e0aa550d-5bf5-4a78-a0e4-2e06a9fe8b20",
+          "bandName": "Microwave",
+          "count": 1
+        },
+        {
+          "id": "25",
+          "name": "Angels Fall First",
+          "price": "400.000",
+          "image": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FAngels_Fall_First%2Fcover.jpg?alt=media&token=2d1d0615-51c1-4970-888b-d9550ee55b64",
+          "bandName": "Nightwish",
+          "count": 1
+        }
+      ],
+      "avatar": "https://storage.googleapis.com/user-avatar-qtv-music-shop/22a3ed20-9a4f-4917-b967-9715876d26b5-avatar.jpg",
+      "address": {
+        "province": "79",
+        "district": "764",
+        "commune": "26884",
+        "street": "gfgfhêjejje"
+      },
+      "payment": {
+        "cardType": "Visa",
+        "cardNumber": "565756878787",
+        "cardOwner": "heheh",
+        "cardExpireDate": "10/2022",
+        "cardCvv": "343"
+      },
+      "tradeHistory": [],
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJpZCI6ImIyYWUyOWZjLTlmN2ItNGFlZS1iY2ExLTcyYzhhOTVmYmExMyJ9LCJleHAiOjE2MzQ3Mzk0ODcsImlhdCI6MTYzMzUyOTg4N30.KxQDY0FRBL-DG30z4Uwy1rLa1Pi3kU3eQ-muKE70zjM"
+    },
+    {
+      "id": "3814588f-31c0-4dd4-984e-88646cd8c198",
+      "userID": "107347633390463361957",
+      "email": "vu.quangtuan@pharos.vn",
+      "password": "",
+      "platform": "google",
+      "name": "Vu Quang",
+      "phone": "",
+      "shoppingCart": [],
+      "avatar": "",
+      "address": {
+        "province": "",
+        "district": "",
+        "commune": "",
+        "street": ""
+      },
+      "payment": {
+        "cardType": "",
+        "cardNumber": "",
+        "cardOwner": "",
+        "cardExpireDate": "",
+        "cardCvv": ""
+      },
+      "tradeHistory": []
+    },
+    {
+      "id": "6099fdf4-b288-4354-8f5a-d58fda7cdaa7",
+      "userID": "112643098150288535800",
+      "email": "quangtuanvu.nuce@gmail.com",
+      "password": "",
+      "platform": "google",
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoicXVhbmd0dWFudnUubnVjZUBnbWFpbC5jb20iLCJpZCI6IjYwOTlmZGY0LWIyODgtNDM1NC04ZjVhLWQ1OGZkYTdjZGFhNyJ9LCJleHAiOjE2MzQyMjYzMjksImlhdCI6MTYzMzAxNjcyOX0.ZbnDwoYeCbxhvfjbgZ3dTFSmU2OMY66llLoCrRInQZE",
+      "name": "Tuấn Vũ Quang",
+      "phone": "",
+      "shoppingCart": [
+        {
+          "id": "14",
+          "name": "Unlimited Giáng sinh",
+          "price": "180.000",
+          "image": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FGiang_Sinh%2Fcover.jpg?alt=media&token=90446a9e-e6e8-4f86-a0d1-d1eea9ea1c75",
+          "bandName": "UnlimiteD",
+          "count": 1
+        }
+      ],
+      "avatar": "https://storage.googleapis.com/user-avatar-qtv-music-shop/412316e8-3f3a-48bb-b3cb-a649fde4d220-avatar.jpg",
+      "address": {
+        "province": "15",
+        "district": "",
+        "commune": "",
+        "street": ""
+      },
+      "payment": {
+        "cardType": "",
+        "cardNumber": "",
+        "cardOwner": "",
+        "cardExpireDate": "",
+        "cardCvv": ""
+      },
+      "tradeHistory": []
+    },
+    {
+      "id": "61d6bee7-d6e3-40fb-8cb2-279c480e4da9",
+      "email": "quangtuanvu1991@gmail.com",
+      "password": "$2a$12$KW11jQ.ef5bbzejZRgcgI.BBv5XMkR/U9XOV1RF3aZo40QncbKtGi",
+      "platform": "web",
+      "name": "Vu Quang",
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoicXVhbmd0dWFudnUxOTkxQGdtYWlsLmNvbSIsImlkIjoiNjFkNmJlZTctZDZlMy00MGZiLThjYjItMjc5YzQ4MGU0ZGE5In0sImV4cCI6MTYzNDczNzk2OCwiaWF0IjoxNjMzNTI4MzY4fQ.pKfuhs7NfrpFWMcBJ0Act_Xu9tt2ZxuAeMVG9StKupc",
+      "phone": "0962461650",
+      "shoppingCart": [],
+      "avatar": "https://storage.googleapis.com/user-avatar-qtv-music-shop/4ba67ae0-4baa-4f4e-bfb8-a3ee692a1315-avatar.jpg",
+      "address": {
+        "province": "",
+        "district": "",
+        "commune": "",
+        "street": ""
+      },
+      "payment": {
+        "cardType": "",
+        "cardNumber": "",
+        "cardOwner": "",
+        "cardExpireDate": "",
+        "cardCvv": ""
+      },
+      "tradeHistory": []
+    }
+  ]
+}

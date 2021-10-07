@@ -16,13 +16,53 @@ IconLibrary.addIcon();
 
 function MyApp({ Component, pageProps }) {
   const [isLoadingScreen, setIsLoadingScreen] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(null)
   const router = useRouter();
   useEffect(() => {
     const resizeObserver = new ResizeObserver(() => {
       additionalFunctionDom.checkhtmlHeight();
     });
     resizeObserver.observe(document.documentElement);
+    const windowWidthInitial = window.innerWidth;
+    window.addEventListener("resize", updateWindowWidth);
+    setWindowWidth(windowWidthInitial)
   }, []);
+
+  useEffect(() => {
+    async function handleCredentialResponse(response) {
+      store.dispatch(openLoadingModal());
+      console.log(response.credential )
+      try {
+        await loginGoogle({ googleAccessToken: response.credential });
+
+        MySwal.fire({
+          icon: "success",
+          html: "Đăng Nhập Thành Công",
+          showConfirmButton: false,
+          timer: 1250,
+        }).then(() => {
+          window.location = "/";
+        });
+      } catch (err) {
+        console.log("error", err);
+      }
+      store.dispatch(closeLoadingModal());
+    }
+    google.accounts.id.initialize({
+      client_id:
+        "1020234478913-eptfd3u3qg9kds0ngb44tijnb77gojn8.apps.googleusercontent.com",
+      callback: handleCredentialResponse,
+    });
+    google.accounts.id.renderButton(
+      document.getElementById("buttonDiv"),
+      { theme: "filled_blue", size: "large", width: `${windowWidth > 336? 320 : windowWidth*0.95}` } // customization attributes
+    );
+  }, windowWidth)
+
+  const updateWindowWidth = () => {
+    const windowWidthUpdate = window.innerWidth;
+    setWindowWidth(windowWidthUpdate)
+  };
 
   useEffect(() => {
     const resizeObserver = new ResizeObserver(() => {
@@ -35,13 +75,13 @@ function MyApp({ Component, pageProps }) {
       document.readyState === "complete"
     ) {
       const MySwal = withReactContent(Swal);
-
+      console.log(windowWidth)
       async function handleCredentialResponse(response) {
         store.dispatch(openLoadingModal());
-        console.log("Encoded JWT ID token: " + response.credential);
+
         try {
           await loginGoogle({ googleAccessToken: response.credential });
-
+  
           MySwal.fire({
             icon: "success",
             html: "Đăng Nhập Thành Công",
@@ -62,9 +102,10 @@ function MyApp({ Component, pageProps }) {
       });
       google.accounts.id.renderButton(
         document.getElementById("buttonDiv"),
-        { theme: "filled_blue", size: "large", width: "320" } // customization attributes
+        { theme: "filled_blue", size: "large", width: `${windowWidth > 336? 320 : windowWidth*0.95}` } // customization attributes
       );
-      google.accounts.id.prompt(); // also display the One Tap dialog
+      
+      // google.accounts.id.prompt(); // also display the One Tap dialog
     }
   }, [router.pathname]);
 
@@ -82,7 +123,7 @@ function MyApp({ Component, pageProps }) {
   const handleStart = (url) => {
     const prevUrl = window.location.pathname;
     const prevBaseUrl = prevUrl.split("?")[0];
-    console.log(prevBaseUrl === "/san-pham");
+    // console.log(prevBaseUrl === "/san-pham");
     const [baseUrl, hashUrl] = url.split("?");
     if (
       prevBaseUrl === "/san-pham" &&
@@ -105,7 +146,7 @@ function MyApp({ Component, pageProps }) {
     <Provider store={store}>
       <LoadingScreen isLoadingScreen={isLoadingScreen} />
       <Layout>
-        <Component {...pageProps} />
+        <Component {...pageProps} windowWidth={windowWidth}/>
       </Layout>
     </Provider>
   );

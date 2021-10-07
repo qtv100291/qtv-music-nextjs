@@ -13,7 +13,7 @@ async function updateUser() {
 }
 
 export async function updateAvatarUser(formData) {
-  await http.patch(apiEndpointAvatar, formData ,{
+  return await http.patch(apiEndpointAvatar, formData ,{
     headers:{
       "Content-type":"multipart/form-data"
     }

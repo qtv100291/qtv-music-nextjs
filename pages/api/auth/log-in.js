@@ -11,6 +11,9 @@ export default async function handler(req, res) {
   const { email, password } = req.body;
   for (let i = 0; i < data.users.length; i++) {
     if (data.users[i].email === email) {
+      if (data.users[i].platform !== "web"){
+        return res.status(409).json({message : `Email này được liên kết với tài khoản ${data.users[i].platform}, xin hãy đăng nhập qua ${data.users[i].platform} `})
+      }
       const isValid = await comparePassword(password, data.users[i].password);
       if (isValid) {
         const payload = {
