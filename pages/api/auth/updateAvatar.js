@@ -6,6 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 import Busboy from "busboy";
 import { PutObjectCommand } from "@aws-sdk/client-s3";
 import { s3Client } from "../../../services/amazonservice";
+import multer from "multer";
 export const config = {
   api: {
     bodyParser: false,
@@ -73,7 +74,7 @@ export default async function handler(req, res) {
             });
             file.on("limit", function () {
               file.destroy()
-              blobStream.destroy()
+              // blobStream.destroy()
               return res.status(413).json({ message: "file too large" });
             });
             file.pipe(blobStream);
@@ -88,8 +89,6 @@ export default async function handler(req, res) {
   }
 }
 
-
-
 // export default async function handler(req, res) {
 //   if (req.method !== "PATCH") return;
 //   const filePath = path.join(process.cwd(), "data", "users.json");
@@ -103,7 +102,7 @@ export default async function handler(req, res) {
 //     const { id } = decode.data;
 //     for (let i = 0; i < dataUser.users.length; i++) {
 //       if (dataUser.users[i].id === id) {
-//         // console.log(bucketUserAvatar)
+//         // console.log(req.headers);
 //         const busboy = new Busboy({
 //           headers: req.headers,
 //           limits: {
@@ -114,27 +113,26 @@ export default async function handler(req, res) {
 //         busboy.on(
 //           "file",
 //           async function (fieldname, file, filename, encoding, mimetype) {
-//             console.log("file on");
-//             if (!mimetype.includes("image")){
+//             if (!mimetype.includes("image")) {
 //               return res.status(406).json({ message: "not image file" });
 //             }
 //             extensionName = path.extname(filename);
 //             const avatarId = uuidv4();
-//             const blob = bucketUserAvatar.file(
-//               `${avatarId}-avatar${extensionName}`
-//             );
-//             const testFile = path.join(process.cwd(), "data", "test.jpg")
-//             console.log(testFile)
-//             const testFileStream = fs.createReadStream(testFile)
+//             // const blob = bucketUserAvatar.file(
+//             //   `${avatarId}-avatar${extensionName}`
+//             // );
+//             // const testFile = path.join(process.cwd(), "data", "test.jpg")
+//             // console.log(testFile)
+//             // const testFileStream = fs.createReadStream(testFile)
 //             const uploadParams = {
 //               Bucket: "user-avatar-qtv-music-shop",
 //               // Add the required 'Key' parameter using the 'path' module.
 //               Key: `${avatarId}-avatar${extensionName}`,
 //               // Add the required 'Body' parameter
-//               Body: testFileStream,
+//               Body: file,
 //             };
-//             const data = await run(uploadParams)
-//             console.log("data", data)
+//             const data = await uploadToAWS(uploadParams)
+//             // console.log("data", data)
 //             // blobStream.on("finish", async (data) => {
 //             //   console.log("upload end");
 //             //   if (
@@ -155,9 +153,13 @@ export default async function handler(req, res) {
 //             //     urlAvatar: publicUrl,
 //             //   });
 //             // });
+//             file.on("finish", function () {
+//               console.log("finish");
+//               const file = req.files.element2;
+//               console.log("file", file);
+//             });
 //             file.on("limit", function () {
-//               file.destroy()
-              
+//               file.destroy();
 //               return res.status(413).json({ message: "file too large" });
 //             });
 //           }
@@ -171,10 +173,10 @@ export default async function handler(req, res) {
 //   }
 // }
 
-// const run = async (uploadParams) => {
+// const uploadToAWS = async (uploadParams) => {
 //   try {
 //     const data = await s3Client.send(new PutObjectCommand(uploadParams));
-//     return data
+//     return data;
 //   } catch (err) {
 //     console.log("Error", err);
 //   }
