@@ -4,12 +4,14 @@ import styles from "./InputSelect.module.scss";
 const Select = ({
   name,
   label,
+  subClass,
   options,
   idName,
   error,
   obligatory,
   ...rest
 }) => {
+  // console.log(subClass)
   return (
     <div className={styles.formGroupSelect}>
       <div className={`${styles.selectInput} d-flex align-items-center`}>
@@ -19,7 +21,7 @@ const Select = ({
             {obligatory === "false" ? "" : "*"}
           </span>
         </label>
-        <div className={name}>
+        <div className={subClass ? `${name} ${subClass}` : name}>
           <select name={name} id={name} {...rest} className="form-control">
             {options.map((option, index) => (
               <option

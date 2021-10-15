@@ -3,7 +3,7 @@ import styles from "./FilterContent.module.scss";
 import addfunc from "../../utils/additionalFunction";
 
 
-const FilterContent = ({ filterList, filterValue, onFilter }) => {
+const FilterContent = ({ filterList, filterValue, onFilter, onHide}) => {
   return (
     <ul className={styles.listGroupFilter}>
       {filterList.map((band) => (
@@ -14,7 +14,10 @@ const FilterContent = ({ filterList, filterValue, onFilter }) => {
               : "list-group-item d-flex justify-content-between align-items-center"
           }
           key={Object.keys(band)[0]}
-          onClick={() => onFilter(Object.keys(band)[0])}
+          onClick={() => {
+            onFilter(Object.keys(band)[0])
+            if (onHide) onHide()
+          }}
         >
           {Object.keys(band)[0]}
           <span className="badge badge-primary badge-pill">

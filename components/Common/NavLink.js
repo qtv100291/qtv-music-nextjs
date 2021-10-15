@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 
 const NavLink = ({href, exact, children, ...props}) => {
   const { pathname } = useRouter();
+  // console.log(pathname)
   const isActive = exact
     ? pathname === href
     : pathname.startsWith(href);

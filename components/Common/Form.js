@@ -95,7 +95,7 @@ class Form extends Component {
     if (input.name === "receiverProvince" || input.name === "userProvince") {
       this.hanldeDistrict(input.value);
     }
-    if (input.name.includes("receiverDistrict") || input.name.includes("userDistrict")) {
+    if (input.name === "receiverDistrict" || input.name === "userDistrict") {
       this.hanldeCommune(input.value);
     }
   };
@@ -191,12 +191,20 @@ class Form extends Component {
       );
   }
 
-  renderSelect(name, label, options, idName, obligatory = "true") {
+  renderSelect(
+    name,
+    label,
+    options,
+    idName,
+    obligatory = "true",
+    subClass = ""
+  ) {
     const { data, errors } = this.state;
     return (
       <Select
         name={name}
         value={data[name]}
+        subClass={subClass}
         label={label}
         idName={idName}
         options={options}

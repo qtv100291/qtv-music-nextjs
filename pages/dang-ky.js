@@ -1,5 +1,5 @@
 import Register from "../components/Register";
 
-export default function RegisterPage() {
-  return <Register />;
+export default function RegisterPage(props) {
+  return <Register {...props} />;
 }

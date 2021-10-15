@@ -24,12 +24,14 @@ class AlbumItem extends Component {
         <div className={`${styles.albumItem} album-item`}>
           <div className={styles.albumPhoto}>
             <Link href={productPath} passHref>
-              <Image
-                loading="eager"
-                src={imagePath}
-                alt={albumName}
-                layout="fill"
-              />
+              <a>
+                <Image
+                  loading="eager"
+                  src={imagePath}
+                  alt={albumName}
+                  layout="fill"
+                />
+              </a>
             </Link>
             <div
               className={`${styles.buttonQuickview} d-flex justify-content-center align-items-center`}

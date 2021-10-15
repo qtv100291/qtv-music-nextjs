@@ -9,7 +9,7 @@ export async function getStaticProps() {
   const promise_1 = getAlbum(["5", "10", "14", "33"]);
   const promise_2 = getAlbum(["6", "32", "26", "18"]);
   const promise_3 = getAlbum(["23"]);
-  return Promise.all([promise_1, promise_2, promise_3]).then((values) => {
+  return await Promise.all([promise_1, promise_2, promise_3]).then((values) => {
     return {
       props:{
         vietnameseAlbum: values[0],

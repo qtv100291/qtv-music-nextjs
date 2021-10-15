@@ -6,11 +6,7 @@ import IconLibrary from "../utils/addIcon";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import additionalFunctionDom from "../utils/additionalFunctionDom";
-import { loginGoogle } from "../services/googleService";
-import Swal from "sweetalert2";
-import withReactContent from "sweetalert2-react-content";
 import LoadingScreen from "../components/LoadingScreen";
-import { openLoadingModal, closeLoadingModal } from "../store/loadingModal";
 
 IconLibrary.addIcon();
 
@@ -28,41 +24,6 @@ function MyApp({ Component, pageProps }) {
     setWindowWidth(windowWidthInitial);
   }, []);
 
-  useEffect(() => {
-    async function handleCredentialResponse(response) {
-      store.dispatch(openLoadingModal());
-      // console.log(response.credential);
-      try {
-        await loginGoogle({ googleAccessToken: response.credential });
-
-        MySwal.fire({
-          icon: "success",
-          html: "Đăng Nhập Thành Công",
-          showConfirmButton: false,
-          timer: 1250,
-        }).then(() => {
-          window.location = "/";
-        });
-      } catch (err) {
-        console.log("error", err);
-      }
-      store.dispatch(closeLoadingModal());
-    }
-    google.accounts.id.initialize({
-      client_id:
-        "1020234478913-eptfd3u3qg9kds0ngb44tijnb77gojn8.apps.googleusercontent.com",
-      callback: handleCredentialResponse,
-    });
-    google.accounts.id.renderButton(
-      document.getElementById("buttonDiv"),
-      {
-        theme: "filled_blue",
-        size: "large",
-        width: `${windowWidth > 336 ? 320 : windowWidth * 0.95}`,
-      } // customization attributes
-    );
-  }, windowWidth);
-
   const updateWindowWidth = () => {
     const windowWidthUpdate = window.innerWidth;
     setWindowWidth(windowWidthUpdate);
@@ -73,48 +34,6 @@ function MyApp({ Component, pageProps }) {
       additionalFunctionDom.checkhtmlHeight();
     });
     resizeObserver.observe(document.documentElement);
-
-    if (
-      router.pathname === "/dang-nhap" &&
-      document.readyState === "complete"
-    ) {
-      const MySwal = withReactContent(Swal);
-      console.log(windowWidth);
-      async function handleCredentialResponse(response) {
-        store.dispatch(openLoadingModal());
-
-        try {
-          await loginGoogle({ googleAccessToken: response.credential });
-
-          MySwal.fire({
-            icon: "success",
-            html: "Đăng Nhập Thành Công",
-            showConfirmButton: false,
-            timer: 1250,
-          }).then(() => {
-            window.location = "/";
-          });
-        } catch (err) {
-          console.log("error", err);
-        }
-        store.dispatch(closeLoadingModal());
-      }
-      google.accounts.id.initialize({
-        client_id:
-          "1020234478913-eptfd3u3qg9kds0ngb44tijnb77gojn8.apps.googleusercontent.com",
-        callback: handleCredentialResponse,
-      });
-      google.accounts.id.renderButton(
-        document.getElementById("buttonDiv"),
-        {
-          theme: "filled_blue",
-          size: "large",
-          width: `${windowWidth > 336 ? 320 : windowWidth * 0.95}`,
-        } // customization attributes
-      );
-
-      // google.accounts.id.prompt(); // also display the One Tap dialog
-    }
   }, [router.pathname]);
 
   useEffect(() => {

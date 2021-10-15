@@ -9,13 +9,13 @@ import Spinner from "react-bootstrap/Spinner";
 import UnseenRoute from "../UnseenRoute";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { loginFacebook } from "../../services/facebookService";
-import { loginGoogle } from "../../services/googleService";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import additionalFunctionDom from "../../utils/additionalFunctionDom";
 import { connect } from "react-redux";
 import { openLoadingModal, closeLoadingModal } from "../../store/loadingModal";
-import { axiosInner } from "../../services/httpService";
+import GoogleButtonSignUp from "./GoogleButtonSignUp";
+// import { axiosInner } from "../../services/httpService";
 
 const mapDispatchToProps = (dispatch) => ({
   openLoadingModalPage() {
@@ -121,36 +121,7 @@ class LogIn extends Form {
   };
 
   render() {
-    const buttonLoginGoogle = document.getElementById("buttonDiv");
-    if (buttonLoginGoogle) {
-      const MySwal = withReactContent(Swal);
-      async function handleCredentialResponse(response) {
-        console.log("Encoded JWT ID token: " + response.credential);
-        try {
-          await loginGoogle({ googleAccessToken: response.credential });
-          MySwal.fire({
-            icon: "success",
-            html: "Đăng Nhập Thành Công",
-            showConfirmButton: false,
-            timer: 1250,
-          }).then(() => {
-            window.location = "/";
-          });
-        } catch (err) {
-          console.log("error", err);
-        }
-      }
-      google.accounts.id.initialize({
-        client_id:
-          "1020234478913-eptfd3u3qg9kds0ngb44tijnb77gojn8.apps.googleusercontent.com",
-        callback: handleCredentialResponse,
-      });
-      google.accounts.id.renderButton(
-        document.getElementById("buttonDiv"),
-        { theme: "filled_blue", size: "large", width: "320" } // customization attributes
-      );
-      google.accounts.id.prompt(); // also display the One Tap dialog
-    }
+    console.log(this.props.windowWidth)
     return (
       <main className={styles.logInSection}>
         <Head>
@@ -207,7 +178,7 @@ class LogIn extends Form {
                 Đăng nhập bằng Facebook
               </button>
             </div>
-            <div id="buttonDiv" className={styles.buttonGoogleLogin}></div>
+            <GoogleButtonSignUp windowWidth = {this.props.windowWidth}/>
           </div>
           <p>
             Bạn chưa có tài khoản?{" "}

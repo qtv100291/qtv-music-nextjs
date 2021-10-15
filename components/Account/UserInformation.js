@@ -4,12 +4,12 @@ import payoutService from "../../services/payoutService";
 import styles from "./UserInformation.module.scss";
 import { connect } from "react-redux";
 import { updateUserInformation } from "../../store/authentication";
+import { openLoadingModal, closeLoadingModal } from "../../store/loadingModal";
 import updateUser from "../../services/updateService";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import additionalFunctionDom from "../../utils/additionalFunctionDom";
 import Head from "next/head";
-
 
 const mapStateToProps = (state) => ({
   userData: state.user.userData,
@@ -18,6 +18,14 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   onUpdateUser: (userInfo) => {
     dispatch(updateUserInformation(userInfo));
+  },
+  onOpenLoadingModal: () => {
+    additionalFunctionDom.fixBody();
+    dispatch(openLoadingModal());
+  },
+  onCloseLoadingModal: () => {
+    additionalFunctionDom.releaseBody();
+    dispatch(closeLoadingModal());
   },
 });
 
@@ -78,6 +86,7 @@ class UserInformation extends Form {
   };
 
   async componentDidMount() {
+    console.log("state", this.state);
     const { userData } = this.props;
     if (Object.keys(userData).length !== 0) {
       const userLoadProperty = [...this.userLoadProperty];
@@ -99,7 +108,9 @@ class UserInformation extends Form {
       if (userLoad.userDistrict !== "") {
         await this.hanldeCommune(userLoad.userDistrict);
       }
-      this.setState({ data: userLoad, province });
+      this.setState({ data: userLoad, province }, () => {
+        console.log("state after", this.state);
+      });
     }
   }
 
@@ -141,8 +152,9 @@ class UserInformation extends Form {
       const districtList = await payoutService.getDistrict(idProvince);
       const district = [{ ...this.districtInit }, ...districtList];
       this.setState({ district, commune: [{ ...this.communeInit }] });
-      document.querySelector(`.${styles.userDistrict} > span`).style.display =
+      document.querySelector(`.${styles.userDistrict}> span`).style.display =
         "none";
+      // console.log(districtList)
     }
   };
 
@@ -161,6 +173,7 @@ class UserInformation extends Form {
   };
 
   doSubmit = async () => {
+    this.props.onOpenLoadingModal();
     const userData = { ...this.props.userData };
     userData.address = {};
     userData.payment = {};
@@ -179,6 +192,7 @@ class UserInformation extends Form {
     this.setState({ userData });
     this.props.onUpdateUser(userData);
     await updateUser();
+    this.props.onCloseLoadingModal();
     const MySwal = withReactContent(Swal);
     MySwal.fire({
       icon: "success",
@@ -217,7 +231,7 @@ class UserInformation extends Form {
         <Head>
           <title>Thông Tin Tài Khoản</title>
         </Head>
-        
+
         <form className={styles.formAccount} onSubmit={this.handleSubmit}>
           <h2>THÔNG TIN TÀI KHOẢN</h2>
           <div className={styles.personalInformation}>
@@ -246,18 +260,20 @@ class UserInformation extends Form {
               "false"
             )}
             {this.renderSelect(
-              `${styles.userDistrict}`,
+              "userDistrict",
               "Quận/Huyện",
               district,
               "idDistrict",
-              "false"
+              "false",
+              `${styles.userDistrict}`
             )}
             {this.renderSelect(
-              `${styles.userCommune}`,
+              "userCommune",
               "Phường/Xã",
               commune,
               "idCommune",
-              "false"
+              "false",
+              `${styles.userCommune}`
             )}
             {this.renderInputType3(
               "userStreet",

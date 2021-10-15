@@ -96,6 +96,7 @@ function checkRetype(inputName) {
 }
 
 function selectEmptyCheck(inputName) {
+  console.log(inputName)
   const input = document.querySelector(`#${inputName}`).value;
   const error = "Bạn phải chọn một mục";
   if (input === "None") return error;

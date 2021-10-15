@@ -33,8 +33,8 @@ class Product extends Component {
     }
 
     this.props.router.push(url);
-    document.documentElement.classList.add("on-top");
-    setTimeout(() => window.scrollTo(0, 0), 100);
+    // document.documentElement.classList.add("on-top");
+    // setTimeout(() => window.scrollTo(0, 0), 100);
   };
 
   handlePageChange = (pageValue) => {
@@ -139,8 +139,8 @@ class Product extends Component {
       this.props.router.push(encodeURI(url));
     }
     document.documentElement.classList.add("on-top");
-    setTimeout(() => window.scrollTo(0, 0), 100);
-    this.setState({ isModalShowing: false });
+    // setTimeout(() => window.scrollTo(0, 0), 100);
+    // this.setState({ isModalShowing: false });
   };
 
   handleCloseFilter = () => {
@@ -170,11 +170,13 @@ class Product extends Component {
               filterList={classificationAlbum["vietnameseAlbums"]}
               filterValue={query.filter}
               onFilter={this.handleFilter}
+              onHide={this.handleCloseFilter}
             />
             <FilterContent
               filterList={classificationAlbum["internationalAlbums"]}
               filterValue={query.filter}
               onFilter={this.handleFilter}
+              onHide={this.handleCloseFilter}
             />
           </Modal.Body>
         </Modal>

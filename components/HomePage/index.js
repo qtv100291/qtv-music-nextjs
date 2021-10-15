@@ -16,7 +16,7 @@ class HomePage extends Component {
 
   render() {
     const { vietnameseAlbum, internationalAlbum, albumOfTheWeek } = this.props;
-    console.log(this.props.windowWidth)
+    // console.log(this.props.windowWidth)
     return (
       <main className={styles.mainContainer}>
         <Head>

@@ -6,10 +6,10 @@ const UnseenRoute = (WrappedComponent) => (props) => {
   if (typeof window !== "undefined") {
     const tokenKey = authService.checkToken();
     const timeNow = Date.now() / 1000;
-    if (tokenKey && tokenKey.exp > timeNow) router.replace('/')
-    return <WrappedComponent {...props}/>
+    if (tokenKey && tokenKey.exp > timeNow) router.replace("/");
+    return <WrappedComponent {...props} />;
   }
-  return null
-}
+  return null;
+};
 
 export default UnseenRoute;

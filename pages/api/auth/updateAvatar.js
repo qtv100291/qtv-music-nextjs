@@ -54,15 +54,15 @@ export default async function handler(req, res) {
             });
             blobStream.on("finish", async (data) => {
               console.log("upload end");
-              if (
-                dataUser.users[i].avatar &&
-                dataUser.users[i].avatar.includes("storage.googleapis.com")
-              ) {
-                const userAvatarUrlArray = dataUser.users[i].avatar.split("/");
-                const fileNameGCS =
-                  userAvatarUrlArray[userAvatarUrlArray.length - 1];
-                await bucketUserAvatar.file(fileNameGCS).delete();
-              }
+              // if (
+              //   dataUser.users[i].avatar &&
+              //   dataUser.users[i].avatar.includes("storage.googleapis.com")
+              // ) {
+              //   const userAvatarUrlArray = dataUser.users[i].avatar.split("/");
+              //   const fileNameGCS =
+              //     userAvatarUrlArray[userAvatarUrlArray.length - 1];
+              //   await bucketUserAvatar.file(fileNameGCS).delete();
+              // }
               await blob.makePublic();
               const publicUrl = blob.publicUrl();
               dataUser.users[i].avatar = publicUrl;
@@ -131,7 +131,7 @@ export default async function handler(req, res) {
 //               // Add the required 'Body' parameter
 //               Body: file,
 //             };
-//             const data = await uploadToAWS(uploadParams)
+//             const data = await uploadToAWS(uploadParams);
 //             // console.log("data", data)
 //             // blobStream.on("finish", async (data) => {
 //             //   console.log("upload end");
@@ -153,10 +153,16 @@ export default async function handler(req, res) {
 //             //     urlAvatar: publicUrl,
 //             //   });
 //             // });
-//             file.on("finish", function () {
-//               console.log("finish");
-//               const file = req.files.element2;
-//               console.log("file", file);
+//             file.on("end", async function () {
+//               const uploadParams = {
+//                 Bucket: "user-avatar-qtv-music-shop",
+//                 // Add the required 'Key' parameter using the 'path' module.
+//                 Key: `${avatarId}-avatar${extensionName}`,
+//                 // Add the required 'Body' parameter
+//                 Body: file,
+//               };
+//               const data = await uploadToAWS(uploadParams);
+//               console.log("data", data);
 //             });
 //             file.on("limit", function () {
 //               file.destroy();

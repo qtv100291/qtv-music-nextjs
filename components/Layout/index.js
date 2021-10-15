@@ -23,7 +23,7 @@ const Layout = (props) => {
     checkIsLogged();
     initFacebookSdk();
     
-  }, []);
+  },[]);
 
   const checkIsLogged = async () => {
     const tokenKey = authService.checkToken();

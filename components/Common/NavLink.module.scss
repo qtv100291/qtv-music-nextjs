@@ -10,7 +10,7 @@
       text-decoration: none;
   }
   &.activeLink{
-      color: $color-active;
+      color: $color-active!important;
   }
 }
 .navbarPageItem:nth-child(1){

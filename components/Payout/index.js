@@ -16,6 +16,7 @@ import {
   selectShoppingCart,
   removeAllItem,
 } from "../../store/shoppingCart";
+import { openLoadingModal, closeLoadingModal } from "../../store/loadingModal";
 import { connect } from "react-redux";
 import Head from "next/head";
 import ProtectedRoute from "../ProtectedRoute";
@@ -33,6 +34,14 @@ const mapDispatchToProps = (dispatch) => ({
   onTradeHistory: (tradeHistory) => {
     dispatch(removeAllItem());
     dispatch(updateTradeHistory(tradeHistory));
+  },
+  onOpenLoadingModal: () => {
+    additionalFunctionDom.fixBody();
+    dispatch(openLoadingModal());
+  },
+  onCloseLoadingModal: () => {
+    additionalFunctionDom.releaseBody();
+    dispatch(closeLoadingModal());
   },
 });
 
@@ -66,15 +75,12 @@ class Payout extends Form {
     isLoadingCommune: false,
   };
 
-  receiverDistrictKey = styles.receiverDistrict
-  receiverCommuneKey = styles.receiverCommune
-
   inputCheck = {
     receiverName: "emptyCheck",
     receiverPhone: "phoneCheck",
     receiverProvince: "selectEmptyCheck",
-    [this.receiverDistrictKey]: "selectEmptyCheck",
-    [this.receiverCommuneKey]: "selectEmptyCheck",
+    receiverDistrict: "selectEmptyCheck",
+    receiverCommune: "selectEmptyCheck",
     receiverStreet: "emptyCheck",
   };
 
@@ -181,12 +187,15 @@ class Payout extends Form {
         commune: [{ ...this.communeInit }],
       });
     } else {
-      document.querySelector(`.${styles.receiverDistrict} > span`).style.display =
-        "block";
+      document.querySelector(
+        `.${styles.receiverDistrict} > span`
+      ).style.display = "block";
       const districtList = await payoutService.getDistrict(idProvince);
       const district = [{ ...this.districtInit }, ...districtList];
       this.setState({ district, commune: [{ ...this.communeInit }] });
-      document.querySelector(`.${styles.receiverDistrict} > span`).style.display = "none";
+      document.querySelector(
+        `.${styles.receiverDistrict} > span`
+      ).style.display = "none";
     }
   };
 
@@ -194,20 +203,26 @@ class Payout extends Form {
     if (idDistrict === "None") {
       this.setState({ commune: [{ ...this.communeInit }] });
     } else {
-      document.querySelector(`.${styles.receiverCommune} > span`).style.display = "block";
+      document.querySelector(
+        `.${styles.receiverCommune} > span`
+      ).style.display = "block";
       const communeList = await payoutService.getCommune(idDistrict);
       const commune = [{ ...this.communeInit }, ...communeList];
       this.setState({ commune });
-      document.querySelector(`.${styles.receiverCommune} > span`).style.display = "none";
+      document.querySelector(
+        `.${styles.receiverCommune} > span`
+      ).style.display = "none";
     }
   };
 
   doSubmit = async () => {
-    additionalFunctionDom.fixBody();
+    this.props.onOpenLoadingModal();
     const MySwal = withReactContent(Swal);
     const { data } = this.state;
-    const { data : dataTradeHistory } = await payoutService.orderService(data);
+    const { data: dataTradeHistory } = await payoutService.orderService(data);
     this.props.onTradeHistory(dataTradeHistory.tradeHistory);
+    this.props.onCloseLoadingModal();
+    additionalFunctionDom.fixBody();
     MySwal.fire({
       icon: "success",
       text: "Cảm ơn quý khách đã tin tưởng QTV Music, nhân viên của chúng tôi sẽ liên lạc với quý khách trong thời gian sớm nhất.",
@@ -272,16 +287,20 @@ class Payout extends Form {
                   "idProvince"
                 )}
                 {this.renderSelect(
-                  `${styles.receiverDistrict}`,
+                  `receiverDistrict`,
                   "Quận/Huyện",
                   district,
-                  "idDistrict"
+                  "idDistrict",
+                  "true",
+                  `${styles.receiverDistrict}`
                 )}
                 {this.renderSelect(
-                  `${styles.receiverCommune}`,
+                  `receiverCommune`,
                   "Phường/Xã",
                   commune,
-                  "idCommune"
+                  "idCommune",
+                  "true",
+                  `${styles.receiverCommune}`
                 )}
                 {this.renderInputType3(
                   "receiverStreet",
@@ -431,4 +450,7 @@ class Payout extends Form {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ProtectedRoute (Payout));
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(ProtectedRoute(Payout));
