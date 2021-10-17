@@ -12,11 +12,11 @@ const mapDispatchToProps = (dispatch) => ({
   openLoadingModalPage: () => {
     additionalFunctionDom.fixBody();
     dispatch(openLoadingModal());
-    console.log("outside");
+    // console.log("outside");
   },
   closeLoadingModalPage: function () {
     dispatch(closeLoadingModal());
-    console.log("inside");
+    // console.log("inside");
   },
 });
 
@@ -51,11 +51,10 @@ class Subscription extends Form {
           html: "Email Này Đã Đăng Ký",
         }).then(() => {
           additionalFunctionDom.releaseBody();
-        this.props.closeLoadingModalPage();
         });
       }
+      this.props.closeLoadingModalPage();
     }
-    
   };
 
   render() {

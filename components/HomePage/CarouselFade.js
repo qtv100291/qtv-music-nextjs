@@ -13,7 +13,7 @@ const CarouselHomePage = () => {
       fade={true}
       className={styles.carouselHomePage}
       indicators={false}
-      interval={5000}
+      interval={4000}
     >
       <Carousel.Item id={styles.carouselMainItem}>
         <Link href="/san-pham" passHref>

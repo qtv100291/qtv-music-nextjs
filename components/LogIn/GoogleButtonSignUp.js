@@ -4,6 +4,7 @@ import withReactContent from "sweetalert2-react-content";
 import { loginGoogle } from "../../services/googleService";
 import styles from "./LogIn.module.scss";
 import store from "../../store/configureStore";
+import { openLoadingModal, closeLoadingModal } from "../../store/loadingModal";
 
 const GoogleButtonSignIn = ({windowWidth}) => {
   useEffect(() => {

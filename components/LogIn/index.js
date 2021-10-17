@@ -1,5 +1,5 @@
 import React from "react";
-import Form from "../Common/form";
+import Form from "../Common/Form";
 import styles from "./LogIn.module.scss";
 import authService from "../../services/loginService";
 import Link from "next/link";
@@ -33,12 +33,12 @@ const mapDispatchToProps = (dispatch) => ({
 class LogIn extends Form {
   state = {
     data: {
-      emailLogIn: "user@gmail.com",
-      passwordLogIn: "123456",
+      emailLogIn: "",
+      passwordLogIn: "",
     },
     errors: {},
     serverError: "",
-    disabled: false,
+    disabled: true,
     isLoading: false,
   };
 
@@ -160,7 +160,7 @@ class LogIn extends Form {
             <div className={styles.lineSeparated__part}></div>
           </div>
           <div className={`${styles.socialLogin} `}>
-            <div
+            {/* <div
               className={`${styles.buttonFacebookLoginContainer} d-flex justify-content-between`}
             >
               <div
@@ -177,7 +177,7 @@ class LogIn extends Form {
               >
                 Đăng nhập bằng Facebook
               </button>
-            </div>
+            </div> */}
             <GoogleButtonSignUp windowWidth = {this.props.windowWidth}/>
           </div>
           <p>

@@ -22,12 +22,13 @@ class Register extends Form {
 
   inputCheck = {
     emailRegister: "emailCheck",
-    phoneRegister: "phoneCheck",
+    // phoneRegister: "phoneCheck",
     passwordRegister: "passwordCheck",
     passwordRegisterRetype: "checkRetype",
   };
 
   doSubmit = async () => {
+    console.log("run")
     const MySwal = withReactContent(Swal);
     this.setState({ isLoading: true, disabled: true });
     try {
@@ -40,8 +41,8 @@ class Register extends Form {
         timer: 1250,
       }).then(() => {
         additionalFunctionDom.releaseBody();
+        this.props.router.replace("/dang-nhap");
       });
-      this.props.router.replace("/dang-nhap");
     } catch (ex) {
       if (ex.response && ex.response.status === 409) {
         const serverError = "Email này đã được sử dụng";
@@ -70,12 +71,12 @@ class Register extends Form {
           <form onSubmit={this.handleSubmit} className={styles.registerForm}>
             {this.renderInputType2("emailRegister", "Email Đăng Ký")}
             {this.renderInputType2("nameRegister", "Họ Tên")}
-            {this.renderInputType2(
+            {/* {this.renderInputType2(
               "phoneRegister",
               "Số Điện Thoại",
               "text",
               "true"
-            )}
+            )} */}
             {this.renderInputType2(
               "passwordRegister",
               "Mật Khẩu Chứa Ít Nhất 6 Kí Tự",

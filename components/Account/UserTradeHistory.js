@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import addfunc from "../../utils/additionalFunction";
-import styles from "./userTradeHistory.module.scss";
+import styles from "./UserTradeHistory.module.scss";
 import { useSelector } from "react-redux";
 import { selectTradeHistory } from "../../store/authentication";
 import Head from "next/head";

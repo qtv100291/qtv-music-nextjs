@@ -1,5 +1,5 @@
 import React from "react";
-import Form from "../Common/form";
+import Form from "../Common/Form";
 import payoutService from "../../services/payoutService";
 import styles from "./UserInformation.module.scss";
 import { connect } from "react-redux";

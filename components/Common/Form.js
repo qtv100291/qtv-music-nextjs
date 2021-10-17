@@ -9,6 +9,7 @@ import additionalFunctionDom from "../../utils/additionalFunctionDom";
 
 class Form extends Component {
   handleSubmit = async (e) => {
+    console.log("run hehe")
     e.preventDefault();
     const errors = additionalFunctionDom.checkInput(this.inputCheck); // check and print errors (if any)
     let newErros = { ...errors };

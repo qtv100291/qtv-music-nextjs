@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import scrollTopIcon from "../../assets/homepage-assets/up-arrow.svg";
-import styles from "./scrollTopIcon.module.scss";
+import styles from "./ScrollTopIcon.module.scss";
 import Image from "next/image";
 
 class ScrollTopIcon extends Component {

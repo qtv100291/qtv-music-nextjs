@@ -1,25 +1,22 @@
 import fs from "fs";
 import path from "path";
 import jwt from "jsonwebtoken";
+import connectMongoDB from "../../../utils/connectMongoDB";
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   if (req.method !== "GET") return;
-  const filePath = path.join(process.cwd(), "data", "users.json");
-  const fileData = fs.readFileSync(filePath);
-  const data = JSON.parse(fileData);
   const [schema, token] = req.headers.authorization.split(" ");
-  const secretKey = process.env.NEXT_PUBLIC_JWT_SECRET_KEY;
+  const secretKey = process.env.NEXT_PUBLIC_JWT_SECRET_KEY
   try {
     const decode = jwt.verify(token, secretKey);
-    const { id } = decode.data;
-    for (let i = 0; i < data.users.length; i++) {
-      if (data.users[i].id === id) {
-        const userData = { ...data.users[i] };
-        delete userData.password;
-        res.status(200).json(userData);
-      }
-    }
+    const { email } = decode.data;
+    const client = await connectMongoDB("usersData");
+    const userCollection = await client.db().collection("users");
+    const user = await userCollection.findOne({ email });
+    if (!user) return res.status(404).json({ message: "User not found" });
+    delete user.password
+    res.status(200).json(user);
   } catch (err) {
-    res.status(401).json({message:err.message});
+    res.status(401).json({ message: err.message });
   }
 }

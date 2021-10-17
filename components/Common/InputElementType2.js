@@ -6,7 +6,7 @@ const InputElementType2 = ({ label, name, error, value, ...rest }) => {
     <div className={styles.inputGroupType2}>
       <input name={name} id={name} value={value || ""} {...rest} required />
       {label && <label htmlFor={name}>{label}</label>}
-      {error && <div className="valid-feedback">{error}</div>}
+      {error && <div className={styles.validFeedback}>{error}</div>}
     </div>
   );
 };

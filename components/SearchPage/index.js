@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import AlbumItem from "../Common/albumItem";
+import AlbumItem from "../Common/AlbumItem";
 import PaginationBasic from "../Common/Pagination";
 import BreadCrumb from "../Common/BreadCrumb";
 import Dropdown from "react-bootstrap/Dropdown";

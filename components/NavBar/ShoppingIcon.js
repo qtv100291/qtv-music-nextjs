@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from './navbarIconItem.module.scss';
+import styles from './NavbarIconItem.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { getTotalCountItem } from '../../store/shoppingCart';
 import {  useSelector } from "react-redux";

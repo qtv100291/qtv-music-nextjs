@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import BreadCrumb from "../Common/BreadCrumb";
-import AudioPlayer from "../Common/audioPlayer";
+import AudioPlayer from "../Common/AudioPlayer";
 import AlbumHomePage from "../HomePage/AlbumHomePage";
 import addfunc from "../../utils/additionalFunction";
 import additionalFunctionDom from "../../utils/additionalFunctionDom";
