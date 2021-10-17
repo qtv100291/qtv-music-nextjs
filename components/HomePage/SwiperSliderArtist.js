@@ -50,7 +50,7 @@ const SwiperSliderArtist = ({ windowWidth }) => {
         <Link
           href={{
             pathname: "/san-pham",
-            query: { filter: "Bức Tường" },
+            query: { filter: "Buc Tuong" },
           }}
           passHref
         >

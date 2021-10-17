@@ -103,7 +103,7 @@ function filterValueInVienamese(value){
 
 function productFilter(album, filterValue) {
   let filteredAlbum;
-  console.log(filterValue === "Rock/Metal Viet Nam")
+  // console.log(filterValue === "Rock/Metal Viet Nam")
   if (filterValue === undefined) {
     filteredAlbum = album.slice(0);
     return filteredAlbum;
@@ -117,7 +117,7 @@ function productFilter(album, filterValue) {
     return filteredAlbum;
   }
   filteredAlbum = album.filter((x) => removeAccents(x.bandName) === filterValue);
-  console.log(filteredAlbum)
+  // console.log(filteredAlbum)
   return filteredAlbum;
 }
 

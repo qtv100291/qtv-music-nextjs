@@ -51,6 +51,7 @@ class Subscription extends Form {
           html: "Email Này Đã Đăng Ký",
         }).then(() => {
           additionalFunctionDom.releaseBody();
+        this.props.closeLoadingModalPage();
         });
       }
     }
