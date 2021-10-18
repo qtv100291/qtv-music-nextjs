@@ -7,7 +7,7 @@ export default async function handler(req, res) {
   if (req.method !== "POST") return;
   const { email, password, name, phone } = req.body;
   try {
-    const client =await connectMongoDB("usersData");
+    const client = await connectMongoDB("usersData");
     const existingEmail = await client.db().collection("users").findOne({ email });
     // console.log(existingEmail)
     if (existingEmail)
