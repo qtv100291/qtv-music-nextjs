@@ -3,8 +3,9 @@ import path from "path";
 import addfunc from "../../../utils/additionalFunction";
 import jwt from 'jsonwebtoken'
 import sendEmailConfirmation from "../../../utils/sendEmailConfirmation";
+import connectMongoDB from "../../../utils/connectMongoDB";
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   if (req.method !== "POST") return;
   const { userInfo } = req.body;
   const filePath = path.join(process.cwd(), "data", "users.json");
@@ -17,7 +18,13 @@ export default function handler(req, res) {
   const secretKey = process.env.NEXT_PUBLIC_JWT_SECRET_KEY;
   try {
     const decode = jwt.verify(token, secretKey);
-    const { id } = decode.data;
+    const { email } = decode.data;
+    const client = await connectMongoDB("usersData");
+    const clientOrder = await connectMongoDB("ordersData")
+    const userCollection = await client.db().collection("users");
+    const orderCollection = await client.db().collection("orders");
+    const user = await userCollection.findOne({ email });
+    if (!user) return res.status(404).json({ message: "User not found" });
     for (let i = 0; i < data.users.length; i++) {
       if (data.users[i].id === id) {
         const shoppingCart = JSON.parse(JSON.stringify(data.users[i].shoppingCart));
