@@ -216,6 +216,7 @@ class Payout extends Form {
   };
 
   doSubmit = async () => {
+    console.log("do submit")
     this.props.onOpenLoadingModal();
     const MySwal = withReactContent(Swal);
     const { data } = this.state;

@@ -19,6 +19,10 @@ export default async function refreshToken(req, res) {
       id: user._id.valueOf(),
     };
     const [tokenKey, refreshTokenKey] = generateToken(payload);
+    await userCollection.updateOne(
+      { email },
+      { $set: { refreshToken: refreshTokenKey } }
+    );
     client.close();
     return res
       .status(200)

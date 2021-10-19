@@ -32,6 +32,7 @@ export default async function handler(req, res) {
         .json({ accessToken: tokenKey, refreshToken: refreshTokenKey });
     } else return res.status(401).json({ message: "Password incorrect" });
   } catch (err) {
+    console.log(err)
     return res.status(500).json({ message: "server error" });
   }
 }

@@ -15,8 +15,10 @@ export default async function handler(req, res) {
     const user = await userCollection.findOne({ email });
     if (!user) return res.status(404).json({ message: "User not found" });
     delete user.password
+    // console.log("user")
     res.status(200).json(user);
   } catch (err) {
+    // console.log(err)
     res.status(401).json({ message: err.message });
   }
 }

@@ -1,6 +1,7 @@
 import jwtDecode from "jwt-decode";
 import generateToken from "../../../utils/generateToken";
 import connectMongoDB from "../../../utils/connectMongoDB";
+import sendWelcomeEmail from "../../../utils/sendWelcomeEmail";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return;
@@ -48,6 +49,7 @@ export default async function handler(req, res) {
         { email },
         { $set: { refreshToken: refreshTokenKey } }
       );
+      sendWelcomeEmail(email);
       return res
         .status(200)
         .json({ accessToken: tokenKey, refreshToken: refreshTokenKey });
