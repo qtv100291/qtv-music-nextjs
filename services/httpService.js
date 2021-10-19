@@ -2,7 +2,7 @@ import axios from "axios";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import additionalFunctionDom from "../utils/additionalFunctionDom";
-import { getCookie, setCookie } from "../utils/cookie";
+import { getCookie, setCookie, deleteCookie } from "../utils/cookie";
 
 export const axiosInner = axios.create({
   baseURL: process.env.NEXT_PUBLIC_API_BASE_URL_DEV || "http://localhost:3000",
@@ -45,6 +45,8 @@ axiosOuter.interceptors.response.use(null, async (error) => {
         "Bearer " + userToken.accessToken;
       return axiosOuter(originalRequest);
     } catch (err) {
+      deleteCookie("token_qtv")
+      deleteCookie("refreshToken_qtv")
       return Promise.reject(error);
     }
   }

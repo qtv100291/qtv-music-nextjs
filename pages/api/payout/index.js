@@ -14,7 +14,7 @@ export default async function handler(req, res) {
     const client = await connectMongoDB("usersData");
     const clientOrder = await connectMongoDB("ordersData");
     const userCollection = await client.db().collection("users");
-    const orderCollection = await client.db().collection("orders");
+    const orderCollection = await clientOrder.db().collection("orders");
     const user = await userCollection.findOne({ email });
     if (!user) return res.status(404).json({ message: "User not found" });
     const shoppingCart = user.shoppingCart;
@@ -23,13 +23,14 @@ export default async function handler(req, res) {
     await orderCollection.insertOne(orderInfo);
     await userCollection.updateOne(
       { email },
-      { $push: { tradeHistory: tradeHistory } }
+      { $push: { tradeHistory:{ $each : tradeHistory }} }
     );
-    sendEmailConfirmation(users.email, orderInfo);
+    sendEmailConfirmation(user.email, orderInfo);
     return res
       .status(200)
-      .json({ tradeHistory: [...data.users[i].tradeHistory] });
+      .json({ tradeHistory: [...user.tradeHistory, ...tradeHistory] });
   } catch (err) {
+    console.log(err)
     if (err.name === "MongoServerError")
       return res.status(500).json({ message: "server error" });
     return res.status(401).json({ message: err.message });
