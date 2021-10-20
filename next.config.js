@@ -12,6 +12,7 @@ module.exports = {
       "lh6.googleusercontent.com",
       "lh7.googleusercontent.com",
       "storage.googleapis.com",
+      "res.cloudinary.com"
     ],
   },
 };

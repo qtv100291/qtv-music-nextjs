@@ -14,19 +14,23 @@ export default async function refreshToken(req, res) {
     const userCollection = await client.db().collection("users");
     const user = await userCollection.findOne({ email });
     if (!user) return res.status(404).json({ message: "User not found" });
-    const payload = {
-      email: data.users[i].email,
-      id: user._id.valueOf(),
-    };
-    const [tokenKey, refreshTokenKey] = generateToken(payload);
-    await userCollection.updateOne(
-      { email },
-      { $set: { refreshToken: refreshTokenKey } }
-    );
-    client.close();
-    return res
-      .status(200)
-      .json({ accessToken: tokenKey, refreshToken: refreshTokenKey });
+    if (user.refreshToken === refreshToken){
+      const payload = {
+        email,
+        id: user._id.valueOf(),
+      };
+      const [tokenKey, refreshTokenKey] = generateToken(payload);
+      await userCollection.updateOne(
+        { email },
+        { $set: { refreshToken: refreshTokenKey } }
+      );
+      client.close();
+      return res
+        .status(200)
+        .json({ accessToken: tokenKey, refreshToken: refreshTokenKey });
+    }
+    else return res.status(401).json({ message: "Refresh Token not valid" });
+    
   } catch (err) {
     if (err.name === "MongoServerError")
       return res.status(500).json({ message: "server error" });

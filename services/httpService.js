@@ -62,7 +62,7 @@ axiosOuter.interceptors.response.use(null, async (error) => {
       icon: "error",
       html: "Đã Có Lỗi Xảy Ra. Xin Thử Lại",
       showConfirmButton: false,
-      timer: 1250,
+      timer: 1500,
     }).then(() => {
       additionalFunctionDom.releaseBody();
     });

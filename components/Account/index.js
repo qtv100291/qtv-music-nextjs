@@ -50,10 +50,10 @@ const Account = ({ activeTab }) => {
     const file = input.files[0];
     formData.append("upload_file", file);
     try {
-      await updateAvatarUser(formData)
-      // const { data } = await updateAvatarUser(formData);
-      // const urlAvatar = data.urlAvatar;
-      // dispatch(updateAvatar(urlAvatar));
+      // await updateAvatarUser(formData)
+      const { data } = await updateAvatarUser(formData);
+      const urlAvatar = data.urlAvatar;
+      dispatch(updateAvatar(urlAvatar));
     } catch (err) {
       if (err.response && err.response.status === 413) {
         const MySwal = withReactContent(Swal);
@@ -81,6 +81,11 @@ const Account = ({ activeTab }) => {
           setIsLoadingAvatar(false);
         });
       }
+      if (err.response && err.response.status >= 500){
+        setTimeout(()=> {
+          setIsLoadingAvatar(false);
+        },1500)
+      } 
     }
   };
 
