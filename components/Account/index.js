@@ -48,11 +48,12 @@ const Account = ({ activeTab }) => {
     if (input.files.length === 0) return;
     setIsLoadingAvatar(true);
     const file = input.files[0];
-    formData.append("imageUpload", file);
+    formData.append("upload_file", file);
     try {
-      const { data } = await updateAvatarUser(formData);
-      const urlAvatar = data.urlAvatar;
-      dispatch(updateAvatar(urlAvatar));
+      await updateAvatarUser(formData)
+      // const { data } = await updateAvatarUser(formData);
+      // const urlAvatar = data.urlAvatar;
+      // dispatch(updateAvatar(urlAvatar));
     } catch (err) {
       if (err.response && err.response.status === 413) {
         const MySwal = withReactContent(Swal);
