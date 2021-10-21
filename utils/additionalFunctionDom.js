@@ -7,6 +7,7 @@ function setDimension(source, target) {
 }
 
 function fixBody() {
+  // console.log("fixed")
   let scrollBarWidth;
   if (document.body.offsetHeight > window.innerHeight) {
     scrollBarWidth = window.innerWidth - document.body.clientWidth;

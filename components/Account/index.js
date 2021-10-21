@@ -18,6 +18,7 @@ import withReactContent from "sweetalert2-react-content";
 import Modal from "react-bootstrap/Modal";
 import ModalBody from "react-bootstrap/ModalBody";
 import Button from "react-bootstrap/Button";
+import { openLoadingModal, closeLoadingModal } from "../../store/loadingModal";
 
 const Account = ({ activeTab }) => {
   const [isLoadingAvatar, setIsLoadingAvatar] = useState(false);
@@ -43,7 +44,8 @@ const Account = ({ activeTab }) => {
 
   const uploadAvatarToServer = async ({ currentTarget: input }) => {
     setIsOpenModalUpload(false);
-    document.querySelector("#navbar-desktop").style.paddingRight = "0px";
+    // document.querySelector("#navbar-desktop").style.paddingRight = "0px";
+    dispatch(openLoadingModal());
     const formData = new FormData();
     if (input.files.length === 0) return;
     setIsLoadingAvatar(true);
@@ -51,13 +53,13 @@ const Account = ({ activeTab }) => {
     formData.append("upload_file", file);
     try {
       // await updateAvatarUser(formData)
+      additionalFunctionDom.fixBody();
       const { data } = await updateAvatarUser(formData);
       const urlAvatar = data.urlAvatar;
       dispatch(updateAvatar(urlAvatar));
     } catch (err) {
       if (err.response && err.response.status === 413) {
         const MySwal = withReactContent(Swal);
-        additionalFunctionDom.fixBody();
         MySwal.fire({
           icon: "error",
           text: "Kích thước file vượt quá 1 MB",
@@ -66,11 +68,11 @@ const Account = ({ activeTab }) => {
         }).then(() => {
           additionalFunctionDom.releaseBody();
           setIsLoadingAvatar(false);
+          dispatch(closeLoadingModal());
         });
       }
       if (err.response && err.response.status === 406) {
         const MySwal = withReactContent(Swal);
-        additionalFunctionDom.fixBody();
         MySwal.fire({
           icon: "error",
           text: "File không phải định dạng ảnh",
@@ -79,13 +81,15 @@ const Account = ({ activeTab }) => {
         }).then(() => {
           additionalFunctionDom.releaseBody();
           setIsLoadingAvatar(false);
+          dispatch(closeLoadingModal());
         });
       }
-      if (err.response && err.response.status >= 500){
-        setTimeout(()=> {
+      if (err.response && err.response.status >= 500) {
+        setTimeout(() => {
           setIsLoadingAvatar(false);
-        },1500)
-      } 
+          dispatch(closeLoadingModal());
+        }, 1500);
+      }
     }
   };
 
@@ -98,7 +102,6 @@ const Account = ({ activeTab }) => {
   const handleLoadingAvatar = () => {
     if (isLoadingAvatar) {
       const MySwal = withReactContent(Swal);
-      additionalFunctionDom.fixBody();
       MySwal.fire({
         icon: "success",
         text: "Tải Lên Avatar Thành Công",
@@ -106,6 +109,7 @@ const Account = ({ activeTab }) => {
         timer: 1500,
       }).then(() => {
         additionalFunctionDom.releaseBody();
+        dispatch(closeLoadingModal());
       });
       setIsLoadingAvatar(false);
     }
@@ -121,8 +125,8 @@ const Account = ({ activeTab }) => {
           document.querySelector("#navbar-desktop").style.paddingRight = "0px";
         }}
       >
-        <ModalBody style={{ padding: "30px", textAlign:"center" }}>
-          <p style={{ textAlign: "center", marginBottom:"20px" }}>
+        <ModalBody style={{ padding: "30px", textAlign: "center" }}>
+          <p style={{ textAlign: "center", marginBottom: "20px" }}>
             Vui lòng chọn file ảnh với kích thước không quá 1 MB
           </p>
           <Button variant="primary" onClick={uploadImageFile} style={{}}>
@@ -145,7 +149,7 @@ const Account = ({ activeTab }) => {
               <div
                 className={`${styles.avatarPicture} d-flex align-items-center justify-content-center`}
                 onClick={() => {
-                  if (isLoadingAvatar) return;
+                  // if (isLoadingAvatar) return;
                   let scrollBarWidth;
                   if (document.body.offsetHeight > window.innerHeight) {
                     scrollBarWidth =
@@ -159,11 +163,11 @@ const Account = ({ activeTab }) => {
                   setIsOpenModalUpload(true);
                 }}
               >
-                {isLoadingAvatar && (
+                {/* {isLoadingAvatar && (
                   <div className={styles.avatarSpinLoading}>
                     <Image loading="eager" alt="Avatar" src={spinIcon} />
                   </div>
-                )}
+                )} */}
                 {avatar ? (
                   <Image
                     loading="eager"

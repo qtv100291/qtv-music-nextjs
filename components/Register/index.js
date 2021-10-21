@@ -88,7 +88,7 @@ class Register extends Form {
               "password"
             )}
             <p>
-              Khi bạn Khi bạn nhấn ĐĂNG KÝ, bạn đã đồng ý với những{" "}
+              Khi bạn nhấn ĐĂNG KÝ, bạn đã đồng ý với những{" "}
               <span>
                 <Link href="/dieu-khoan-dich-vu">Điều Khoản</Link>
               </span>{"  "}
