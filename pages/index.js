@@ -5,7 +5,7 @@ function HomePagePage(props) {
   return <HomePage {...props}/>;
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const promise_1 = getAlbum(["5", "10", "14", "33"]);
   const promise_2 = getAlbum(["6", "32", "26", "18"]);
   const promise_3 = getAlbum(["23"]);
