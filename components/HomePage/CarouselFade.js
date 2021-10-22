@@ -6,6 +6,7 @@ import Banner1 from "../../assets/homepage-assets/banner.jpg";
 import Banner2 from "../../assets/homepage-assets/banner2.jpg";
 import Banner3 from "../../assets/homepage-assets/banner3.jpg";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const CarouselHomePage = () => {
   return (
@@ -14,13 +15,32 @@ const CarouselHomePage = () => {
       className={styles.carouselHomePage}
       indicators={false}
       interval={4000}
+      prevIcon={
+        <div className="arrow-icon-carousel-container icon-carousel-container-prev">
+          <FontAwesomeIcon
+            style={{ color: "black" }}
+            className="arrow-icon-carousel"
+            icon="chevron-left"
+          />
+        </div>
+      }
+      nextIcon={
+        <div className="arrow-icon-carousel-container icon-carousel-container-next">
+          <FontAwesomeIcon
+            style={{ color: "black" }}
+            className="arrow-icon-carousel"
+            icon="chevron-right"
+          />
+        </div>
+      }
     >
       <Carousel.Item id={styles.carouselMainItem}>
         <Link href="/san-pham" passHref>
           <a>
             <div className={styles.carouselBanner}>
               <div className={styles.carouselBannerPhoto}>
-                <Image loading="eager"
+                <Image
+                  loading="eager"
                   className="d-block w-100"
                   src={Banner1}
                   alt="First slide"
@@ -38,7 +58,8 @@ const CarouselHomePage = () => {
           <a>
             <div className={styles.carouselBanner}>
               <div className={styles.carouselBannerPhoto}>
-                <Image loading="eager"
+                <Image
+                  loading="eager"
                   className="d-block w-100"
                   src={Banner2}
                   alt="First slide"
@@ -60,7 +81,8 @@ const CarouselHomePage = () => {
           <a>
             <div className={styles.carouselBanner}>
               <div className={styles.carouselBannerPhoto}>
-                <Image loading="eager"
+                <Image
+                  loading="eager"
                   className="d-block w-100"
                   src={Banner3}
                   alt="First slide"

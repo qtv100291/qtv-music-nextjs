@@ -57,7 +57,21 @@ export default async function handler(req, res) {
     if (user.platform !== "google") {
       return res.status(409).json({ message: "Your email is already used" });
     }
+    const payload = {
+      email,
+      id: user._id.valueOf(),
+    };
+    const [tokenKey, refreshTokenKey] = generateToken(payload);
+    await userCollection.updateOne(
+      { email },
+      { $set: { refreshToken: refreshTokenKey } }
+    );
+    client.close()
+    return res
+      .status(200)
+      .json({ accessToken: tokenKey, refreshToken: refreshTokenKey });
   } catch (err) {
+    console.log(err)
     return res.status(500).json({ message: "server error" });
   }
 }

@@ -37,21 +37,21 @@ body {
     transform: translateY(-45%);
     outline: none;
     &::after {
-        @include desktop {
-          font-size: 30px;
-        }
-        @include large-tablet {
-          font-size: 30px;
-        }
-        @include tablet {
-          font-size: 30px;
-        }
-        @include mobile {
-          font-size: 30px;
-        }
+      @include desktop {
+        font-size: 30px;
       }
+      @include large-tablet {
+        font-size: 30px;
+      }
+      @include tablet {
+        font-size: 30px;
+      }
+      @include mobile {
+        font-size: 30px;
+      }
+    }
   }
-} 
+}
 .swiper-container {
   .swiper-button-prev {
     height: 100%;
@@ -75,7 +75,7 @@ body {
       }
     }
   }
-}  
+}
 
 .album-container {
   width: 100%;
@@ -191,7 +191,6 @@ footer.fixed {
   }
 }
 
-
 .product-part-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -243,4 +242,52 @@ footer.fixed {
     width: 250px;
     outline: none;
   }
+}
+
+.arrow-icon-carousel-container {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-radius: 999px;
+  background-color: rgb(119, 119, 119);
+  opacity: 0.8;
+  transition: 0.5s;
+  @include large-tablet {
+    width: 35px;
+    height: 35px;
+    padding: 25px;
+  }
+  @include tablet {
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+  }
+}
+
+.arrow-icon-carousel {
+  font-size: 35px;
+  @include large-tablet {
+    font-size: 30px;
+  }
+  @include tablet {
+    font-size: 25px;
+  }
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  transition: 0.5s;
+}
+
+.carousel-control-next:hover {
+  background-color: black;
+  opacity: 0.6;
+}
+
+.carousel-control-prev:hover {
+  background-color: black;
+  opacity: 0.6;
 }

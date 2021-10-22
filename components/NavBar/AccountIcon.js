@@ -32,7 +32,7 @@ const AccountIcon = () => {
                 <a
                   className={styles.navBarPopoverItem}
                   onClick={() => {
-                    console.log("hihihi");
+                    // console.log("hihihi");
                     document.body.click();
                   }}
                 >
@@ -47,7 +47,7 @@ const AccountIcon = () => {
                 <a
                   className={styles.navBarPopoverItem}
                   onClick={() => {
-                    console.log("hihihi");
+                    // console.log("hihihi");
                     document.body.click();
                   }}
                 >
