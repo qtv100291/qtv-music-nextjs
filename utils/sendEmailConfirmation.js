@@ -222,6 +222,7 @@ export default async function sendEmailConfirmation(clientEmail, order) {
       console.log("Email sent: " + info.response);
     }
   });
+  console.log("welcome email was sent")
 }
 
 function renderOrderList(orderList) {

@@ -3,6 +3,9 @@ import nodemailer from "nodemailer";
 export default async function sendWelcomeEmail(clientEmail) {
   const transporter = nodemailer.createTransport({
     service: "gmail",
+    host: "smtp.gmail.com",
+    secure: true,
+    port: 465,
     tls: { rejectUnauthorized: false },
     auth: {
       user: process.env.NEXT_PUBLIC_EMAIL,
@@ -150,4 +153,5 @@ export default async function sendWelcomeEmail(clientEmail) {
       console.log("Email sent: " + info.response);
     }
   });
+  console.log("welcome email was sent")
 }
