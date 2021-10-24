@@ -80,7 +80,7 @@ class AlbumDetail extends Component {
       releaseYear,
       albumName,
       bandName,
-      albumCover,
+      albumCoverContent,
       price,
       description,
       previewSong,
@@ -90,8 +90,8 @@ class AlbumDetail extends Component {
     } = this.props.productContent;
 
     const { relatedAlbum } = this.props;
-    console.log(relatedAlbum);
-    const imagePath = albumCover;
+    // console.log(relatedAlbum);
+    const imagePath = albumCoverContent;
     const mp3Path = previewSong;
 
     return (

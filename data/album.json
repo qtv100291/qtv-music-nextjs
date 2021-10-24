@@ -1,4 +1,5 @@
-{"musicData": [
+{
+  "musicData": [
     {
       "id": "1",
       "albumName": "Tâm Hồn của Đá",
@@ -35,7 +36,8 @@
         "Tâm hồn của đá (tựa tiếng Anh: The Soul of Rock) là album phòng thu đầu tay của ban nhạc rock Việt Bức Tường, phát hành ngày 3 tháng 2 năm 2002 bởi Trung tâm Nghe nhìn Hà Nội. Album tập hợp 10 ca khúc thành công nhất của Bức Tường, trong đó có những bài đã trở thành 'ca khúc ruột' trong giới sinh viên – cái nôi trưởng thành của ban nhạc. Mặc dù từ bản demo đầu tiên được thu vào tháng 6 năm 1999 cho tới khi chính thức thâu âm cũng mất chừng 1 năm vì thiếu tiền thực hiện. Một năm sau khi thu âm, sau rất nhiều lần gõ cửa các đầu mối phát hành khắp Bắc chí Nam, cuối cùng thì \"Tâm hồn của đá\" mới chính thức ra đời. Toàn bộ các khâu sản xuất thực sự đều do chính tay các thành viên ban nhạc thực hiện."
       ],
       "albumFolder": "album-cover-and-audio/Tam_Hon_Cua_Da",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FTam_Hon_Cua_Da%2Fcover.jpg?alt=media&token=9b21efcd-a39a-4a7e-878d-f9276736b81e",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089229/qtv-music-shop-cover/cover_ktbpfd_Copy_tjomqp.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635085635/qtv-music-shop/cover_ktbpfd.jpg",
       "price": "199.000"
     },
     {
@@ -72,7 +74,9 @@
         "Vô Hình (tựa tiếng Anh: The Invisible) là album phòng thu thứ hai của ban nhạc rock Việt Bức Tường, phát hành ngày 10 tháng 8 năm 2003 bởi Trung tâm Nghe nhìn Hà Nội. Album tập hợp chuỗi 9 ca khúc thành công tiếp theo của Bức Tường, những bài hát nói về giá trị của cuộc sống, hạnh phúc hay khổ đau nhiều khi không thể đo được bằng vật chất mà có khi là một thứ gì đó rất \"vô hình\". Có một số ca khúc về thân phận con người như: Sông Hồng, Con số không, Đêm, Cô gái mù....Toàn bộ nhạc phẩm được soạn và sáng tác bởi Trần Lập"
       ],
       "albumFolder": "album-cover-and-audio/Vo_Hinh",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FVo_Hinh%2Fcover.jpg?alt=media&token=39d222fe-67ed-403d-b8cd-937ff5bd31ef",
+
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089232/qtv-music-shop-cover/cover_sp3zb4_Copy_k704ep.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635085802/qtv-music-shop/cover_sp3zb4.jpg",
       "price": "199.000"
     },
     {
@@ -116,7 +120,9 @@
         "Có lẽ độc đáo nhất là ca khúc \" Dế Mèn\" với nội dung đầy chất triết lý và sự kết hợp đầy sáng tạo của nét giai điệu cổ truyền và chất Metal. Đặc biệt là ca khúc “Ra khơi” phóng tác từ dân ca Nam Bộ, như một thử nghiệm, tìm tòi mới của Bức Tường khi kết hợp âm nhạc dân gian và Rock. “Nam châm”  là tên của một ca khúc trong album, đồng thời cũng như mong muốn của ban nhạc, là ''sức hút'' của những khát khao sáng tạo để tìm đến một phong cách rock đậm chất Việt. “Nam châm” cũng là bước tiếp theo của Bức tường qua gần mười năm gắn bó với rock để đến gần với tiêu chí này."
       ],
       "albumFolder": "album-cover-and-audio/Nam_Cham",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FNam_Cham%2Fcover.jpg?alt=media&token=aa51db22-7a62-4c4f-affa-9cd6c0c0f658",
+
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089233/qtv-music-shop-cover/cover_xwkbrb_Copy_okbcaq.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635085884/qtv-music-shop/cover_xwkbrb.jpg",
       "price": "230.000"
     },
     {
@@ -160,7 +166,9 @@
         "Vẫn là chất rock sâu lắng, 12 ca khúc trong album đã truyền đến người nghe năng lượng sống dồi dào, tình yêu thương giữa con người-con người cùng tình yêu cuộc sống. Album “Ngày khác” đã cho thấy sự chuẩn bị kỹ lưỡng  của họ ở nhiều góc cạnh về một hình ảnh hoàn toàn mới của ban nhạc Bức tường với nhiều trải nghiệm. Lời ca không chỉ chứa đựng nhiều hình ảnh mà còn mang tính triết lý. Phong cách biểu diễn cũng không thiên về tốc độ mà chú trọng tới kỹ thuật nhiều hơn. Đặc biệt, phần hình ảnh của 5 chàng trai Bức tường không còn dáng vẻ hầm hố, đinh sắt mà trở nên lịch thiệp, thân thiện của các quý ông chơi rock. Đây là kết quả của những năm tháng miệt mài tập luyện, chuẩn bị không đứt đoạn của các thành viên Bức tường, họ chia tay để rồi vẫn hy vọng một ngày tái ngộ."
       ],
       "albumFolder": "album-cover-and-audio/Ngay_Khac",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FNgay_Khac%2Fcover.jpg?alt=media&token=8c70d8e5-681a-495d-8dc0-bf720e6d302c",
+
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089230/qtv-music-shop-cover/cover_pj87qm_Copy_rq8y5d.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635085959/qtv-music-shop/cover_pj87qm.jpg",
       "price": "299.000"
     },
     {
@@ -200,7 +208,9 @@
         "Vẫn là chất rock sâu lắng, 12 ca khúc trong album đã truyền đến người nghe năng lượng sống dồi dào, tình yêu thương giữa con người-con người cùng tình yêu cuộc sống. Album “Ngày khác” đã cho thấy sự chuẩn bị kỹ lưỡng  của họ ở nhiều góc cạnh về một hình ảnh hoàn toàn mới của ban nhạc Bức tường với nhiều trải nghiệm. Lời ca không chỉ chứa đựng nhiều hình ảnh mà còn mang tính triết lý. Phong cách biểu diễn cũng không thiên về tốc độ mà chú trọng tới kỹ thuật nhiều hơn. Đặc biệt, phần hình ảnh của 5 chàng trai Bức tường không còn dáng vẻ hầm hố, đinh sắt mà trở nên lịch thiệp, thân thiện của các quý ông chơi rock. Đây là kết quả của những năm tháng miệt mài tập luyện, chuẩn bị không đứt đoạn của các thành viên Bức tường, họ chia tay để rồi vẫn hy vọng một ngày tái ngộ."
       ],
       "albumFolder": "album-cover-and-audio/Dat_Viet",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FDat_Viet%2Fcover.jpg?alt=media&token=0cfa7ef8-9eee-4deb-844a-fe80e8a016a6",
+
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089235/qtv-music-shop-cover/cover_cygjut_Copy_nn3evs.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635086512/qtv-music-shop/cover_cygjut.jpg",
       "price": "350.000"
     },
     {
@@ -236,7 +246,8 @@
         "Master of Puppets nhận được lời khen ngợi từ giới phê bình và được đưa vào các danh sách album hay nhất của những ấn phẩm khác nhau. Với chất nhạc mạnh mẽ đầy kỹ thuật cùng ca từ đậm chất chính trị và dữ tợn, nó đã nhận được lời khen ngợi từ các nhà phê bình ở ngoài cộng đồng nhạc metal. Album được xem như là nỗ lực mạnh nhất của ban nhạc trong gian đoạn này và là một trong những album heavy metal có nhiều ảnh hưởng nhất. Master of Puppets được cho rằng có đầy đủ \"tầm quan trọng về văn hóa, lịch sử hoặc thẩm mỹ\" để được gìn giữ trong National Recording Registry của Thư viện Quốc hội Hoa Kỳ vào năm 2016. Chỉ có 450 bản thu âm nhận được vinh dự này, và Master of Puppets là lựa chọn đầu tiên thuộc dòng nhạc metal."
       ],
       "albumFolder": "album-cover-and-audio/Master_Of_Pupets",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FMaster_Of_Pupets%2Fcover.jpg?alt=media&token=4456058b-7995-47b8-bdbe-6fde8815bcad",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089237/qtv-music-shop-cover/cover_c4np3c_Copy_td5uv1.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635086735/qtv-music-shop/cover_c4np3c.jpg",
       "price": "499.000"
     },
     {
@@ -280,7 +291,8 @@
         "Metallica đã nhận được nhiều lời khen ngợi từ giới phê bình và trở thành album bán chạy nhất của ban nhạc. Album đã ra mắt ở vị trí số một trên bảng xếp hạng của hơn mười quốc gia và trải qua bốn tuần liên tiếp đứng đầu Billboard 200, và là album đầu tiên của Metallica đứng đầu các bảng xếp hạng album. Metallica là một trong những album bán chạy nhất trên toàn thế giới và cũng là một trong những album bán chạy nhất tại Hoa Kỳ kể từ khi hệ thống Nielsen SoundScan bắt đầu. Album được chứng nhận 16× platinum bởi Hiệp hội Công nghiệp ghi âm Hoa Kỳ (RIAA) vào năm 2012 và đã bán được hơn mười sáu triệu bản tại Hoa Kỳ, và là album đầu tiên trong kỷ nguyên SoundScan làm được điều đó."
       ],
       "albumFolder": "album-cover-and-audio/Metallica",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FMetallica%2Fcover.jpg?alt=media&token=4d0960f2-b48b-49ab-ae5a-221dccbad449",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089235/qtv-music-shop-cover/cover_bqbjzt_Copy_qyioqp.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635086752/qtv-music-shop/cover_bqbjzt.jpg",
       "price": "750.000"
     },
     {
@@ -320,7 +332,8 @@
         "Death Magnetic đã được đề cử cho bốn giải Grammy năm 2009 bao gồm: Album nhạc rock xuất sắc nhất, Trình diễn metal xuất sắc nhất, Trình diễn nhạc đệm rock xuất sắc nhất, Trình bày đĩa hát đẹp nhất. Và đã chiến thấng tại 2 hạng mục là Trình diễn metal xuất sắc nhất và Trình bày đĩa hát đẹp nhất. "
       ],
       "albumFolder": "album-cover-and-audio/Death_Magnetic",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FDeath_Magnetic%2Fcover.jpg?alt=media&token=6033d84f-d2de-4456-9611-71e136aad05d",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089232/qtv-music-shop-cover/cover_uunwsr_Copy_kltrzj.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635086814/qtv-music-shop/cover_uunwsr.jpg",
       "price": "999.000"
     },
     {
@@ -364,7 +377,8 @@
         "Album này là album phòng thu thứ sáu liên tiếp của Metallica ra mắt ở vị trí số một trên Billboard 200 của Mỹ, bán được 291.000 bản ngay trong tuần đầu tiên và đứng đầu các bảng xếp hạng ở 57 quốc gia. Sự thành công của album này đánh dấu lần thứ hai trong lịch sử rằng bất kỳ ban nhạc thuộc bất kỳ thể loại nào cũng đã có sáu album liên tiếp ra mắt ở vị trí số một, chỉ sau Dave Matthews Band. "
       ],
       "albumFolder": "album-cover-and-audio/Hardwired_To_Self-Destruct",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FHardwired_To_Self-Destruct%2Fcover.jpg?alt=media&token=cd7517fd-a455-4c9a-9ae7-4e9ff02b91bb",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089236/qtv-music-shop-cover/cover_egrnfd_Copy_ytya6u.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635086879/qtv-music-shop/cover_egrnfd.jpg",
       "price": "1.200.000"
     },
     {
@@ -402,7 +416,8 @@
         "\"Tìm lại\" là một trong những ca khúc thành công nhất của nhóm nhạc rock nu metal Việt Nam Microwave. Đây là ca khúc thứ 9 trong album Lối thoát. Trong năm 2006, ca khúc này được phát trên sóng radio và ngay lập tức đã trở thành một hit. Ca khúc nhận được rất nhiều yêu cầu đề nghị phát trên radio của những người yêu nhạc. Trong suốt mùa hè năm 2007, ca khúc này đã thống trị các chương trình ca nhạc trên các sóng phát thanh Việt Nam. \"Tìm lại\" cũng đã đạt đến vị trí quán quân trên bảng xếp hạng âm nhạc VN10 của kênh âm nhạc Xone FM."
       ],
       "albumFolder": "album-cover-and-audio/Loi_Thoat",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FLoi_Thoat%2Fcover.jpg?alt=media&token=2f2b1685-3c19-4a11-99f4-269028d2813d",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089235/qtv-music-shop-cover/cover_bh6w04_Copy_oxucld.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087034/qtv-music-shop/cover_bh6w04.jpg",
       "price": "200.000"
     },
     {
@@ -440,7 +455,8 @@
         "Album được thu tại phòng thu âm của hãng Music Face, do nhạc sĩ Đức trí sáng lập, cũng là nơi Ngọc Lĩnh làm việc với tư cách là một kỹ sư."
       ],
       "albumFolder": "album-cover-and-audio/Thoi_Gian",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FThoi_Gian%2Fcover.jpg?alt=media&token=6114dda7-1d15-42fa-a028-2e83b92ce16b",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089237/qtv-music-shop-cover/cover_hejqkt_Copy_drznpu.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087026/qtv-music-shop/cover_hejqkt.jpg",
       "price": "250.000"
     },
     {
@@ -480,7 +496,8 @@
         "Album được thu âm tại phòng thu riêng của ban nhạc. Khâu sản xuất do Chris Hesse, tay trống kiêm nhà sản xuất của nhóm rock nổi tiếng Hoobastank, từng có 3 đề cử giải Grammy cho hạng mục Nhà sản xuất âm nhạc đảm nhận. Nên album được đánh giá là đĩa nhạc rock có chất lượng ghi âm tiêu chuẩn quốc tế."
       ],
       "albumFolder": "album-cover-and-audio/10",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2F10%2Fcover.jpg?alt=media&token=e0aa550d-5bf5-4a78-a0e4-2e06a9fe8b20",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089234/qtv-music-shop-cover/cover_yzr6vp_Copy_fqnuhe.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087287/qtv-music-shop/cover_yzr6vp.jpg",
       "price": "299.000"
     },
     {
@@ -520,7 +537,8 @@
         "Tái sinh (tên album) cũng là ca khúc chủ đề mà nhóm muốn truyền đạt đến người nghe, với những triết lý nhân sinh, số phận con người, sự sống, cái chết... Tái sinh gồm 10 ca khúc: Linh hồn vẫn tồn tại, Mộ gió, Sự cứu chuộc, Lời nguyền... mang phong cách power metal, khá dễ nghe và cảm nhận. Đặc biệt có cả ca khúc Nối vòng tay lớn của Trịnh Công Sơn được nhóm mạnh dạn cover bằng chất rock mạnh mẽ và hùng tráng. Trong album còn có hai ca khúc nước ngoài cover lại là Wings of Destiny (Rhapsody) và Final countdown (Europe)."
       ],
       "albumFolder": "album-cover-and-audio/Tai_Sinh",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FTai_Sinh%2Fcover.jpg?alt=media&token=40dbcbdc-ed80-452a-9fef-ff208712d545",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089234/qtv-music-shop-cover/cover_axiydg_Copy_cixyca.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087379/qtv-music-shop/cover_axiydg.jpg",
       "price": "150.000"
     },
     {
@@ -544,7 +562,8 @@
         "Tái sinh (tên album) cũng là ca khúc chủ đề mà nhóm muốn truyền đạt đến người nghe, với những triết lý nhân sinh, số phận con người, sự sống, cái chết... Tái sinh gồm 10 ca khúc: Linh hồn vẫn tồn tại, Mộ gió, Sự cứu chuộc, Lời nguyền... mang phong cách power metal, khá dễ nghe và cảm nhận. Đặc biệt có cả ca khúc Nối vòng tay lớn của Trịnh Công Sơn được nhóm mạnh dạn cover bằng chất rock mạnh mẽ và hùng tráng. Trong album còn có hai ca khúc nước ngoài cover lại là Wings of Destiny (Rhapsody) và Final countdown (Europe)."
       ],
       "albumFolder": "album-cover-and-audio/Giang_Sinh",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FGiang_Sinh%2Fcover.jpg?alt=media&token=90446a9e-e6e8-4f86-a0d1-d1eea9ea1c75",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089233/qtv-music-shop-cover/cover_rwnp1c_Copy_yxzieh.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087420/qtv-music-shop/cover_rwnp1c.jpg",
       "price": "180.000"
     },
     {
@@ -588,7 +607,8 @@
         "Cây guitar Lê Hiếu, trưởng nhóm rock Thuỷ Triều Đỏ, cho biết: \"Nắng mới là lời nhắn nhủ hãy tin vào một ngày mới, một tương lai tươi sáng và rằng con người luôn là nhân tố quyết định cho sự thành công hay thất bại. Hãy sống với bầu nhiệt huyết sục sôi nhưng đồng thời cũng phải có cái đầu tỉnh táo, biết phân biệt tốt xấu, chính tà. Và luôn tự hỏi: Ngày hôm qua chúng ta đã làm được gì còn ngày hôm nay chúng ta sẽ phải làm gì?”.12 tác phẩm trong album (như Ánh sáng nơi núi rừng, Nắng mới, Đàn dơi (hòa tấu), Người hát rong, Bạn bè, Ngắn ngủi, Thời gian, Vượt qua chính mình, Cánh thư cuối cùng, Hát về anh (remix)... ) đều là những câu chuyện riêng lẻ, có phân đoạn rõ ràng, mỗi đoạn thể hiện một cảm xúc khác nhau."
       ],
       "albumFolder": "album-cover-and-audio/Nang_Moi",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FNang_Moi%2Fcover.jpg?alt=media&token=949da8d0-8fc5-46aa-8125-87f4bda14225",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089234/qtv-music-shop-cover/cover_zizbig_Copy_ycd2o4.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087457/qtv-music-shop/cover_zizbig.jpg",
       "price": "180.000"
     },
     {
@@ -628,7 +648,8 @@
         "“Toàn bộ album “Sau Cơn Mưa” như là một “cuốn sách” có nội dung vươn tới sự lạc quan. Nhiều câu chuyện được kể ra với các góc nhìn khác nhau của cuộc sống đời thường. Điểm xuyên suốt của toàn bộ các ca khúc trong Album, đó chính là mơ ước. Điều này luôn ẩn chứa trong mỗi con người cho dù họ sống ở những hoàn cảnh khác nhau, cảm nhận cuộc đời với nhiều cách nhìn khác nhau và khi hạnh phúc hay khổ đau thì MƠ ƯỚC luôn hướng tất cả chúng ta tới điều tốt đẹp nhất.” – Thủy Triều Đỏ đã chia sẻ về album thứ hai của mình"
       ],
       "albumFolder": "album-cover-and-audio/Sau_Con_Mua",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FSau_Con_Mua%2Fcover.jpg?alt=media&token=ce497707-4f9f-4726-9478-482bfda34ac5",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089231/qtv-music-shop-cover/cover_op2mqg_Copy_ulihgq.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087482/qtv-music-shop/cover_op2mqg.jpg",
       "price": "249.000"
     },
     {
@@ -673,7 +694,8 @@
         "Sự cộng hưởng độc đáo đến từ những cú riff metal sắc như lưỡi dao cạo, tiết tấu điện tử tinh tế, các đoạn twist rap uyển chuyển, giọng thét nảy lửa kèm với đó là một dự cảm âm nhạc đầy tinh tường đã mang sáu con người từ bóng tối vô danh này bước ra ngoài ánh sáng và trở thành một trong những tượng đài không gì có thể sánh nổi."
       ],
       "albumFolder": "album-cover-and-audio/Hybrid_Theory",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FHybrid_Theory%2Fcover.jpg?alt=media&token=7b6661e5-c74a-4c48-ad7c-167dd30905a6",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089233/qtv-music-shop-cover/cover_wcibuw_Copy_jfvif5.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087511/qtv-music-shop/cover_wcibuw.jpg",
       "price": "249.000"
     },
     {
@@ -718,7 +740,8 @@
         "Meteora là album phòng thu thứ hai của ban nhạc nu metal Linkin Park, phát hành lần đầu vào 25 tháng 3 năm 2003, ngay sau album Reanimation. Linkin Park phát hành các đĩa đơn từ Meteora trong vòng hơn 1 năm, gồm có: \"Somewhere I Belong\", \"Faint\", \"Breaking the Habit\" và \"Numb\". Meteora cũng là studio album ngắn nhất của Linkin Park. Âm nhạc trong Meteora có sự thay đổi đáng kể so với Hybrid Theory. Nó khác biệt bởi sự ảnh hưởng từ rapcore (\"Lying from You\", \"Hit the Floor\", \"Figure.09\"), nhạc hip hop (\"Nobody's Listening\") và electronica (\"Breaking the Habit\"). Bài hát không lời \"Session\" được đề cử Giải Grammy cho Bài hát rock hay nhất năm 2003. Đây là album thành công nhất trong lịch sử của bảng xếp hạng Modern Rock Tracks – một bảng xếp hạng chuyên về các bài rock alternative phát sóng qua đài. \"Numb\" là bài hát nổi tiếng nhất năm trên bảng xếp hạng. Album đã bán được 5,5 triệu bản ở Mỹ và hơn 11 triệu bản trên thế giới cho đến nay."
       ],
       "albumFolder": "album-cover-and-audio/Meteora",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FMeteora%2Fcover.jpg?alt=media&token=929f0094-ec52-4923-b83d-d84e27247dc8",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089237/qtv-music-shop-cover/cover_ibdeak_Copy_g9qcwa.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087553/qtv-music-shop/cover_ibdeak.jpg",
       "price": "520.000"
     },
     {
@@ -762,7 +785,8 @@
         "Ban nhạc tuyên bố rằng Living Things kết hợp các yếu tố từ bốn album phòng thu trước đó của họ để tạo ra một phong cách mới. Họ nói rằng cuối cùng họ cũng cảm thấy họ ở trong \"lãnh địa quen thuộc\" và \"thoải mái trong chính làn da của họ\" sau nhiều năm thử nghiệm của hai album phòng thu trước đó của họ, Minutes to Midnight và A Thousand Suns. Living Things được chọn làm tiêu đề của album vì có nhiều chủ đề cá nhân của các thành viên trong album. "
       ],
       "albumFolder": "album-cover-and-audio/Living_Things",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FLiving_Things%2Fcover.jpg?alt=media&token=7f740d00-f263-41b2-a9e7-ddd9a4146b1c",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089231/qtv-music-shop-cover/cover_ruo2rr_Copy_o6ua66.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087566/qtv-music-shop/cover_ruo2rr.jpg",
       "price": "450.000"
     },
     {
@@ -802,7 +826,8 @@
         "Ban nhạc đã thu âm album từ tháng 9 năm 2015 đến tháng 2 năm 2017 tại nhiều phòng thu. Các thành viên ban nhạc Brad Delson và Mike Shinoda từng là nhà sản xuất chính của album. Âm thanh của One More Light đã được mô tả là tập trung nhiều nhạc pop hơn, không giống như phong cách alternative rock hoặc alternative metal như trong các album trước của họ. Album có sự xuất hiện của các ca sĩ khách mời từ Pusha T, Stormzy và Kiiara, và sự hợp tác sản xuất và sáng tác với JR Rotem, Julia Michaels, Justin Tranter, Ross Golan, Andrew Goldstein, blackbear và Eg White. Album này cũng là lần đầu tiên một album của ban nhạc có ca khúc chủ đề , vì họ cảm thấy bài hát \"One More Light\" là trái tim của album."
       ],
       "albumFolder": "album-cover-and-audio/One_More_Light",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FOne_More_Light%2Fcover.jpg?alt=media&token=8a284e63-3505-4ae2-be5b-4d3d9f11e13c",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089237/qtv-music-shop-cover/cover_gyrrss_Copy_ytlduo.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087579/qtv-music-shop/cover_gyrrss.jpg",
       "price": "800.000"
     },
     {
@@ -846,7 +871,8 @@
         "Với sự thành công từ album này, ban nhạc đã dành được một loạt các giải thưởng như American Music Award cho hạng mục Best New Hard Rock/Heavy Metal Band of 1991, Metal Edge Magazine's Best New Band of 1991, Young Guitar Magazine's Best Newcomer of 1991. Đĩa đơn \"Love of a Lifetime\" cũng đạt được thành công vang dội với hơn 500.000 bản được bán ra. "
       ],
       "albumFolder": "album-cover-and-audio/Fire_House",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FFire_House%2Fcover.jpg?alt=media&token=a49e9ee6-876f-4bda-892a-b66839e879e8",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089228/qtv-music-shop-cover/cover_kdm6gz_Copy_lsdpst.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087592/qtv-music-shop/cover_kdm6gz.jpg",
       "price": "1.000.000"
     },
     {
@@ -890,7 +916,8 @@
         "Album này chủ yếu tập trung và những bản power ballad, nó đã giúp cho FireHouse trở thành một trong những nhóm nhạc chính của thể loại pop-metal trong giai đoạn này. Nhóm đã xây dựng album này trở thành một sản phẩm đáng nghe cho tất cả người hâm mộ thể loại này."
       ],
       "albumFolder": "album-cover-and-audio/Hold_Your_Fire",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FHold_Your_Fire%2Fcover.jpg?alt=media&token=c149fdae-b553-4a83-bbfa-ff8c9b943a66",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089233/qtv-music-shop-cover/cover_x3qus1_Copy_dbikno.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087681/qtv-music-shop/cover_x3qus1.jpg",
       "price": "600.000"
     },
     {
@@ -932,7 +959,8 @@
         "Album được sản xuất bởi người chơi guitar của nhóm Bill Leverty, đã đạt chứng nhận Gold tại 6 quốc gia trên toàn thế giới bao gồm Malaysia, Thái Lan và Indonesia. "
       ],
       "albumFolder": "album-cover-and-audio/Good_Acoustic",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FGood_Acoustic%2Fcover.jpg?alt=media&token=df8f45bb-9ba2-4f61-85ef-31c9294f1e27",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089238/qtv-music-shop-cover/cover_jxpsw4_Copy_cc3zuf.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087707/qtv-music-shop/cover_jxpsw4.jpg",
       "price": "1.200.000"
     },
     {
@@ -971,7 +999,8 @@
         "Prime Time là album phòng thu thứ bảy của ban nhạc rock FireHouse. Nó được phát hành vào năm 2003 bởi Pony Canyon ở Nhật Bản và năm 2004 tại Hoa Kỳ."
       ],
       "albumFolder": "album-cover-and-audio/Prime_Time",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FPrime_Time%2Fcover.jpg?alt=media&token=64201db1-8f54-4aad-9f4a-906683d8b577",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089233/qtv-music-shop-cover/cover_vvjpuz_Copy_zhkkcs.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087712/qtv-music-shop/cover_vvjpuz.jpg",
       "price": "900.000"
     },
     {
@@ -1009,7 +1038,8 @@
         "Angel Fall First là một album power metal pha trộn cùng các yếu tố gothic, folk và classical. Các ca khúc trong album được Tuomas Holopainen viết trong thời gian phục vụ trong quân đội."
       ],
       "albumFolder": "album-cover-and-audio/Angels_Fall_First",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FAngels_Fall_First%2Fcover.jpg?alt=media&token=2d1d0615-51c1-4970-888b-d9550ee55b64",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089231/qtv-music-shop-cover/cover_tjeunn_Copy_owpf59.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087766/qtv-music-shop/cover_tjeunn.jpg",
       "price": "400.000"
     },
     {
@@ -1049,7 +1079,8 @@
         "Album được chứng nhận Double Platinum ở Phần Lan với hơn 60.000 bản được bán và là album bán chạy thứ hai ở Phần Lan năm 2002. Century Child đã bán được hơn 80.000 bản chỉ riêng ở Phần Lan và bán được hơn 350.000 bản trên toàn thế giới từ năm 2002 đến 2003."
       ],
       "albumFolder": "album-cover-and-audio/Century_Child",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FCentury_Child%2Fcover.jpg?alt=media&token=a21ad686-28ee-4cf3-9b07-06e716edbc59",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089231/qtv-music-shop-cover/cover_ldkhge_Copy_oobnd5.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087781/qtv-music-shop/cover_ldkhge.jpg",
       "price": "420.000"
     },
     {
@@ -1091,7 +1122,8 @@
         "Album tiếp tục cách tiếp cận âm nhạc hợp lý hơn xuất hiện lần đầu tiên trên album trước của nhóm Century Child, cố gắng tách xa dần sự ảnh hưởng bởi power metal như các album trước của họ, mang lại một cảm giác gần gũi, dễ tiếp cận hơn. Khác với Century Child, Nightwish chọn một dàn nhạc bên ngoài Phần Lan, Dàn nhạc giao hưởng London, để thu âm cùng nhóm."
       ],
       "albumFolder": "album-cover-and-audio/Once",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FOnce%2Fcover.jpg?alt=media&token=6cf386ca-0b74-4260-8fd7-1f8411f41fb1",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089236/qtv-music-shop-cover/cover_fwbydh_Copy_ntpopa.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087806/qtv-music-shop/cover_fwbydh.jpg",
       "price": "630.000"
     },
     {
@@ -1133,7 +1165,8 @@
         "Không giống như album trước \"Imaginaerum\", nơi có chủ đề về trí tưởng tượng và những điều huyền diệu, Endless Forms Most Beautiful đề cập đến khoa học và lý trí. Tập trung vào các lý thuyết tiến hóa của Charles Darwin và Richard Dawkins, phần sau của album thậm chí trích dẫn các trích đoạn từ sách của họ. Cả hai tác giả đều ảnh hưởng đến rất nhiều các bài hát trong album."
       ],
       "albumFolder": "album-cover-and-audio/Endless_Forms_Most_Beautiful",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FEndless_Forms_Most_Beautiful%2Fcover.jpg?alt=media&token=b3261c0d-d3a2-4f86-8d8d-19b5c17c08a6",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089233/qtv-music-shop-cover/cover_v2txzn_Copy_ifrywo.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087821/qtv-music-shop/cover_v2txzn.jpg",
       "price": "870.000"
     },
     {
@@ -1172,7 +1205,8 @@
         "Valley of the Damned là album phòng thu đầu tay của ban nhạc power metal Anh DragonForce. Vào năm 2000, khi mà ban nhạc vẫn được biết đến với cái tên DragonHeart, một bản demo cùng tên đã được ghi lại và gửi đến Noise Records, sau đó một thỏa thuận giữa ban nhạc với hãng đĩa này đã được kí kết. Tiếp đó, nó đã được thu âm lại vào cuối năm 2002 và được phát hành dưới dạng album phòng thu đầy đủ vào ngày 25 tháng 2 năm 2003, sau khi ban nhạc đạt được thỏa thuận với Noise Records và đổi tên thành DragonForce. Album được chuẩn bị để được làm lại và phát hành với một bản DVD đặc biệt vào ngày 24 tháng 9 năm 2007, nhưng sau đó đã bị trì hoãn và cuối cùng được phát hành vào ngày 22 tháng 2 năm 2010, cùng với việc phát hành lại album thứ hai của ban nhạc."
       ],
       "albumFolder": "album-cover-and-audio/Valley_Of_The_Damned",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FValley_Of_The_Damned%2Fcover.jpg?alt=media&token=28948926-ad58-4d9d-aa73-0e10886e8748",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089238/qtv-music-shop-cover/cover_esflaa_Copy_j7o7uw.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087841/qtv-music-shop/cover_esflaa.jpg",
       "price": "270.000"
     },
     {
@@ -1208,7 +1242,8 @@
         "Ở Hoa Kỳ, Inhuman Rampage đã đạt được vị trí số 1 trên bảng xếp hạng Billboard Heatseekers và vị trí số 103 trên bảng xếp hạng Billboard 200. Album được chứng nhận Silver bởi ngành công nghiệp ghi âm Anh khi bán hơn 60.000 bản tại Vương quốc Anh và đã bán được hơn 350.000 bản tại Hoa Kỳ. Metal Hammer đã đưa album vào danh sách năm 2016 gồm mười album Power Metal tiêu biểu."
       ],
       "albumFolder": "album-cover-and-audio/Inhuman_Rampage",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FInhuman_Rampage%2Fcover.jpg?alt=media&token=60c40a97-e52a-41ad-adf6-09445cae836d",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089237/qtv-music-shop-cover/cover_j8okit_Copy_c3vjff.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087854/qtv-music-shop/cover_j8okit.jpg",
       "price": "299.000"
     },
     {
@@ -1244,7 +1279,8 @@
         "Bài hát \"Heroes of Our Time\" đã được đề cử cho giải Grammy Award for Best Metal Performance, nhưng đã thua cuộc bởi ca khúc \"My Apocalypse\" của Metallica. Vào ngày 28 tháng 8 năm 2008, album được xếp ở vị trí thứ 9 tại Nhật Bản, nó cũng lọt vào bảng xếp hạng của Úc trong tuần đầu tiên của tháng 9 ở vị trí 19 và cùng ở vị trí thứ 18 trong cả hai bảng xếp hạng UK Albums Chart và Billboard 200."
       ],
       "albumFolder": "album-cover-and-audio/Ultra_Beatdown",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FUltra_Beatdown%2Fcover.jpg?alt=media&token=8b9edca0-2bec-4eb3-b6aa-58ba1fb6982d",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089236/qtv-music-shop-cover/cover_fxpmsn_Copy_vuc4db.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087863/qtv-music-shop/cover_fxpmsn.jpg",
       "price": "499.000"
     },
     {
@@ -1283,7 +1319,8 @@
         "Maximum Overload là album phòng thu thứ sáu của ban nhạc power metal Anh DragonForce, được phát hành ở châu Âu vào ngày 18 tháng 8 năm 2014 và ở Bắc Mỹ vào ngày hôm sau. Ca sĩ của nhóm Trivium, Matt Heafy đã đóng góp backing vocal cho ba bài hát, bao gồm đĩa đơn đầu tiên của album, \"The Game\". Album được sản xuất bởi Jens Bogren, đây là lần đầu tiên ban nhạc quyết định không thu âm trong phòng thu của riêng họ mà hợp tác với một nhà sản xuất bên ngoài. Album được phát hành với ba phiên bản: phiên bản DVD thường, phiên bản DVD đặc biệt (với năm bài hát bổ sung và DVD bonus) và phiên bản đĩa vinyl. Đây cũng là album cuối cùng của DragonForce có sự tham gia của tay trống Dave Mackffy, người đã tuyên bố rời khỏi ban nhạc vào ngày 3 tháng 6 năm 2014, và sau đó đã được thay thế bởi Gee Anzalone"
       ],
       "albumFolder": "album-cover-and-audio/Maximum_Overload",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FMaximum_Overload%2Fcover.jpg?alt=media&token=9a9167ac-15d7-4de0-83a7-eb8cc7e00aa1",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089234/qtv-music-shop-cover/cover_yv4yyd_Copy_eliivj.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087888/qtv-music-shop/cover_yv4yyd.jpg",
       "price": "799.000"
     },
     {
@@ -1329,7 +1366,8 @@
         "Ca khúc chủ đề \"Đám cưới chuột\" dựa trên hình ảnh về một bức tranh dân gian Đông Hồ cùng tên đã trở nên rất nổi tiếng và xuất hiện trong cả chương trình \"Bài Hát Việt\". Các ca khúc khác khai thác rất nhiều các chủ đề trong cuộc sống \"Phở\", \"Mứt\" hoặc câu chuyện ngụ ngôn khác như \"Chùm Nho Chín Mọng\", thậm chí là cả những bài báo về những sự oan khuất trong xã hội “14 năm đòi xoá tội giết con” cũng trở thành cảm hứng cho ban nhạc viết ca khúc \"5000 ngày\"."
       ],
       "albumFolder": "album-cover-and-audio/Dam_Cuoi_Chuot",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FDam_Cuoi_Chuot%2Fcover.jpg?alt=media&token=c1a44d93-80d5-4f7e-be40-2c5bb35f0692",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089232/qtv-music-shop-cover/cover_v0s1bp_Copy_db5wir.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087903/qtv-music-shop/cover_v0s1bp.jpg",
       "price": "299.000"
     },
     {
@@ -1368,7 +1406,8 @@
         "Các ca khúc trong album xoay quanh chủ đề về Bản Chất Của Con Người, về sự đồng cảm, vị tha, lòng biết ơn, đặt ra những câu hỏi về bản chất thật sự của chúng ta, liệu chúng ta có thể trở nên tốt hơn hay sẽ bị biến đổi trở thành tồi tệ hơn ? ."
       ],
       "albumFolder": "album-cover-and-audio/Human_Nature",
-      "albumCover": "https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/album-cover-and-audio%2FHuman_Nature%2Fcover.jpg?alt=media&token=4fa1e9d4-0713-440c-b7a1-1fc072d6b6fd",
+      "albumCover": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635089230/qtv-music-shop-cover/cover_nzpcsq_Copy_uiac9s.jpg",
+      "albumCoverContent": "https://res.cloudinary.com/dqfemw7l4/image/upload/v1635087916/qtv-music-shop/cover_nzpcsq.jpg",
       "price": "1.300.000"
     }
   ]
