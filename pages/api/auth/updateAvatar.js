@@ -1,11 +1,6 @@
-import fs from "fs";
-import path from "path";
 import jwt from "jsonwebtoken";
-import bucketUserAvatar from "../../../services/firebaseStorage";
 import { v4 as uuidv4 } from "uuid";
 import Busboy from "busboy";
-import { s3Client } from "../../../services/amazonservice";
-import { PutObjectCommand } from "@aws-sdk/client-s3";
 // import upload from "../../../services/amazonservice";
 import connectMongoDB from "../../../utils/connectMongoDB";
 import cloudinary from "cloudinary"
