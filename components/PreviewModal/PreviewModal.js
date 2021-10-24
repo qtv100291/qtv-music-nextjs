@@ -126,8 +126,8 @@ class PreviewModal extends Component {
             )}
           </div>
           <div className={styles.previewModalContent} ref={this.myModal}>
-            <Link href={productPath} passHref onClick={this.props.closeModal}>
-              <a>
+            <Link href={productPath} passHref >
+              <a onClick={this.props.closeModal}>
                 <h3 className={styles.albumName}>{albumName}</h3>
               </a>
             </Link>

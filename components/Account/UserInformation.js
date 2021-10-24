@@ -86,7 +86,7 @@ class UserInformation extends Form {
   };
 
   async componentDidMount() {
-    console.log("state", this.state);
+    // console.log("state", this.state);
     const { userData } = this.props;
     if (Object.keys(userData).length !== 0) {
       const userLoadProperty = [...this.userLoadProperty];
@@ -100,6 +100,7 @@ class UserInformation extends Form {
             userData[userDataProperty[i][0]][userDataProperty[i][1]];
         }
       }
+      console.log(userLoad.userProvince !== "")
       const provinceList = await payoutService.getProvince();
       const province = [{ ...this.provinceInit }, ...provinceList];
       if (userLoad.userProvince !== "") {

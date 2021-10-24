@@ -134,12 +134,13 @@ class Payout extends Form {
             userData[userDataProperty[i][0]][userDataProperty[i][1]];
         }
       }
+      console.log("user load", userLoad.receiverProvince)
       const provinceList = await payoutService.getProvince();
       const province = [{ ...this.provinceInit }, ...provinceList];
-      if (userLoad.userProvince !== "") {
+      if (userLoad.receiverProvince !== "") {
         await this.hanldeDistrict(userLoad.receiverProvince);
       }
-      if (userLoad.userDistrict !== "") {
+      if (userLoad.receiverDistrict !== "") {
         await this.hanldeCommune(userLoad.receiverDistrict);
       }
       this.setState({ data: userLoad, province });
@@ -164,6 +165,7 @@ class Payout extends Form {
             userData[userDataProperty[i][0]][userDataProperty[i][1]];
         }
       }
+      // console.log("hehehe")
       const provinceList = await payoutService.getProvince();
       const province = [{ ...this.provinceInit }, ...provinceList];
       if (userLoad.userProvince !== "") {
