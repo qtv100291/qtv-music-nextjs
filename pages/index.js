@@ -1,23 +1,28 @@
 import HomePage from "../components/HomePage";
 import { getAlbum } from "../services/albumServiceHomePage";
+import fs from "fs";
+import path from "path";
 
 function HomePagePage(props) {
   return <HomePage {...props}/>;
 }
 
 export async function getStaticProps() {
-  const promise_1 = getAlbum(["5", "10", "14", "33"]);
-  const promise_2 = getAlbum(["6", "32", "26", "18"]);
-  const promise_3 = getAlbum(["23"]);
-  return await Promise.all([promise_1, promise_2, promise_3]).then((values) => {
-    return {
-      props:{
-        vietnameseAlbum: values[0],
-        internationalAlbum: values[1],
-        albumOfTheWeek: values[2],
-      }
+  const filePath = path.join(process.cwd(), "data", "album.json");
+  const fileData = fs.readFileSync(filePath);
+  const data = JSON.parse(fileData);
+
+  const vietnameseAlbum = data.musicData.filter((album) => ["5", "10", "14", "33"].includes(album.id))
+  const internationalAlbum = data.musicData.filter((album) => ["6", "32", "26", "18"].includes(album.id))
+  const albumOfTheWeek = data.musicData.filter((album) => ["23"].includes(album.id))
+
+  return {
+    props:{
+      vietnameseAlbum,
+      internationalAlbum,
+      albumOfTheWeek,
     }
-  });
+  }
 }
 
 export default HomePagePage;
