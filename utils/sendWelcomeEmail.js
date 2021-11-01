@@ -2,17 +2,11 @@ import nodemailer from "nodemailer";
 
 export default async function sendWelcomeEmail(clientEmail) {
   const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 465,
-    secure: true,
+    service: "gmail",
     tls: { rejectUnauthorized: false },
     auth: {
-      type: "OAuth2",
       user: process.env.NEXT_PUBLIC_EMAIL,
-      clientId: process.env.NEXT_GOOGLE_CLIENT_ID,
-      clientSecret: process.env.NEXT_GOOGLE_CLIENT_SECRET,
-      accessToken: process.env.NEXT_GOOGLE_GMAIL_ACCESS_TOKEN,
-      refreshToken: process.env.NEXT_GOOGLE_GMAIL_REFRESH_TOKEN,
+      pass: process.env.NEXT_PUBLIC_EMAIL_PASSWORD,
     },
   });
 
@@ -62,7 +56,7 @@ export default async function sendWelcomeEmail(clientEmail) {
     <main>
       <div style="width: 100%; text-align: center; ">
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/qtv-music-shop.appspot.com/o/Photo%2F1.jpg?alt=media&token=8c8cf756-ba43-4ac0-8461-3b8e45f9f269"
+          src="https://res.cloudinary.com/dqfemw7l4/image/upload/v1635776919/stuff/unnamed_1_rzmdrk.jpg"
           style=" width: 100%"
         />
       </div>
