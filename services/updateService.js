@@ -8,7 +8,9 @@ const apiEndpointShoppingCart = "/api/shopping-cart/update";
 async function updateUser() {
   const userDataAddress = { ...store.getState().user.userData.address };
   const userDataPayment = { ...store.getState().user.userData.payment };
-  const userDataUpdate = { address: userDataAddress, payment: userDataPayment };
+  const userName = store.getState().user.userData.name
+  const userPhone = store.getState().user.userData.phone
+  const userDataUpdate = { address: userDataAddress, payment: userDataPayment, name : userName, phone: userPhone };
   await http.patch(apiEndpoint, userDataUpdate);
 }
 

@@ -3,7 +3,7 @@ import connectMongoDB from "../../../utils/connectMongoDB";
 
 export default async function handler(req, res) {
   if (req.method !== "PATCH") return;
-  const { address, payment } = req.body;
+  const { address, payment, name, phone } = req.body;
   const [schema, token] = req.headers.authorization.split(" ");
   const secretKey = process.env.NEXT_PUBLIC_JWT_SECRET_KEY;
   try {
@@ -13,7 +13,7 @@ export default async function handler(req, res) {
     const userCollection = await client.db().collection("users");
     const user = await userCollection.findOne({ email });
     if (!user) return res.status(404).json({ message: "User not found" });
-    await userCollection.updateOne({ email }, { $set: { address, payment } });
+    await userCollection.updateOne({ email }, { $set: { address, payment, name, phone } });
     return res.status(200).json({ message: "User Updated" });
   } catch (err) {
     if (err.name === "MongoServerError")

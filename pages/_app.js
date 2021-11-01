@@ -67,7 +67,7 @@ function MyApp({ Component, pageProps }) {
     setTimeout(() => {
       additionalFunctionDom.releaseBody();
       setIsLoadingScreen(false);
-    }, 1000);
+    }, 500);
 
   return (
     <Provider store={store}>

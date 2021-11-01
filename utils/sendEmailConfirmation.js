@@ -3,7 +3,6 @@ import fs from "fs";
 import path from "path";
 import addFunc from "./additionalFunction";
 
-
 export default async function sendEmailConfirmation(clientEmail, order) {
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -14,7 +13,6 @@ export default async function sendEmailConfirmation(clientEmail, order) {
       user: process.env.NEXT_PUBLIC_EMAIL,
       clientId: process.env.NEXT_GOOGLE_CLIENT_ID,
       clientSecret: process.env.NEXT_GOOGLE_CLIENT_SECRET,
-      accessToken: process.env.NEXT_GOOGLE_GMAIL_ACCESS_TOKEN,
       refreshToken: process.env.NEXT_GOOGLE_GMAIL_REFRESH_TOKEN,
     },
     tls: {
@@ -221,13 +219,26 @@ export default async function sendEmailConfirmation(clientEmail, order) {
     html: mailContent,
   };
 
-  transporter.sendMail(mailDetails, function (error, info) {
-    if (error) {
-      console.log(error);
-    } else {
-      console.log("Email sent: " + info.response);
-    }
+  await new Promise((resolve, reject) => {
+    // send mail
+    transporter.sendMail(mailDetails, (err, info) => {
+      if (err) {
+        console.error(err);
+        reject(err);
+      } else {
+        console.log(info);
+        resolve(info);
+      }
+    });
   });
+
+  // transporter.sendMail(mailDetails, function (error, info) {
+  //   if (error) {
+  //     console.log(error);
+  //   } else {
+  //     console.log("Email sent: " + info.response);
+  //   }
+  // });
   console.log("welcome email was sent");
 }
 

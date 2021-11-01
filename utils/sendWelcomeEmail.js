@@ -149,13 +149,26 @@ export default async function sendWelcomeEmail(clientEmail) {
     html: mailContent,
   };
 
-  transporter.sendMail(mailDetails, function (error, info) {
-    if (error) {
-      console.log(error);
-    } else {
-      console.log("Email sent: " + info.response);
-    }
+  await new Promise((resolve, reject) => {
+    // send mail
+    transporter.sendMail(mailDetails, (err, info) => {
+      if (err) {
+        console.error(err);
+        reject(err);
+      } else {
+        console.log(info);
+        resolve(info);
+      }
+    });
   });
+
+  // transporter.sendMail(mailDetails, function (error, info) {
+  //   if (error) {
+  //     console.log(error);
+  //   } else {
+  //     console.log("Email sent: " + info.response);
+  //   }
+  // });
   console.log("welcome email was sent")
 }
 

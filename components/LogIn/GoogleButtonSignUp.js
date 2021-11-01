@@ -5,6 +5,7 @@ import { loginGoogle } from "../../services/googleService";
 import styles from "./LogIn.module.scss";
 import store from "../../store/configureStore";
 import { openLoadingModal, closeLoadingModal } from "../../store/loadingModal";
+import additionalFunctionDom from "../../utils/additionalFunctionDom";
 
 const GoogleButtonSignIn = ({windowWidth}) => {
   useEffect(() => {
@@ -24,7 +25,15 @@ const GoogleButtonSignIn = ({windowWidth}) => {
           window.location = "/";
         });
       } catch (err) {
-        console.log("error", err);
+        if (err.response && err.response.status === 409) {
+          additionalFunctionDom.fixBody();
+          MySwal.fire({
+            icon: "error",
+            html: "Email Này Đã Được Sử Dụng",
+          }).then(() => {
+            additionalFunctionDom.releaseBody();
+          });
+        }
       }
       store.dispatch(closeLoadingModal());
     }
