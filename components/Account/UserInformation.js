@@ -146,13 +146,14 @@ class UserInformation extends Form {
       this.setState({
         district: [{ ...this.districtInit }],
         commune: [{ ...this.communeInit }],
+        data : {...this.state.data, userProvince: "", userDistrict: "", userCommune : ""}
       });
     } else {
       document.querySelector(`.${styles.userDistrict} > span`).style.display =
         "block";
       const districtList = await payoutService.getDistrict(idProvince);
       const district = [{ ...this.districtInit }, ...districtList];
-      this.setState({ district, commune: [{ ...this.communeInit }] });
+      this.setState({ district, commune: [{ ...this.communeInit }], data : {...this.state.data, userProvince : idProvince, userDistrict: "", userCommune : ""} });
       document.querySelector(`.${styles.userDistrict}> span`).style.display =
         "none";
       // console.log(districtList)
@@ -161,13 +162,14 @@ class UserInformation extends Form {
 
   hanldeCommune = async (idDistrict) => {
     if (idDistrict === "None") {
-      this.setState({ commune: [{ ...this.communeInit }] });
+      this.setState({ commune: [{ ...this.communeInit }], data: {...this.state.data,userDistrict: "", userCommune: ""} });
+      
     } else {
       document.querySelector(`.${styles.userCommune} > span`).style.display =
         "block";
       const communeList = await payoutService.getCommune(idDistrict);
       const commune = [{ ...this.communeInit }, ...communeList];
-      this.setState({ commune });
+      this.setState({ commune, data : {...this.state.data, userDistrict : idDistrict, userCommune: ""} });
       document.querySelector(`.${styles.userCommune} > span`).style.display =
         "none";
     }

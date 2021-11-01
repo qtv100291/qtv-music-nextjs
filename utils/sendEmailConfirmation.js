@@ -2,19 +2,25 @@ const nodemailer = require("nodemailer");
 import fs from "fs";
 import path from "path";
 import addFunc from "./additionalFunction";
-// const readline = require('readline');
-// const {google} = require('googleapis');
+
 
 export default async function sendEmailConfirmation(clientEmail, order) {
   const transporter = nodemailer.createTransport({
-    service: "gmail",
-    tls: { rejectUnauthorized: false },
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
     auth: {
+      type: "OAuth2",
       user: process.env.NEXT_PUBLIC_EMAIL,
-      pass: process.env.NEXT_PUBLIC_EMAIL_PASSWORD,
+      clientId: process.env.NEXT_GOOGLE_CLIENT_ID,
+      clientSecret: process.env.NEXT_GOOGLE_CLIENT_SECRET,
+      accessToken: process.env.NEXT_GOOGLE_GMAIL_ACCESS_TOKEN,
+      refreshToken: process.env.NEXT_GOOGLE_GMAIL_REFRESH_TOKEN,
+    },
+    tls: {
+      rejectUnauthorized: false,
     },
   });
-
 
   const filePathProvince = path.join(process.cwd(), "data", "province.json");
   const fileDataProvince = fs.readFileSync(filePathProvince);
@@ -49,7 +55,7 @@ export default async function sendEmailConfirmation(clientEmail, order) {
 
   const totalMoneyCalculation = addFunc.totalMoneyCalculation(order.orderList);
 
-  const mailContent = `  <div
+  const mailContent = `<div
   class="container"
   style="
     background-color: rgb(156, 156, 156);
@@ -163,9 +169,9 @@ export default async function sendEmailConfirmation(clientEmail, order) {
                 >Tạm tính :
               </b>
             </td>
-            <td style="text-align: center"><b>${addFunc
-              .separator1000((totalMoneyCalculation)
-              .toFixed(0))} VND </b></td>
+            <td style="text-align: center"><b>${addFunc.separator1000(
+              totalMoneyCalculation.toFixed(0)
+            )} VND </b></td>
           </tr>
           <tr class="data-vat data-total">
             <td colspan="3" style="text-align: center">
@@ -173,9 +179,9 @@ export default async function sendEmailConfirmation(clientEmail, order) {
                 >Thuế VAT :
               </b>
             </td>
-            <td style="text-align: center"><b>${addFunc
-              .separator1000((totalMoneyCalculation * 0.1)
-              .toFixed(0))} VND </b></td>
+            <td style="text-align: center"><b>${addFunc.separator1000(
+              (totalMoneyCalculation * 0.1).toFixed(0)
+            )} VND </b></td>
           </tr>
           <tr class="data-total-finish data-total">
             <td colspan="3" style="text-align: center">
@@ -183,9 +189,9 @@ export default async function sendEmailConfirmation(clientEmail, order) {
                 >Tổng giá trị đơn hàng :
               </b>
             </td>
-            <td style="text-align: center"><b>${addFunc
-              .separator1000((totalMoneyCalculation * 1.1)
-              .toFixed(0))} VND </b></td>
+            <td style="text-align: center"><b>${addFunc.separator1000(
+              (totalMoneyCalculation * 1.1).toFixed(0)
+            )} VND </b></td>
           </tr>
         </tfoot>
       </table>
@@ -222,14 +228,13 @@ export default async function sendEmailConfirmation(clientEmail, order) {
       console.log("Email sent: " + info.response);
     }
   });
-  console.log("welcome email was sent")
+  console.log("welcome email was sent");
 }
 
 function renderOrderList(orderList) {
   let orderHtml = "";
   for (let i = 0; i < orderList.length; i++) {
-    orderHtml += 
-    `<tr class="data-row" style="margin-top: 5px">
+    orderHtml += `<tr class="data-row" style="margin-top: 5px">
       <td style="font-size: 13px">
         <p>${orderList[i].name}</p>
       </td>

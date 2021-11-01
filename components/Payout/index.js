@@ -168,10 +168,10 @@ class Payout extends Form {
       // console.log("hehehe")
       const provinceList = await payoutService.getProvince();
       const province = [{ ...this.provinceInit }, ...provinceList];
-      if (userLoad.userProvince !== "") {
+      if (userLoad.receiverProvince !== "") {
         await this.hanldeDistrict(userLoad.receiverProvince);
       }
-      if (userLoad.userDistrict !== "") {
+      if (userLoad.receiverDistrict !== "") {
         await this.hanldeCommune(userLoad.receiverDistrict);
       }
       this.setState({ data: userLoad, province });
@@ -187,6 +187,7 @@ class Payout extends Form {
       this.setState({
         district: [{ ...this.districtInit }],
         commune: [{ ...this.communeInit }],
+        data : {...this.state.data, userProvince: "", receiverDistrict: "", receiverCommune : ""}
       });
     } else {
       document.querySelector(
@@ -194,7 +195,7 @@ class Payout extends Form {
       ).style.display = "block";
       const districtList = await payoutService.getDistrict(idProvince);
       const district = [{ ...this.districtInit }, ...districtList];
-      this.setState({ district, commune: [{ ...this.communeInit }] });
+      this.setState({ district, commune: [{ ...this.communeInit }], data : {...this.state.data, receiverProvince : idProvince, receiverDistrict: "", receiverCommune : ""} });
       document.querySelector(
         `.${styles.receiverDistrict} > span`
       ).style.display = "none";
@@ -203,14 +204,14 @@ class Payout extends Form {
 
   hanldeCommune = async (idDistrict) => {
     if (idDistrict === "None") {
-      this.setState({ commune: [{ ...this.communeInit }] });
+      this.setState({ commune: [{ ...this.communeInit }], data: {...this.state.data,userDistrict: "", receiverCommune: ""} });
     } else {
       document.querySelector(
         `.${styles.receiverCommune} > span`
       ).style.display = "block";
       const communeList = await payoutService.getCommune(idDistrict);
       const commune = [{ ...this.communeInit }, ...communeList];
-      this.setState({ commune });
+      this.setState({ commune, data : {...this.state.data, receiverDistrict : idDistrict, receiverCommune: ""} });
       document.querySelector(
         `.${styles.receiverCommune} > span`
       ).style.display = "none";

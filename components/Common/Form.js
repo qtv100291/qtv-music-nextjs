@@ -92,13 +92,17 @@ class Form extends Component {
     // set state when changing input
     let data = { ...this.state.data };
     data[input.name] = input.value;
-    this.setState({ data });
+    
     if (input.name === "receiverProvince" || input.name === "userProvince") {
       this.hanldeDistrict(input.value);
+      return
     }
     if (input.name === "receiverDistrict" || input.name === "userDistrict") {
       this.hanldeCommune(input.value);
+      return
     }
+
+    this.setState({ data });
   };
 
   handleChangeRadio = ({ currentTarget: input }) => {
