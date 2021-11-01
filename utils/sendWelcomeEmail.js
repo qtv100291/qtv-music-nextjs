@@ -2,11 +2,17 @@ import nodemailer from "nodemailer";
 
 export default async function sendWelcomeEmail(clientEmail) {
   const transporter = nodemailer.createTransport({
-    service: "gmail",
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
     tls: { rejectUnauthorized: false },
     auth: {
+      type: "OAuth2",
       user: process.env.NEXT_PUBLIC_EMAIL,
-      pass: process.env.NEXT_PUBLIC_EMAIL_PASSWORD,
+      clientId: process.env.NEXT_GOOGLE_CLIENT_ID,
+      clientSecret: process.env.NEXT_GOOGLE_CLIENT_SECRET,
+      accessToken: process.env.NEXT_GOOGLE_GMAIL_ACCESS_TOKEN,
+      refreshToken: process.env.NEXT_GOOGLE_GMAIL_REFRESH_TOKEN,
     },
   });
 

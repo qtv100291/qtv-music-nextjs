@@ -5,11 +5,18 @@ import addFunc from "./additionalFunction";
 
 export default async function sendEmailConfirmation(clientEmail, order) {
   const transporter = nodemailer.createTransport({
-    service: "gmail",
-    tls: { rejectUnauthorized: false },
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
     auth: {
+      type: "OAuth2",
       user: process.env.NEXT_PUBLIC_EMAIL,
-      pass: process.env.NEXT_PUBLIC_EMAIL_PASSWORD,
+      clientId: process.env.NEXT_GOOGLE_CLIENT_ID,
+      clientSecret: process.env.NEXT_GOOGLE_CLIENT_SECRET,
+      refreshToken: process.env.NEXT_GOOGLE_GMAIL_REFRESH_TOKEN,
+    },
+    tls: {
+      rejectUnauthorized: false,
     },
   });
 
