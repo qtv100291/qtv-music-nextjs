@@ -1,7 +1,7 @@
 import jwtDecode from "jwt-decode";
 import generateToken from "../../../utils/generateToken";
 import connectMongoDB from "../../../utils/connectMongoDB";
-import sendWelcomeEmail from "../../../utils/sendWelcomeEmail";
+import axios from 'axios'
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return;
@@ -49,7 +49,9 @@ export default async function handler(req, res) {
         { email },
         { $set: { refreshToken: refreshTokenKey } }
       );
-      sendWelcomeEmail(email);
+      axios.post("https://qtv-music-shop-send-email.herokuapp.com/send-welcome-email", {
+        clientEmail: email,
+      });
       return res
         .status(200)
         .json({ accessToken: tokenKey, refreshToken: refreshTokenKey });

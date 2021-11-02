@@ -1,9 +1,19 @@
 const nodemailer = require("nodemailer");
+import { SMTPClient } from 'emailjs';
+
 import fs from "fs";
 import path from "path";
 import addFunc from "./additionalFunction";
 
 export default async function sendEmailConfirmation(clientEmail, order) {
+  
+  // const client = new SMTPClient({
+  //   user: process.env.NEXT_PUBLIC_EMAIL,
+  //   password: process.env.NEXT_PUBLIC_EMAIL_PASSWORD,
+  //   host: 'smtp.gmail.com',
+  //   ssl: true,
+  // });
+
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
@@ -212,25 +222,25 @@ export default async function sendEmailConfirmation(clientEmail, order) {
   </div>
 </div>`;
 
-  const mailDetails = {
-    from: process.env.NEXT_PUBLIC_EMAIL,
-    to: clientEmail,
-    subject: "Xác nhận đơn hàng",
-    html: mailContent,
-  };
+  // const mailDetails = {
+  //   from: process.env.NEXT_PUBLIC_EMAIL,
+  //   to: clientEmail,
+  //   subject: "Xác nhận đơn hàng",
+  //   html: mailContent,
+  // };
 
-  await new Promise((resolve, reject) => {
-    // send mail
-    transporter.sendMail(mailDetails, (err, info) => {
-      if (err) {
-        console.error(err);
-        reject(err);
-      } else {
-        console.log(info);
-        resolve(info);
-      }
-    });
-  });
+  // await new Promise((resolve, reject) => {
+  //   // send mail
+  //   transporter.sendMail(mailDetails, (err, info) => {
+  //     if (err) {
+  //       console.error(err);
+  //       reject(err);
+  //     } else {
+  //       console.log(info);
+  //       resolve(info);
+  //     }
+  //   });
+  // });
 
   // transporter.sendMail(mailDetails, function (error, info) {
   //   if (error) {
@@ -239,7 +249,19 @@ export default async function sendEmailConfirmation(clientEmail, order) {
   //     console.log("Email sent: " + info.response);
   //   }
   // });
-  console.log("welcome email was sent");
+
+  client.send({
+    text: 'i hope this works',
+		from: process.env.NEXT_PUBLIC_EMAIL,
+		to: clientEmail,
+		subject: "Đăng Ký Thành Công",
+    attachments: [{data: "<div>hehehehe</div>", alternative: true}]
+	},
+	(err, message) => {
+		console.log(err || message);
+	})
+
+  console.log("confirmation email was sent");
 }
 
 function renderOrderList(orderList) {

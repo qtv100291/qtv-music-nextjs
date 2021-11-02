@@ -1,7 +1,7 @@
 import addfunc from "../../../utils/additionalFunction";
 import jwt from "jsonwebtoken";
-import sendEmailConfirmation from "../../../utils/sendEmailConfirmation";
 import connectMongoDB from "../../../utils/connectMongoDB";
+import axios from "axios";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return;
@@ -23,14 +23,21 @@ export default async function handler(req, res) {
     await orderCollection.insertOne(orderInfo);
     await userCollection.updateOne(
       { email },
-      { $push: { tradeHistory:{ $each : tradeHistory }} }
+      { $push: { tradeHistory: { $each: tradeHistory } } }
     );
-    sendEmailConfirmation(user.email, orderInfo);
+    
+    client.close();
+
+    axios.post("https://qtv-music-shop-send-email.herokuapp.com/send-confirmation-email", {
+      clientEmail: user.email,
+      order: orderInfo,
+    });
+
     return res
       .status(200)
       .json({ tradeHistory: [...user.tradeHistory, ...tradeHistory] });
   } catch (err) {
-    console.log(err)
+    console.log(err);
     if (err.name === "MongoServerError")
       return res.status(500).json({ message: "server error" });
     return res.status(401).json({ message: err.message });

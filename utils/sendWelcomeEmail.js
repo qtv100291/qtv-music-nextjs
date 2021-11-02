@@ -1,6 +1,15 @@
 import nodemailer from "nodemailer";
+import { SMTPClient } from 'emailjs';
 
 export default async function sendWelcomeEmail(clientEmail) {
+
+  // const client = new SMTPClient({
+  //   user: process.env.NEXT_PUBLIC_EMAIL,
+  //   password: process.env.NEXT_PUBLIC_EMAIL_PASSWORD,
+  //   host: 'smtp.gmail.com',
+  //   ssl: true,
+  // });
+
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
@@ -149,26 +158,37 @@ export default async function sendWelcomeEmail(clientEmail) {
     html: mailContent,
   };
 
-  await new Promise((resolve, reject) => {
-    // send mail
-    transporter.sendMail(mailDetails, (err, info) => {
-      if (err) {
-        console.error(err);
-        reject(err);
-      } else {
-        console.log(info);
-        resolve(info);
-      }
-    });
+  // await new Promise((resolve, reject) => {
+  //   // send mail
+  //   transporter.sendMail(mailDetails, (err, info) => {
+  //     if (err) {
+  //       console.error(err);
+  //       reject(err);
+  //     } else {
+  //       console.log(info);
+  //       resolve(info);
+  //     }
+  //   });
+  // });
+
+  transporter.sendMail(mailDetails, function (error, info) {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log("Email sent: " + info.response);
+    }
   });
 
-  // transporter.sendMail(mailDetails, function (error, info) {
-  //   if (error) {
-  //     console.log(error);
-  //   } else {
-  //     console.log("Email sent: " + info.response);
-  //   }
-  // });
+  // client.send({
+
+	// 	from: process.env.NEXT_PUBLIC_EMAIL,
+	// 	to: clientEmail,
+	// 	subject: "Đăng Ký Thành Công",
+  //   attachments: [{data: mailContent, alternative: true}]
+	// },
+	// (err, message) => {
+	// 	console.log(err || message);
+	// })
   console.log("welcome email was sent")
 }
 
