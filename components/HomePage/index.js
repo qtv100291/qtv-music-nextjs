@@ -20,7 +20,10 @@ class HomePage extends Component {
     return (
       <main className={styles.mainContainer}>
         <Head>
-          <title>QTV Music</title>
+          <title>QTV Music - Let's Rock On</title>
+          <meta property="og:image" content="https://res.cloudinary.com/dqfemw7l4/image/upload/v1635868689/stuff/banner_klgtjp.jpg" />
+          <meta property="og:description" content="Đĩa Nhạc Chất Lượng Quốc Tế" />
+          
         </Head>
         <CarouselFade />
         <AlbumHomePage
