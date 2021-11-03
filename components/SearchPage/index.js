@@ -121,14 +121,14 @@ const SearchPage = ({ searchAlbumList, keyword }) => {
             <AlbumItem {...album} key={album.id} onOpen={handleOpening} />
           ))}
         </div>
-        <PaginationBasic
+        {totalAlbum > 12 && <PaginationBasic
           totalAlbum={totalAlbum}
           currentPage={currentPage}
           albumPerPage={albumPerPage}
           onPageChange={handlePageChange}
           onPreviousPage={handlePreviousPage}
           onNextPage={handleNextPage}
-        />
+        />}
       </section>
     </main>
   );

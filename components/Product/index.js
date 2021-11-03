@@ -232,7 +232,7 @@ class Product extends Component {
               </div>
             </div>
             <div className="product-part-container">
-              {!albums ?  <div>hehehecongacongacongaconga</div> : albums.map((album) => (
+              {albums.map((album) => (
                 <AlbumItem
                   {...album}
                   key={album.id}
@@ -240,14 +240,14 @@ class Product extends Component {
                 />
               ))}
             </div>
-            <PaginationBasic
+            {totalAlbum > 12 && <PaginationBasic
               totalAlbum={totalAlbum}
               currentPage={currentPage}
               albumPerPage={albumPerPage}
               onPageChange={this.handlePageChange}
               onPreviousPage={this.handlePreviousPage}
               onNextPage={this.handleNextPage}
-            />
+            />}
           </section>
         </div>
       </main>
