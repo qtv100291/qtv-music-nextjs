@@ -73,8 +73,8 @@ const ContactUs = ({ onLoadingScreen }) => {
             <p>
               Số điện thoại: <a href="tel:19001570">19001570</a>{" "}
             </p>
-            <p>Email: qtv-music@gmail.com</p>
-            <p>Website: qtv-music.web.app/</p>
+            <p>Email: qtv.music.shop@gmail.com</p>
+            <p>Website: qtv-music-shop.com</p>
           </div>
         </div>
       </section>

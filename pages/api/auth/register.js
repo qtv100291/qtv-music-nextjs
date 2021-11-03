@@ -1,7 +1,7 @@
 
 import hashPassword from "../../../utils/hashPassword";
-import sendWelcomeEmail from "../../../utils/sendWelcomeEmail";
 import connectMongoDB from "../../../utils/connectMongoDB";
+import axios from 'axios'
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return;
@@ -39,7 +39,9 @@ export default async function handler(req, res) {
     };
     await client.db().collection("users").insertOne(newUser);
     res.status(200).json({ message: "Created User" });
-    sendWelcomeEmail(email);
+    axios.post("https://qtv-music-shop-send-email.herokuapp.com/send-welcome-email", {
+        clientEmail: email,
+      });
     client.close()
   } catch (err) {
     return res.status(500).json({ message: "server error" });

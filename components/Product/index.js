@@ -232,7 +232,7 @@ class Product extends Component {
               </div>
             </div>
             <div className="product-part-container">
-              {albums.map((album) => (
+              {!albums ?  <div>hehehecongacongacongaconga</div> : albums.map((album) => (
                 <AlbumItem
                   {...album}
                   key={album.id}

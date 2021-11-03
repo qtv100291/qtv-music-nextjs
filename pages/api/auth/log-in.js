@@ -1,7 +1,6 @@
 import { comparePassword } from "../../../utils/hashPassword";
 import generateToken from "../../../utils/generateToken";
 import connectMongoDB from "../../../utils/connectMongoDB";
-import axios from 'axios'
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return;
@@ -28,9 +27,7 @@ export default async function handler(req, res) {
         { $set: { refreshToken: refreshTokenKey } }
       );
       client.close();
-      axios.post("https://qtv-music-shop-send-email.herokuapp.com/send-welcome-email", {
-        clientEmail: email,
-      });
+      
       return res
         .status(200)
         .json({ accessToken: tokenKey, refreshToken: refreshTokenKey });

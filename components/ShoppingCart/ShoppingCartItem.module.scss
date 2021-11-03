@@ -23,7 +23,7 @@
     }
     @include mobile {
       width: 110px;
-      margin: 10px 20px 10px 0;
+      margin: 10px 10px 10px 10px;
     }
     .itemPhotoContainer {
       width: 100%;
@@ -40,7 +40,8 @@
   }
   .itemInfo {
     width: calc(100% - 180px);
-    margin: 15px 0;
+    min-width: 145px;
+    margin: 15px 10px 15px 0;
     @include tablet {
       flex-wrap: wrap;
     }

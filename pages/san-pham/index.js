@@ -16,7 +16,7 @@ export async function getServerSideProps(context) {
   const responseAlbumList = axiosInner.get(urlString);
   const responseAlbumInfo = axiosInner.get("/api/album/info");
   return Promise.all([responseAlbumList, responseAlbumInfo]).then((values) => {
-    return {
+     return {
       props: {
         totalAlbum: values[0].data.totalAlbum,
         albums: values[0].data.albumDisplay,

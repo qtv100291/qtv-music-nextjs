@@ -9,6 +9,7 @@ import additionalFunctionDom from "../../utils/additionalFunctionDom";
 import { useSelector } from "react-redux";
 import { isLogged, userData } from "../../store/authentication";
 import { getTotalCountItem } from "../../store/shoppingCart";
+import { deleteCookie } from "../../utils/cookie";
 
 const NavbarMobile = () => {
   const [isOpening, setIsOpening] = useState(false);
@@ -27,12 +28,20 @@ const NavbarMobile = () => {
     setIsOpening(false);
   };
 
+  const handleLogOut = () => {
+    setTimeout(() => {
+      deleteCookie("token_qtv");
+      deleteCookie("refreshToken_qtv");
+      window.location = "/";
+    }, 600);
+  };
+
   return (
     <nav className={styles.navbarMobile}>
       <div
         className={`${styles.navbarMobileContainer} d-flex justify-content-between align-items-center`}
       >
-        <Link  href="/">
+        <Link href="/">
           <a className={styles.navbarLogoMobile}>
             <h1>QTV Music</h1>
           </a>
@@ -120,6 +129,17 @@ const NavbarMobile = () => {
                 Liên Hệ
               </NavLink>
             </div>
+            {isLoggedUser && (
+              <div className={styles.mobileNavbarItem} onClick={handleLogOut}>
+                <a>
+                  <FontAwesomeIcon
+                    icon={["fas", "sign-out-alt"]}
+                    className={styles.iconNavMobile}
+                  />{" "}
+                  Đăng Xuất
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </div>
