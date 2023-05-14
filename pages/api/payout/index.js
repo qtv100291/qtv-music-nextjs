@@ -25,13 +25,13 @@ export default async function handler(req, res) {
       { email },
       { $push: { tradeHistory: { $each: tradeHistory } } }
     );
-    
+
     client.close();
 
-    axios.post("https://qtv-music-shop-send-email.herokuapp.com/send-confirmation-email", {
-      clientEmail: user.email,
-      order: orderInfo,
-    });
+    // axios.post("https://qtv-music-shop-send-email.herokuapp.com/send-confirmation-email", {
+    //   clientEmail: user.email,
+    //   order: orderInfo,
+    // });
 
     return res
       .status(200)

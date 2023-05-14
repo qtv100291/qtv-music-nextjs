@@ -1,14 +1,16 @@
-
 import hashPassword from "../../../utils/hashPassword";
 import connectMongoDB from "../../../utils/connectMongoDB";
-import axios from 'axios'
+import axios from "axios";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return;
-  const { email, password, name, phone } = req.body;
+  const { email, password, name, phone, createDate } = req.body;
   try {
     const client = await connectMongoDB("usersData");
-    const existingEmail = await client.db().collection("users").findOne({ email });
+    const existingEmail = await client
+      .db()
+      .collection("users")
+      .findOne({ email });
     // console.log(existingEmail)
     if (existingEmail)
       return res.status(409).json({ message: "Your email is already used" });
@@ -35,14 +37,18 @@ export default async function handler(req, res) {
         cardExpireDate: "",
         cardCvv: "",
       },
+      createDate,
       tradeHistory: [],
     };
     await client.db().collection("users").insertOne(newUser);
     res.status(200).json({ message: "Created User" });
-    axios.post("https://qtv-music-shop-send-email.herokuapp.com/send-welcome-email", {
-        clientEmail: email,
-      });
-    client.close()
+    // axios.post(
+    //   "https://qtv-music-shop-send-email.herokuapp.com/send-welcome-email",
+    //   {
+    //     clientEmail: email,
+    //   }
+    // );
+    client.close();
   } catch (err) {
     return res.status(500).json({ message: "server error" });
   }

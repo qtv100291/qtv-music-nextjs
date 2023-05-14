@@ -1,7 +1,7 @@
 import jwtDecode from "jwt-decode";
 import generateToken from "../../../utils/generateToken";
 import connectMongoDB from "../../../utils/connectMongoDB";
-import axios from 'axios'
+import axios from "axios";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return;
@@ -14,6 +14,11 @@ export default async function handler(req, res) {
     const userCollection = await client.db().collection("users");
     const user = await userCollection.findOne({ email });
     if (!user) {
+      const time = new Date();
+      const year = time.getFullYear();
+      const date = time.getDate() < 10 ? `0${time.getDate()}` : time.getDate();
+      const month =
+        time.getMonth() < 9 ? `0${time.getMonth() + 1}` : time.getMonth() + 1;
       const newUser = {
         userID,
         email,
@@ -37,6 +42,7 @@ export default async function handler(req, res) {
           cardExpireDate: "",
           cardCvv: "",
         },
+        createDate: `${date} - ${month} - ${year}`,
         tradeHistory: [],
       };
       const returnInfo = await userCollection.insertOne(newUser);
@@ -49,9 +55,12 @@ export default async function handler(req, res) {
         { email },
         { $set: { refreshToken: refreshTokenKey } }
       );
-      axios.post("https://qtv-music-shop-send-email.herokuapp.com/send-welcome-email", {
-        clientEmail: email,
-      });
+      // axios.post(
+      //   "https://qtv-music-shop-send-email.herokuapp.com/send-welcome-email",
+      //   {
+      //     clientEmail: email,
+      //   }
+      // );
       return res
         .status(200)
         .json({ accessToken: tokenKey, refreshToken: refreshTokenKey });
@@ -68,12 +77,12 @@ export default async function handler(req, res) {
       { email },
       { $set: { refreshToken: refreshTokenKey } }
     );
-    client.close()
+    client.close();
     return res
       .status(200)
       .json({ accessToken: tokenKey, refreshToken: refreshTokenKey });
   } catch (err) {
-    console.log(err)
+    console.log(err);
     return res.status(500).json({ message: "server error" });
   }
 }
