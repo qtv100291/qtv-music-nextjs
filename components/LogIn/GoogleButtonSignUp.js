@@ -7,9 +7,9 @@ import store from "../../store/configureStore";
 import { openLoadingModal, closeLoadingModal } from "../../store/loadingModal";
 import additionalFunctionDom from "../../utils/additionalFunctionDom";
 
-const GoogleButtonSignIn = ({windowWidth}) => {
+const GoogleButtonSignIn = ({ windowWidth }) => {
   useEffect(() => {
-    console.log(windowWidth)
+    console.log(windowWidth);
     const MySwal = withReactContent(Swal);
     async function handleCredentialResponse(response) {
       store.dispatch(openLoadingModal());
@@ -47,14 +47,12 @@ const GoogleButtonSignIn = ({windowWidth}) => {
       {
         theme: "filled_blue",
         size: "large",
-        width: `${windowWidth > 336 ? 320 : windowWidth * 0.95}`,
+        width: windowWidth > 336 ? 320 : windowWidth * 0.95,
       } // customization attributes
     );
-  },[windowWidth])
-  
-  return ( 
-    <div id="buttonDiv" className={styles.buttonGoogleLogin}></div>
-   );
-}
- 
+  }, [windowWidth]);
+
+  return <div id="buttonDiv" className={styles.buttonGoogleLogin}></div>;
+};
+
 export default React.memo(GoogleButtonSignIn);
