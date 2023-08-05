@@ -9,7 +9,8 @@ import additionalFunctionDom from "../../utils/additionalFunctionDom";
 
 const GoogleButtonSignIn = ({ windowWidth }) => {
   useEffect(() => {
-    console.log(windowWidth);
+    console.log(process.env.NEXT_PUBLIC_API_KEY);
+    console.log(process.env.NEXT_PUBLIC_FB_APP_ID);
     const MySwal = withReactContent(Swal);
     async function handleCredentialResponse(response) {
       store.dispatch(openLoadingModal());
@@ -38,8 +39,7 @@ const GoogleButtonSignIn = ({ windowWidth }) => {
       store.dispatch(closeLoadingModal());
     }
     google.accounts.id.initialize({
-      client_id:
-        "1020234478913-eptfd3u3qg9kds0ngb44tijnb77gojn8.apps.googleusercontent.com",
+      client_id: process.env.NEXT_PUBLIC_GG_CLIENT_ID,
       callback: handleCredentialResponse,
     });
     google.accounts.id.renderButton(
